@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GCSCMDirState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <UpdateTime>2019-06-14T02:35:44.2630632+00:00</UpdateTime>
+  <Standins>
+    <GCSCMStandin>
+      <FileName>Angle Measures\100.STL</FileName>
+      <SHA1>8951C4757DDF4C2B582C5805946E5CA10FF3D8BC</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\110.STL</FileName>
+      <SHA1>9454DD3A208D058CA3543F61E03959A5017C2C8C</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\120.STL</FileName>
+      <SHA1>09D283AA77B154D318A948C9D473DA8DE829751A</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\140.STL</FileName>
+      <SHA1>434D2618D308A412E1DBC88F75708D8743C79B9B</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\90.SLDPRT</FileName>
+      <SHA1>84DA3805D01BB77C20A39D0B332BDB938D15922C</SHA1>
+      <FileSize>51813</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\90.STL</FileName>
+      <SHA1>3726AABB9FBE4BE8763E64780445334FCF52FA85</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\92.SLDPRT</FileName>
+      <SHA1>206C45E42738687A2BBF39A4BA95B296ABCC2859</SHA1>
+      <FileSize>51585</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\92.STL</FileName>
+      <SHA1>FC37A35975833DC53DBAE10EF071CE3E8842DA5D</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\94.STL</FileName>
+      <SHA1>87054AADCFC134331BA25FCE6772CD35972CA38C</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\96.STL</FileName>
+      <SHA1>AA0FAC10874BD866DEC7771BDDAC02FC71424877</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Angle Measures\98.STL</FileName>
+      <SHA1>5DDE32634BD3767FC53016C11D95A1FB444E1FD1</SHA1>
+      <FileSize>1084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\chassis and sensor render.png</FileName>
+      <SHA1>AD562E990D1D02D6FB3CF3CBB6031FF70591F354</SHA1>
+      <FileSize>5608156</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\Chassis Clamp Render.png</FileName>
+      <SHA1>B46EFE800D03CA0DC506B057364E7D8B8224DDFF</SHA1>
+      <FileSize>5705108</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\lidar plate with pins.png</FileName>
+      <SHA1>5222EA1B2161F0B0A0E5989D1801A7B7A39BBC6B</SHA1>
+      <FileSize>4121318</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\nuc and lidar.png</FileName>
+      <SHA1>E1D42105E910142CFD36E3D2DA18CC1196928ED9</SHA1>
+      <FileSize>4514542</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\velodyne chage.png</FileName>
+      <SHA1>A1E53F36C81589EC9A3E599FE5C9F14B5D4538D8</SHA1>
+      <FileSize>5238066</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\2664N110_METAL GEAR - 20 DEGREE PRESSURE ANGLE.STL</FileName>
+      <SHA1>181D770F8387E5BAA75BCB60F6AD57974AFBCB0B</SHA1>
+      <FileSize>13229384</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\90145A484_18-8 STAINLESS STEEL DOWEL PIN.SLDPRT</FileName>
+      <SHA1>58BB80A81A6131799D2E0D7B6D0B810BBC5D559C</SHA1>
+      <FileSize>80978</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\90176A121_NYLON UNTHREADED SPACERS.SLDPRT</FileName>
+      <SHA1>E59C32F3621D5815C1A4BE4DB0F6881EBC02A4AB</SHA1>
+      <FileSize>144337</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\92196A108_18-8 STAINLESS STEEL SOCKET HEAD CAP SCREW.SLDPRT</FileName>
+      <SHA1>C9A8777DDB8682567B4F14DE4A728E4E8E5D9936</SHA1>
+      <FileSize>636451</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\92196A535_18-8 STAINLESS STEEL SOCKET HEAD CAP SCREW.SLDPRT</FileName>
+      <SHA1>DB50CE0302FF53D3AB3E00A63F7475D74282A7A7</SHA1>
+      <FileSize>476833</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\92196A544_18-8 STAINLESS STEEL SOCKET HEAD CAP SCREW.SLDPRT</FileName>
+      <SHA1>1273578CD2C9F444E3D3956D39BF69B91270FCE6</SHA1>
+      <FileSize>830684</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\92196A706_18-8 STAINLESS STEEL SOCKET HEAD CAP SCREW.SLDPRT</FileName>
+      <SHA1>18D69F3AD0C1F52DB06F64B5D847708AC2AB720D</SHA1>
+      <FileSize>890102</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\93330A541_ALUM FEM THRDED ROUND STANDOFF.SLDPRT</FileName>
+      <SHA1>36FB37AFCF2DAA08F7CF5DE8B73C014D5E5CC7AA</SHA1>
+      <FileSize>496913</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\94459A370_BRASS HEAT-SET INSERT FOR PLASTIC.SLDPRT</FileName>
+      <SHA1>B73C1FA809DBAA49659A3383F9508CF3AA207CAD</SHA1>
+      <FileSize>1343970</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\98804A029_18-8 STAINLESS STEEL THREADED ROD.SLDPRT</FileName>
+      <SHA1>8D06997311F9CE977FA1B88EA38F65EA9FAC1F7F</SHA1>
+      <FileSize>7815022</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Render file - Keyshot\Render file keyshot.z01</FileName>
+      <SHA1>943DD85DF9B188443F9E71D816B069EA0237DE3B</SHA1>
+      <FileSize>3670016</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Render file - Keyshot\Render file keyshot.z02</FileName>
+      <SHA1>9D15633D08E12D575FE5BAFCC99BF35A5A318FC9</SHA1>
+      <FileSize>3670016</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Render file - Keyshot\Render file keyshot.zip</FileName>
+      <SHA1>0D67862684A56A670845B107D641CFAE0E2DA8C0</SHA1>
+      <FileSize>2502281</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Renderings\NUC5i3MYHE-NUC5i5MYHE-CHASSIS.189.jpg</FileName>
+      <SHA1>8621CD88BA587084D9D13EE77468E3AE6070F370</SHA1>
+      <FileSize>970706</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Renderings\NUC5i3MYHE-NUC5i5MYHE-CHASSIS.190.jpg</FileName>
+      <SHA1>C33F3B12D12F519E6A625FBD15AD6ABDC054CF5F</SHA1>
+      <FileSize>1038966</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Renderings\NUC5i3MYHE-NUC5i5MYHE-CHASSIS.191.jpg</FileName>
+      <SHA1>168E6CFC797062084FA097C433EDA3032C04188B</SHA1>
+      <FileSize>1677938</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Renderings\NUC5i3MYHE-NUC5i5MYHE-CHASSIS.192.jpg</FileName>
+      <SHA1>1870D559918B63FBF76FD6FBD48F4FF46ACDAC37</SHA1>
+      <FileSize>1542460</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Renderings\NUC5i3MYHE-NUC5i5MYHE-CHASSIS.193.jpg</FileName>
+      <SHA1>A0288708414128B29822F2C000652E8F7C40E6B2</SHA1>
+      <FileSize>1495405</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Renderings\NUC5i3MYHE-NUC5i5MYHE-CHASSIS.194.jpg</FileName>
+      <SHA1>C4764946667D0AE59C5802B546A550658AE93397</SHA1>
+      <FileSize>1354050</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Renderings\NUC5i3MYHE-NUC5i5MYHE-CHASSIS.196.jpg</FileName>
+      <SHA1>CA693B23D82FAF8269FA68008FFA986652E95C4B</SHA1>
+      <FileSize>1284816</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Renderings\NUC5i3MYHE-NUC5i5MYHE-CHASSIS.197.jpg</FileName>
+      <SHA1>CF27039E4CA12746BD24C5FEFE54007E4BA89D8C</SHA1>
+      <FileSize>1168913</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\STEP - with mainboard\NUC5i3MYHE-NUC5i5MYHE-CHASSIS with MB.z01</FileName>
+      <SHA1>F949508113E76F538C660B9F7B436AB7ED8F4D20</SHA1>
+      <FileSize>5242880</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\STEP - with mainboard\NUC5i3MYHE-NUC5i5MYHE-CHASSIS with MB.z02</FileName>
+      <SHA1>4FB9474804CD8DE83ABFDC750E94EE0B0921575A</SHA1>
+      <FileSize>5242880</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\STEP - with mainboard\NUC5i3MYHE-NUC5i5MYHE-CHASSIS with MB.z03</FileName>
+      <SHA1>20021116606D2E43BA5932AF3FEE5E9428D0A0C6</SHA1>
+      <FileSize>5242880</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\STEP - with mainboard\NUC5i3MYHE-NUC5i5MYHE-CHASSIS with MB.zip</FileName>
+      <SHA1>469C61C8E3317CF70A2305A14FBC7EF99E4B61C7</SHA1>
+      <FileSize>3470138</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\base metal foot.SLDPRT</FileName>
+      <SHA1>55426BFA50F8DBA3DDD837A37D060E55DC37F36B</SHA1>
+      <FileSize>1675022</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\base metal.SLDPRT</FileName>
+      <SHA1>BACAC2FC09FA940ED98EF1586E87E36FA9E19EBD</SHA1>
+      <FileSize>521638</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\body.SLDPRT</FileName>
+      <SHA1>68F6562D654D00261A4CD1E0F099706F73F216B5</SHA1>
+      <FileSize>1225970</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\front board.SLDPRT</FileName>
+      <SHA1>257B90A82C5904CF42E1DA4F3B0FBFD003963D93</SHA1>
+      <FileSize>92689</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\HDD SDD frame.SLDPRT</FileName>
+      <SHA1>B142B35737BC0FA740A0547BF9B65E8D1DD9579A</SHA1>
+      <FileSize>527404</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\HDD SDD wires.SLDPRT</FileName>
+      <SHA1>FA99A1D6513AA56E94CDCFD7006AE647088CA761</SHA1>
+      <FileSize>685911</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\NUC5i3MYHE-NUC5i5MYHE-CHASSIS with MB.SLDASM</FileName>
+      <SHA1>D3B6B194C59768C92D45A1B5FA8F8E668777D137</SHA1>
+      <FileSize>5713695</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\Original fileNUC5i3MYHE-NUC5i5MYHE-CHASSIS - 副本.SLDPRT</FileName>
+      <SHA1>F940243090DCAD8C2FBBB5FB0698BB69D59A42D5</SHA1>
+      <FileSize>103540</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\TOP LID pard.SLDPRT</FileName>
+      <SHA1>A1F45A7B837DDB6BA2AE1F70801852924AAE3BE4</SHA1>
+      <FileSize>590829</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\NUC\十字盖板 整理 - 副本.SLDPRT</FileName>
+      <SHA1>864E7CE99A7E2ED40DCB9B99AE70098C7D14BACD</SHA1>
+      <FileSize>549803</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Velodine\Interface Box Models\__MACOSX\._50-6001a FAB ENCLOSURE.IGS</FileName>
+      <SHA1>7FF8A097AA141D28587251A74D45942919F6C19C</SHA1>
+      <FileSize>194</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Velodine\Interface Box Models\__MACOSX\._50-6001a FAB ENCLOSURE.PDF</FileName>
+      <SHA1>7FF8A097AA141D28587251A74D45942919F6C19C</SHA1>
+      <FileSize>194</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Velodine\Interface Box Models\__MACOSX\._50-6001a FAB ENCLOSURE.SLDDRW</FileName>
+      <SHA1>7FF8A097AA141D28587251A74D45942919F6C19C</SHA1>
+      <FileSize>194</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Velodine\Interface Box Models\__MACOSX\._50-6001a FAB ENCLOSURE.SLDPRT</FileName>
+      <SHA1>7FF8A097AA141D28587251A74D45942919F6C19C</SHA1>
+      <FileSize>194</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Velodine\Interface Box Models\50-6001a FAB ENCLOSURE.IGS</FileName>
+      <SHA1>E7BDB5EDAC3D1F5503B425ED24BD4FE34FA93C69</SHA1>
+      <FileSize>1130452</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Velodine\Interface Box Models\50-6001a FAB ENCLOSURE.PDF</FileName>
+      <SHA1>327AB050DAEC2184E0480CDBDC029EF46E668E22</SHA1>
+      <FileSize>108772</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Velodine\Interface Box Models\50-6001a FAB ENCLOSURE.SLDDRW</FileName>
+      <SHA1>3E121EA996E1D25C5209AE5D3F376B44A9BB70E5</SHA1>
+      <FileSize>1206784</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Velodine\Interface Box Models\50-6001a FAB ENCLOSURE.SLDPRT</FileName>
+      <SHA1>887FCD63AB6E6B3C66EA9082028C76CA0BFB81A4</SHA1>
+      <FileSize>459495</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\000_TA_DS5_DEV_KIT_AWG_RGB_ASM__ASM.sldasm</FileName>
+      <SHA1>4440DC443DBB88B084E2FDB3ABDF129C6D78AD2C</SHA1>
+      <FileSize>28735</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\20708-050E_PLUG_ASSY_3.sldprt</FileName>
+      <SHA1>F7AA8345ED44881EAE592AA27E5FDFCB61A0955E</SHA1>
+      <FileSize>746860</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\20709-050E_RECE_ASSY_3.sldprt</FileName>
+      <SHA1>53BBB60779D96B24C32A5CBD427D9A010717DCD7</SHA1>
+      <FileSize>1855162</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\86-0101 REV B ENVELOPE, VLP-16.SLDPRT</FileName>
+      <SHA1>D7A373FC606F8130824B65243A1E0152DA94D0E7</SHA1>
+      <FileSize>511194</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\ADHESIVE_LABEL_CAMERA_DS5_AWG_2.sldprt</FileName>
+      <SHA1>ED93B37D3C92788737CA629745FC9E46E2BF8064</SHA1>
+      <FileSize>28670</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\ADHESIVE_LENS_AWG_RGB_23.sldprt</FileName>
+      <SHA1>F1CE20D66E549E2D93FDB4AB447161834D5F688A</SHA1>
+      <FileSize>26175</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AUX_COVER_ALUMINUM_AWG_W_RGB_61.sldprt</FileName>
+      <SHA1>5DD7155677B2BAEC2CBB6DA15F69D5D994D14EAD</SHA1>
+      <FileSize>60867</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AUX_COVER_SUBASSY_AWG_W_RGB_ASM_ASM.sldasm</FileName>
+      <SHA1>76E3387AF4364766FE51B4F74D7E2A8FD018FCA4</SHA1>
+      <FileSize>20046</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_ADHESIVE_FRONT_BEZEL_1_18.sldprt</FileName>
+      <SHA1>E84245DDB6F1BE44F625759EF8CED0B8C82272E9</SHA1>
+      <FileSize>44622</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_ASIC_BACKER_1_77.sldprt</FileName>
+      <SHA1>A0FFE4C9B042A76280EB1026FBAE31A7DE5DDB30</SHA1>
+      <FileSize>22609</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_ASIC_BACKER_2_84.sldprt</FileName>
+      <SHA1>8C50981DDD0CC384A4DD3A4293F94F81A91F64BF</SHA1>
+      <FileSize>22544</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_ASIC_FLEX_33.sldprt</FileName>
+      <SHA1>F721B72B520C5C90A691B1B2A61D62F6FDF0274F</SHA1>
+      <FileSize>51407</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_FOAM_FRONT_BEZEL_RIGHT_49.sldprt</FileName>
+      <SHA1>450E3B11452FDCC2055C7B8E8A8CEFA3941C08D2</SHA1>
+      <FileSize>44268</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_RGB_CAMERA_5.sldprt</FileName>
+      <SHA1>7954B9E413756F9E8F96CDEDBB4C2F044FA55CCE</SHA1>
+      <FileSize>183695</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_RGB_CAMERA_BOARD_22.sldprt</FileName>
+      <SHA1>15C781844EDF376A1B47AEAB1746262C0C986DE1</SHA1>
+      <FileSize>47856</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_RGB_CAMERA_FLEX_SHEETMETAL_.sldprt</FileName>
+      <SHA1>7FEC316203B032DA430C1C0CA99F13F7949EE2A2</SHA1>
+      <FileSize>39057</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_RGB_CAMERA_MERGED_5.sldprt</FileName>
+      <SHA1>5D252EDE33FA643F7F31EABC92515B9106C05C5C</SHA1>
+      <FileSize>161575</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\AWG_STIFFENER_FRONT_BEZEL_1_18.sldprt</FileName>
+      <SHA1>C1072A203F05F4E07FB8BD6B9E75C53EB41B06C3</SHA1>
+      <FileSize>45049</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\B2B_BRACKET_AWG_W_RGB_1.sldprt</FileName>
+      <SHA1>42F6FE67056FCA40DFCA859E678062B04FC7D085</SHA1>
+      <FileSize>67377</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\BARCODE_AWG_8.sldprt</FileName>
+      <SHA1>876F86F0A616D8664E4C55B9007A8B37E8BA9385</SHA1>
+      <FileSize>23562</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\BRACKET_RGB_MODULE_AWG_W_RGB_46.sldprt</FileName>
+      <SHA1>EC8A72551F1F60EED7B168082742C010D13B91CC</SHA1>
+      <FileSize>66832</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\D435.SLDASM</FileName>
+      <SHA1>EF0235CD173E39DE74D8D9BBC51FF0A8B0D370C5</SHA1>
+      <FileSize>3404867</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\FPC_DS5_DK_ASIC_AWG_STEREO_IM_1_ASM.sldasm</FileName>
+      <SHA1>D70564CF581DDC0E37D12C5977DE7B47D52AE3D1</SHA1>
+      <FileSize>21967</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\FRONT_COVER_ALUMINUM_AWG_W_RGB_.sldprt</FileName>
+      <SHA1>D2A47D1F64C69716914C66D84EF59F67561CF5D8</SHA1>
+      <FileSize>457195</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\HEATSINK_AWG_W_RGB_24.sldprt</FileName>
+      <SHA1>671144E40D72D9435C2A8A4751C74A248C1A3D9C</SHA1>
+      <FileSize>448378</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\ID_50_PIN_20709-050EC_PAD_4.sldprt</FileName>
+      <SHA1>BBCA7A7FD485BE45DAB64F654A4EC4276663141B</SHA1>
+      <FileSize>1599227</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Intel_RealSense_415_0601_EXT-REV-02_25_MAY_2017 (1).sldasm</FileName>
+      <SHA1>5864DFE9DB4B72A46B48E6C97BB36EEB51E4C855</SHA1>
+      <FileSize>22154</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Intel_RealSense_415_0601_EXT-REV-02_25_MAY_2017 (1).STEP</FileName>
+      <SHA1>F28252AC6A049CA57C28049CB16C9FEE907DD758</SHA1>
+      <FileSize>8599394</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Intel_RealSense_Depth_Camera_D435.STEP</FileName>
+      <SHA1>ABAF2534A41D836D4DD5A27E0BCFFC057872D20E</SHA1>
+      <FileSize>22913171</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\LABEL_CAMERA_DS5_AWG_36.sldprt</FileName>
+      <SHA1>C98CD98C2726D537F242C9E42FBF2982B747C377</SHA1>
+      <FileSize>40317</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\LENS_COVER_AWG_RGB_44.sldprt</FileName>
+      <SHA1>8DDF54BFA2BDF3DA0FEB988ED33F880588CAE1E6</SHA1>
+      <FileSize>23303</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\MAGNET_9.sldprt</FileName>
+      <SHA1>B36EA0D8D45B7E5BCE22A8B65936A07BD2BD593F</SHA1>
+      <FileSize>24704</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\MASK_LENS_AWG_RGB_43.sldprt</FileName>
+      <SHA1>8CA8685116C5A897B2DC50BED6F1000A54762460</SHA1>
+      <FileSize>26446</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\MODULE_CAMERA_DS5_AWG_RGB_6.sldprt</FileName>
+      <SHA1>5A35CCDE24B819B315EFE591A15B444E0E1ACD39</SHA1>
+      <FileSize>1205442</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\PASTE_THERMAL_IR_AWG_W_RGB_7.sldprt</FileName>
+      <SHA1>44970D2ACB9703CEA8C8A94DB0FB0AD79A5DB7CD</SHA1>
+      <FileSize>23835</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\PIN_STEEL_ZINC_PLATED_11.sldprt</FileName>
+      <SHA1>5300EE55C8A206E3B2121E4225A8204651EBFE8B</SHA1>
+      <FileSize>24341</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\realsense_angled.SLDASM</FileName>
+      <SHA1>DCD751F08C5A5B5D773B5736B7B74E77960EFC64</SHA1>
+      <FileSize>1998474</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\realsense_vertical.SLDASM</FileName>
+      <SHA1>28434E5C824723035F8BBDDFE57F8EF4EBE49FA6</SHA1>
+      <FileSize>1933929</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\REAR_COVER_ALUMINUM_AWG_RGB_121.sldprt</FileName>
+      <SHA1>1A908DBE386701BC50CB2D529833301ABBFEFB7D</SHA1>
+      <FileSize>104278</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\REAR_COVER_SUBASSY_AWG_W_RGB_AS_ASM.sldasm</FileName>
+      <SHA1>75BC1EF245A6A36EA6C38ACBD3D13B8FE832A6CA</SHA1>
+      <FileSize>20286</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\SCREW_M1-6_4L_4.sldprt</FileName>
+      <SHA1>D1FAC345DF21C426EAC3EB46A6121D9BB94A7C7B</SHA1>
+      <FileSize>38575</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\SCREW_TORX_M2_X_5L_6.sldprt</FileName>
+      <SHA1>345CC24B42F25510D51D6DCE4B56CA022F6345BA</SHA1>
+      <FileSize>113883</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Assem1.SLDASM</FileName>
+      <SHA1>FEA933B307D7B04EDC5F64FA213DEA228BFDFD30</SHA1>
+      <FileSize>153895</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_car_chassis.SLDASM</FileName>
+      <SHA1>4DAC774C4F732741102DF45239FF61CF5E55AAFA</SHA1>
+      <FileSize>1676205</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_clamp.SLDASM</FileName>
+      <SHA1>D968513FBF3C8CC84D8DE0F336FBA3A4762FF8F2</SHA1>
+      <FileSize>1738806</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_end_cap.SLDASM</FileName>
+      <SHA1>46C8C0382F5F8D999DC65DB8575B7BA9217E94CF</SHA1>
+      <FileSize>1986541</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_lidar_imu.SLDASM</FileName>
+      <SHA1>962D8656F1B40823162A957247539F377D859120</SHA1>
+      <FileSize>3400858</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_lidar_preprocessor.SLDASM</FileName>
+      <SHA1>E5A8B0331AB1521F4AED30C1B573A5B587074DAA</SHA1>
+      <FileSize>958879</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_nuc.SLDASM</FileName>
+      <SHA1>7F59D7BC0A7469F1134C1C8997D1521028B5B94A</SHA1>
+      <FileSize>893640</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_rock_crawler.SLDASM</FileName>
+      <SHA1>00D1CCA5D4109B62DB1B3F639B81F6268B84229F</SHA1>
+      <FileSize>3043747</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_rod_clamp.SLDASM</FileName>
+      <SHA1>F422E09787FAB17904F6A1E9831A6ECFBC59158C</SHA1>
+      <FileSize>809488</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>ass_sensor_package.SLDASM</FileName>
+      <SHA1>8D2D24D9C1BAAFCF866D2D7D3C33796B183EBF97</SHA1>
+      <FileSize>3503996</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Autonomy Package Instructions.docx</FileName>
+      <SHA1>0657BB39BE9808BA5A5B02D7388AAB5BDF3676EA</SHA1>
+      <FileSize>760054</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>end cap.SLDPRT</FileName>
+      <SHA1>6C33E4474A743981618C53070D729380387E9C26</SHA1>
+      <FileSize>84091</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>end cap.STL</FileName>
+      <SHA1>9428A51DA9E2637C73274C17A6FA544D315D4DA5</SHA1>
+      <FileSize>577084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>fab_lidar_plate.SLDASM</FileName>
+      <SHA1>51970BB2FE4EAAFDAC83A35EDBC8DFCF1A8556DC</SHA1>
+      <FileSize>195186</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>fab_nuc_plate.SLDASM</FileName>
+      <SHA1>28B5059C8B0167CB3A9B93A18D27025AE4515E6D</SHA1>
+      <FileSize>192678</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Part1.STL</FileName>
+      <SHA1>26CE3BADBF54EC7DA60C66F324770A3218679313</SHA1>
+      <FileSize>1155884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_cage_lid.SLDPRT</FileName>
+      <SHA1>6FA5A082D967552794275BAFA82BF622747D332A</SHA1>
+      <FileSize>98479</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_carriage.SLDPRT</FileName>
+      <SHA1>AAA92262C8F3A6A638183571184012D72F0A445C</SHA1>
+      <FileSize>81207</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_clamp_clamp.SLDPRT</FileName>
+      <SHA1>F2DCAE0EA77454C66FB45B70A46B9ED959B7A83A</SHA1>
+      <FileSize>119954</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_clamp_clamp.STL</FileName>
+      <SHA1>0A37143154B500861F27BD48A274C26F220CD506</SHA1>
+      <FileSize>793684</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_end_cap.SLDPRT</FileName>
+      <SHA1>AF3411D08941FFD03FC1685CF220F1219E586605</SHA1>
+      <FileSize>88738</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_end_cap.STL</FileName>
+      <SHA1>8F9A20EEE3949F2C8631B227EADBEDC426D59EDD</SHA1>
+      <FileSize>1153484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_lower_clamp.SLDPRT</FileName>
+      <SHA1>970AD029E70C9753CCB1ADED197E37C28DE71F93</SHA1>
+      <FileSize>225641</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_lower_clamp.STL</FileName>
+      <SHA1>007D8AE58EEAF84A45F214C404D41612C4C297F9</SHA1>
+      <FileSize>60736284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_nuc_cover.SLDPRT</FileName>
+      <SHA1>82D39A09B327FB073E1AA4CDA553E689A720BCF7</SHA1>
+      <FileSize>122103</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_nuc_cover.STL</FileName>
+      <SHA1>F3F8EA9D4E8FB3DB81322A1DF9A57621C76EE4BE</SHA1>
+      <FileSize>871784</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_nuc_mount.SLDPRT</FileName>
+      <SHA1>645BF3D9F4D60FA425C7DFD83EBAF9842AE9F54F</SHA1>
+      <FileSize>310541</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_nuc_mount.STL</FileName>
+      <SHA1>42ECA82DDEE76EC929839BF33516043FCDB57A9E</SHA1>
+      <FileSize>3509884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_nuc__board_keepout.SLDPRT</FileName>
+      <SHA1>A093B8007D2DC8E63B3D3156EC3B3CC0420A869A</SHA1>
+      <FileSize>99049</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_realsense_mount.SLDPRT</FileName>
+      <SHA1>1CC1D494C952C046BDF0D1DB2E16E3163728940C</SHA1>
+      <FileSize>113539</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_realsense_mount.STL</FileName>
+      <SHA1>A27ACE628EE5B28DE13FD7635A6DA759D22DFD26</SHA1>
+      <FileSize>1299084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_rod_clamp.SLDPRT</FileName>
+      <SHA1>28E4F66E6893D816C126E779F71595AB3A5328CA</SHA1>
+      <FileSize>245736</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_rod_clamp.STL</FileName>
+      <SHA1>A35D4366C7190849F848CA135812FD2B36189F6B</SHA1>
+      <FileSize>2363884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_rod_clamp_insert.STL</FileName>
+      <SHA1>0AFE88FF560A80CBDD9B8298FC21DA946153321A</SHA1>
+      <FileSize>2363884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_rod_clamp_through.STL</FileName>
+      <SHA1>51F59B16A2D85174C3AFFFF7CB60153979E4C24D</SHA1>
+      <FileSize>1362484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_sensor_plate.SLDPRT</FileName>
+      <SHA1>E1A114A23E6E8B40AD37C39BD36510A2F12D13AF</SHA1>
+      <FileSize>204136</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_threaded_rod.SLDPRT</FileName>
+      <SHA1>84D44449F1C1DA3FEA774C221E48704FA3250A55</SHA1>
+      <FileSize>48280</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_upper_clamp.SLDPRT</FileName>
+      <SHA1>47603AAFD0A3896084CB282F6B68915827308146</SHA1>
+      <FileSize>380487</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_upper_clamp.STL</FileName>
+      <SHA1>D1C6659C031BA26481B00E381486A9B15746AE89</SHA1>
+      <FileSize>9779284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_upper_clamp_front.STL</FileName>
+      <SHA1>8351C3249F48D94E995135E5DBAC7EA11C1FA5B8</SHA1>
+      <FileSize>9841284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_upper_clamp_rear.STL</FileName>
+      <SHA1>94C0FD7F9AECECECDFB9BD8A70E8C84CEA28B10C</SHA1>
+      <FileSize>9841284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Rock Crawler.pptx</FileName>
+      <SHA1>D7CCE8A923EC00DC3C6181558482A9FB768C0312</SHA1>
+      <FileSize>7314323</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>support rod.SLDPRT</FileName>
+      <SHA1>183339565E314B8E723612A428D9F9BE5181FD8A</SHA1>
+      <FileSize>57937</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_velodyne_riser_V1.SLDPRT</FileName>
+      <SHA1>2C9AD17929047A57FD199F9AF70C11F5CB5B0CCD</SHA1>
+      <FileSize>321717</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_velodyne_riser_V2.SLDPRT</FileName>
+      <SHA1>66F7150421F38A8A542B7AA81234DE51ADCCD78B</SHA1>
+      <FileSize>137743</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>O-Drive Base.SLDPRT</FileName>
+      <SHA1>7B0CC3A400341F727995C1DBA4CE1D1D5EAB3A92</SHA1>
+      <FileSize>154303</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>O-Drive Base.STL</FileName>
+      <SHA1>62A4A32C0CEA5895091A4C10E7C8648DB3B7C63F</SHA1>
+      <FileSize>2320484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>vn-100-user-manual-(um001).pdf</FileName>
+      <SHA1>494E2C4D46759E21B3004E4988EB1C97FB87E6C0</SHA1>
+      <FileSize>2720727</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\92196A537_18-8 STAINLESS STEEL SOCKET HEAD CAP SCREW.SLDPRT</FileName>
+      <SHA1>2605D97E5D23AC7CC2B10E2B9ACE22E69E851970</SHA1>
+      <FileSize>515017</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_velodyne_riser_V1_3in.STL</FileName>
+      <SHA1>D335D67CB16F43EEF3E2D673800FCBE07396B15D</SHA1>
+      <FileSize>341384</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_velodyne_riser_V1_4in.STL</FileName>
+      <SHA1>EA5FA13F6495219330253790DD68D6E4936DABD4</SHA1>
+      <FileSize>425884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>par_velodyne_riser_V1_5in.STL</FileName>
+      <SHA1>515E0A3A3D96974392BE4BC92759286EE152820F</SHA1>
+      <FileSize>367384</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+  </Standins>
+  <Version>1</Version>
+</GCSCMDirState>

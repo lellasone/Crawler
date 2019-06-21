@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+
+# This is a proof of concept for o-drve based throttle. 
+
+import rospy
+from sensor_msgs.msg import Joy
+
+INDEX_PAN = 3
+INDEX_SPEED = 4
+
+MAX_SPEED = 60000 (pulses per revolution)
+
+def listener():
+	print("Setting up listener")
+	rospy.init_node('throttle',anonymous=True)
+
+	rospy.Subscriber("/spacenav/joy", Joy, callback)
+	
+	print("spinning up listener")
+	rospy.spin()
+	print("listener down")
+
+def callback(msg):
+	a
+
+def set_steering(direction):
+        if direction > 0 and direction < 256:
+
+                message = bytes([direction]) + bytearray.fromhex("0000")
+                send_frame(COMMAND_STEERING, message)
+        else: 
+                print("invalid direction request: " + str(direction))
+
+def send_frame(command, data):
+        with open("/dev/ttyACM2", 'wb') as teensy:
+                frame = bytearray.fromhex("41")
+                frame = frame + command + data
+                frame = frame + bytearray.fromhex("5A") 
+                print(frame)
+                teensy.write(frame)
+
+
+
+if __name__ == '__main__':
+	
+	listener()
+
+

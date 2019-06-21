@@ -1,0 +1,9 @@
+[unit]
+Description = Initializes robot ros nodes on startup
+
+[Service]
+Type = simple
+ExecStart=/bin/bash /usr/bin/crawler_startup_service.sh
+
+[Install]
+WantedBy = multi-user.target

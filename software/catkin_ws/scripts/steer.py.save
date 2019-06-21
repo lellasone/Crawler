@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+
+# This script is a proof of concept for teensy based steering.
+
+
+import rospy
+from sensor_msgs.msg import Joy
+
+INDEX_PAN = 3
+INDEX_SPEED = 4
+
+
+def listener():
+	print("Setting up listener")
+	rospy.init_node('turn',anonymous=True)
+
+	rospy.Subscriber("/spacenav/joy", Joy, callback)
+	
+	print("spinning up listener")
+	rospy.spin()
+	print("listener down")
+
+def callback(msg):
+	
+
+if __name__ == '__main__':
+	listener()

@@ -2,11 +2,10 @@ Install Process:
 	Step 0: Install ubuntu 16.04
 	Step 1: Install ros Kinetic
 	Step 2: Install Python3.6
-	Step 3: Install odrive as directed. 
+	Step 3: sudo pip3 install odrive (may fail) 
 	Step 3.1: Install python3.6-dev
 	Step 3.2: install python3-usb
-	Step 3.3: clone the odrive gitup
-	Step 3.4: run "odrivetools" in the tools subfolder. 
+	Step 3.3: sudo pip3 instal --no-dependencies odrive (should work)
 	[at this point python should be able to import the library]
 	Step 4: Clone repository onto machine
 	Step 5: Install systemd service as described below. 

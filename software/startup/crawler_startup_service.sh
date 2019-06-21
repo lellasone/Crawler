@@ -11,8 +11,8 @@ sleep 1
 
 roslaunch spacenav_node classic.launch &
 
-gnome-terminal --tab="speed" --command="bash -c 'python3.6 ~/Crawler/software/catkin_ws/scripts/drive.py; $SHELL'" --tab="steer" --command="bash -c 'python3.6 ~/Crawler/software/catkin_ws/scripts/steer.py;$SHELL'"&
- &
+python3 /home/jake/Crawler/software/catkin_ws/scripts/drive.py&
+python3 /home/jake/Crawler/software/catkin_ws/scripts/steer.py&
 
 while true; do
 	sleep 1m;

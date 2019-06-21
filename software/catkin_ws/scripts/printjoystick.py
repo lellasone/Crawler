@@ -5,10 +5,25 @@
 # stearing and stop commands to the terminal. 
 
 import rospy
-from std_msgs.msg import String
+from sensor_msgs.msg import Joy
+
+INDEX_PAN = 3
+INDEX_SPEED = 4
 
 
 def listener():
-	ropsy.init_node('listener',anonymous=True)
+	print("Setting up listener")
+	rospy.init_node('listener',anonymous=True)
 
-rospy.Subscriber("
+	rospy.Subscriber("/spacenav/joy", Joy, callback)
+	
+	print("spinning up listener")
+	rospy.spin()
+	print("listener down")
+
+def callback(msg):
+	print("speed: " + str(msg.axes[INDEX_SPEED]))
+	print("pan: " + str(msg.axes[INDEX_PAN]))
+
+if __name__ == '__main__':
+	listener()

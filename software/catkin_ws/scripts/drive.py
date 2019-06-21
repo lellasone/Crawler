@@ -34,6 +34,7 @@ def setup_odrive():
 	global engine 
 	print("finding odrive")
 	engine = odrive.find_any()
+	print("odrive found")
 	print(engine.vbus_voltage)
 
 if __name__ == '__main__':

@@ -35,7 +35,7 @@ def set_steering(direction):
                 print("invalid direction request: " + str(direction))
 
 def send_frame(command, data):
-        with open("/dev/ttyACM2", 'wb') as teensy:
+        with open("/dev/ttyACM0", 'wb') as teensy:
                 frame = bytearray.fromhex("41")
                 frame = frame + command + data
                 frame = frame + bytearray.fromhex("5A") 

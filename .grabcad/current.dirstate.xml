@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GCSCMDirState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <UpdateTime>2019-06-17T13:28:31.6637170-07:00</UpdateTime>
+  <UpdateTime>2019-06-24T10:12:50.9860155-07:00</UpdateTime>
   <Standins>
     <GCSCMStandin>
       <FileName>Angle Measures\100.STL</FileName>
@@ -80,78 +80,526 @@
       <LastUpdated>2019-04-14T00:49:55.9613393+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>images\ODrive\DSC03643.JPG</FileName>
+      <FileName>CAD\Assem1.SLDASM</FileName>
+      <SHA1>FEA933B307D7B04EDC5F64FA213DEA228BFDFD30</SHA1>
+      <FileSize>153895</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-16T00:57:05.3611579+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_car_chassis.SLDASM</FileName>
+      <SHA1>F396680BB84C26FBA73B49EA92D3FC61273151CD</SHA1>
+      <FileSize>1675788</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-17T20:49:38.6726859+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_clamp.SLDASM</FileName>
+      <SHA1>C9B77498103DB248EDFB36F6AD6BC14D296AD448</SHA1>
+      <FileSize>1739628</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-17T20:49:38.2819118+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_end_cap.SLDASM</FileName>
+      <SHA1>46C8C0382F5F8D999DC65DB8575B7BA9217E94CF</SHA1>
+      <FileSize>1986541</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-23T19:17:02.8371770+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_lidar_imu.SLDASM</FileName>
+      <SHA1>32352680FAD3469CDAEDE4B3508E6BB7154C58D2</SHA1>
+      <FileSize>3401530</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-17T20:49:37.1215938+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_lidar_preprocessor.SLDASM</FileName>
+      <SHA1>E5A8B0331AB1521F4AED30C1B573A5B587074DAA</SHA1>
+      <FileSize>958879</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T18:20:18.6312739+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_nuc.SLDASM</FileName>
+      <SHA1>68C003BA6EC1BE69FE9BF840650161C9FDFA76EC</SHA1>
+      <FileSize>894289</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-17T20:49:36.4088366+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_rock_crawler.SLDASM</FileName>
+      <SHA1>742B9B52DA526F7F84F972B4D354D7135764AC2C</SHA1>
+      <FileSize>3109421</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-17T20:49:39.7630589+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_rod_clamp.SLDASM</FileName>
+      <SHA1>F422E09787FAB17904F6A1E9831A6ECFBC59158C</SHA1>
+      <FileSize>809488</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T18:20:18.6492628+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_sensor_package.SLDASM</FileName>
+      <SHA1>E7741E82C595D111F326F01B22A9F8BD280DBC45</SHA1>
+      <FileSize>3504107</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-17T20:49:37.7252303+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\CP_par_nano_carriage_bottom.gcode</FileName>
+      <SHA1>DA39A3EE5E6B4B0D3255BFEF95601890AFD80709</SHA1>
+      <FileSize>0</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T16:26:35.5060219+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\end cap.SLDPRT</FileName>
+      <SHA1>6C33E4474A743981618C53070D729380387E9C26</SHA1>
+      <FileSize>84091</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-02T23:51:07.2425939+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\end cap.STL</FileName>
+      <SHA1>9428A51DA9E2637C73274C17A6FA544D315D4DA5</SHA1>
+      <FileSize>577084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-02T23:52:33.6236863+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\fab_lidar_plate.SLDASM</FileName>
+      <SHA1>51970BB2FE4EAAFDAC83A35EDBC8DFCF1A8556DC</SHA1>
+      <FileSize>195186</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-16T00:57:02.7110949+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\fab_nuc_plate.SLDASM</FileName>
+      <SHA1>28B5059C8B0167CB3A9B93A18D27025AE4515E6D</SHA1>
+      <FileSize>192678</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-16T22:12:37.5057497+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\O-Drive Base.SLDPRT</FileName>
+      <SHA1>B193B5DDD064938D0563841F524F4651FA2D3955</SHA1>
+      <FileSize>154297</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-26T21:04:54.8379103+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\O-Drive Base.STL</FileName>
+      <SHA1>62A4A32C0CEA5895091A4C10E7C8648DB3B7C63F</SHA1>
+      <FileSize>2320484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-05T23:27:40.5965235+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\Part1.STL</FileName>
+      <SHA1>26CE3BADBF54EC7DA60C66F324770A3218679313</SHA1>
+      <FileSize>1155884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-14T07:11:05.5659365+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_cage_lid.SLDPRT</FileName>
+      <SHA1>6FA5A082D967552794275BAFA82BF622747D332A</SHA1>
+      <FileSize>98479</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-11T02:04:18.6390680+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_carriage.SLDPRT</FileName>
+      <SHA1>AAA92262C8F3A6A638183571184012D72F0A445C</SHA1>
+      <FileSize>81207</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-18T18:42:33.7261032+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_clamp_clamp.SLDPRT</FileName>
+      <SHA1>F2DCAE0EA77454C66FB45B70A46B9ED959B7A83A</SHA1>
+      <FileSize>119954</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-18T18:42:07.9045031+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_clamp_clamp.STL</FileName>
+      <SHA1>0A37143154B500861F27BD48A274C26F220CD506</SHA1>
+      <FileSize>793684</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-28T08:31:41.1897743+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_encoder_motor_mount.SLDPRT</FileName>
+      <SHA1>9D0CD81E76CF8B7BAD2C9283D62BADB61FCA61DE</SHA1>
+      <FileSize>94541</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-25T21:47:26.7583181+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_encoder_motor_mount.STL</FileName>
+      <SHA1>1BF1AE8170D4190E4AF8110A61ADB3E6191D0A6F</SHA1>
+      <FileSize>867484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-25T21:47:45.4902824+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_end_cap.SLDPRT</FileName>
+      <SHA1>AF3411D08941FFD03FC1685CF220F1219E586605</SHA1>
+      <FileSize>88738</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-04T22:39:13.5027096+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_end_cap.STL</FileName>
+      <SHA1>8F9A20EEE3949F2C8631B227EADBEDC426D59EDD</SHA1>
+      <FileSize>1153484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-04T22:39:22.8193877+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_fixture_plate_motor.SLDPRT</FileName>
+      <SHA1>A5C6FCF4B414842C4B7F4360E04903548F21370E</SHA1>
+      <FileSize>110527</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-22T23:38:10.6301779+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_fixture_plate_motor.STL</FileName>
+      <SHA1>500D55C2864F16B459CF649604E357F7A847DEE6</SHA1>
+      <FileSize>2432284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-24T19:20:09.9793953+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_fixture_plate_motor.wrl</FileName>
+      <SHA1>E631257DE6C1EA824DDD2534E61E1D373732BA8A</SHA1>
+      <FileSize>2295</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-22T17:04:11.0871283+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_lower_clamp.SLDPRT</FileName>
+      <SHA1>970AD029E70C9753CCB1ADED197E37C28DE71F93</SHA1>
+      <FileSize>225641</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-14T18:12:12.0927637+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_lower_clamp.STL</FileName>
+      <SHA1>007D8AE58EEAF84A45F214C404D41612C4C297F9</SHA1>
+      <FileSize>60736284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-14T21:41:02.5194437+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nano_carriage lid.STL</FileName>
       <SHA1>MODIFIED</SHA1>
+      <FileSize>37334884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-20T04:30:07.8371617+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nano_carriage.SLDPRT</FileName>
+      <SHA1>69C6ED384B1B8D6CD6C1DA6411D211DE728F1BF2</SHA1>
+      <FileSize>260930</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T16:26:35.5080203+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nano_carriage.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2491584</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-20T04:29:40.8272160+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nano_carriage_bottom.STL</FileName>
+      <SHA1>A72A8F41DAE8B4CB87315530C2D7103178005D41</SHA1>
+      <FileSize>147084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T16:26:35.5100202+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nano_carriage_top.STL</FileName>
+      <SHA1>A7B1042B5951D36615445D363B3CC0EEA26466AD</SHA1>
+      <FileSize>127284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T16:26:35.5140193+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc_cover.SLDPRT</FileName>
+      <SHA1>B673C90E2CD719B6968DE3D1F9FC8687BF9E2C61</SHA1>
+      <FileSize>150323</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-21T03:38:59.9894067+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc_cover.STL</FileName>
+      <SHA1>7ADD8E6BBF0295E3B6FBA6E478C2FC6CCD574705</SHA1>
+      <FileSize>1448184</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-21T02:22:19.5734945+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc_mount.SLDPRT</FileName>
+      <SHA1>8CC1FD8430CC02E2531B66380C1C18026B6232F4</SHA1>
+      <FileSize>222209</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-22T04:03:14.3853797+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc_mount.STL</FileName>
+      <SHA1>42ECA82DDEE76EC929839BF33516043FCDB57A9E</SHA1>
+      <FileSize>3509884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-23T17:04:57.6618982+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc__board_keepout.SLDPRT</FileName>
+      <SHA1>A093B8007D2DC8E63B3D3156EC3B3CC0420A869A</SHA1>
+      <FileSize>99049</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-11T02:47:25.1083090+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_odrive_carriage.SLDPRT</FileName>
+      <SHA1>DD1C463549FBF911BFC583A4CFB82F762546BD4D</SHA1>
+      <FileSize>234558</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-07T20:43:19.7243527+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_odrive_carriage.STL</FileName>
+      <SHA1>4764020BBCF0A6BAB9BBD21E781DC1193D96930F</SHA1>
+      <FileSize>20874184</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-05T04:37:09.6771676+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_realsense_mount.SLDPRT</FileName>
+      <SHA1>1CC1D494C952C046BDF0D1DB2E16E3163728940C</SHA1>
+      <FileSize>113539</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-09T05:24:48.0866051+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_realsense_mount.STL</FileName>
+      <SHA1>A27ACE628EE5B28DE13FD7635A6DA759D22DFD26</SHA1>
+      <FileSize>1299084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-09T05:25:03.7081025+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp.SLDPRT</FileName>
+      <SHA1>28E4F66E6893D816C126E779F71595AB3A5328CA</SHA1>
+      <FileSize>245736</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-25T02:06:07.4849782+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp.STL</FileName>
+      <SHA1>A35D4366C7190849F848CA135812FD2B36189F6B</SHA1>
+      <FileSize>2363884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-25T02:06:03.2185001+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp_2.STL</FileName>
+      <SHA1>86C3563CBFEBF51D5FAA63FB78AF93C497485F79</SHA1>
+      <FileSize>95684</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T16:26:35.5180161+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp_insert.STL</FileName>
+      <SHA1>0AFE88FF560A80CBDD9B8298FC21DA946153321A</SHA1>
+      <FileSize>2363884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-24T05:37:00.2457067+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp_through.STL</FileName>
+      <SHA1>51F59B16A2D85174C3AFFFF7CB60153979E4C24D</SHA1>
+      <FileSize>1362484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-24T05:36:34.3274431+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_sensor_plate.SLDPRT</FileName>
+      <SHA1>E1A114A23E6E8B40AD37C39BD36510A2F12D13AF</SHA1>
+      <FileSize>204136</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T18:20:18.6612563+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_threaded_rod.SLDPRT</FileName>
+      <SHA1>84D44449F1C1DA3FEA774C221E48704FA3250A55</SHA1>
+      <FileSize>48280</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-28T08:37:50.4073090+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_upper_clamp.SLDPRT</FileName>
+      <SHA1>47603AAFD0A3896084CB282F6B68915827308146</SHA1>
+      <FileSize>380487</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-18T18:42:07.0619217+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_upper_clamp.STL</FileName>
+      <SHA1>D1C6659C031BA26481B00E381486A9B15746AE89</SHA1>
+      <FileSize>9779284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-26T09:47:12.8858080+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_upper_clamp_front.STL</FileName>
+      <SHA1>8351C3249F48D94E995135E5DBAC7EA11C1FA5B8</SHA1>
+      <FileSize>9841284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-26T09:46:54.6212755+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_upper_clamp_rear.STL</FileName>
+      <SHA1>94C0FD7F9AECECECDFB9BD8A70E8C84CEA28B10C</SHA1>
+      <FileSize>9841284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-14T21:40:20.0442038+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_velodyne_riser_V1.SLDPRT</FileName>
+      <SHA1>2C9AD17929047A57FD199F9AF70C11F5CB5B0CCD</SHA1>
+      <FileSize>321717</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T20:47:12.5873801+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_velodyne_riser_V1_3in.STL</FileName>
+      <SHA1>D335D67CB16F43EEF3E2D673800FCBE07396B15D</SHA1>
+      <FileSize>341384</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T20:47:12.5893781+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_velodyne_riser_V1_4in.STL</FileName>
+      <SHA1>EA5FA13F6495219330253790DD68D6E4936DABD4</SHA1>
+      <FileSize>425884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T20:47:12.5953744+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_velodyne_riser_V1_5in.STL</FileName>
+      <SHA1>515E0A3A3D96974392BE4BC92759286EE152820F</SHA1>
+      <FileSize>367384</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T20:47:12.5993740+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_velodyne_riser_V2.SLDPRT</FileName>
+      <SHA1>66F7150421F38A8A542B7AA81234DE51ADCCD78B</SHA1>
+      <FileSize>137743</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-04T20:40:30.8004880+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>firmware\Reciever\Reciever\Reciever.ino</FileName>
+      <SHA1>2A136AA16946CA771E18574FEA1F0D826D7AF18B</SHA1>
+      <FileSize>2928</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-18T17:59:01.8017789+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>firmware\Stearing\SERIAL.ino</FileName>
+      <SHA1>4EB26E02A440FFD94A415C66601495F2C3EE7B7A</SHA1>
+      <FileSize>2373</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-18T22:02:32.4351670+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>firmware\Stearing\Stearing.ino</FileName>
+      <SHA1>8EFAEE3B45209983E925C3E3F9EBABD8C8FAF5DF</SHA1>
+      <FileSize>458</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-18T21:50:00.9502188+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03643.JPG</FileName>
+      <SHA1>C5A247DBC964E26B1DAAFA9DB1A7FB8A2907E52B</SHA1>
       <FileSize>3097554</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-16T02:54:34.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03644.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>85B13BCB33509BE15E999984B20705E90DB227C5</SHA1>
       <FileSize>2351333</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-16T02:54:38.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03645.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>77A968E2B17915353D3F2053C864F310F9C8FD71</SHA1>
       <FileSize>3375793</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-20T12:12:18.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03646.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>004BA6F68360F92303ED57763226072F7F0DE525</SHA1>
       <FileSize>2734725</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-20T12:12:40.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03647.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>E57BC4054EFF1A47DD05DCF62297DA6493E9BE18</SHA1>
       <FileSize>3127737</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-20T12:47:54.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03648.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>3756E83D93CE6055F36FBB5F74BA2C757E1FD310</SHA1>
       <FileSize>10714980</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-27T05:18:32.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03649.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>4FDD46109FECA2B5B0F659C9B16158DE6FC997D7</SHA1>
       <FileSize>10105269</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-27T05:18:34.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03650.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>8211108E4FEA634D924F2962B30462550C560F37</SHA1>
       <FileSize>10671977</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-27T05:18:36.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03651.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>1CF2977B45112200BA10061F06B1A22BFDAEBD17</SHA1>
       <FileSize>3426133</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-27T09:31:12.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03652.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>30EB250CB99893E3E69E44A0151A1D28470CD6ED</SHA1>
       <FileSize>2673382</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-27T09:38:04.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>images\ODrive\DSC03653.JPG</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>2989035BB8302B80985DC3B06A73934415315411</SHA1>
       <FileSize>3314301</FileSize>
       <ProEVersionedName />
       <LastUpdated>2017-10-27T09:38:18.0000000+00:00</LastUpdated>
@@ -543,7 +991,7 @@
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>Sensors\Assem1.SLDASM</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>79ED52BD0A2EFA10402EFF3826BB7AAEBC6BFAFB</SHA1>
       <FileSize>116131</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-17T20:49:43.8894397+00:00</LastUpdated>
@@ -746,28 +1194,28 @@
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>Sensors\par_vel_standin-Revolve1.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>CD28DE74AD1174CEFF4ADB866D89F0001CD9588D</SHA1>
       <FileSize>2668184</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-17T20:46:19.3394071+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>Sensors\par_vel_standin-Revolve2.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>FEC174E5399DDC0E493EB0BE5D102C5D12C8097C</SHA1>
       <FileSize>2310084</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-17T20:46:35.2722008+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>Sensors\par_vel_standin.SLDPRT</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>BA6097E5DEDDB80FC51D40B3116D575554120A9C</SHA1>
       <FileSize>171226</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-17T20:49:43.4546886+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>Sensors\par_vel_standin.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>22CE0567DCB9A191DF6E679E452C152E5FADC0AD</SHA1>
       <FileSize>4978184</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-17T20:43:43.0468773+00:00</LastUpdated>
@@ -829,74 +1277,1026 @@
       <LastUpdated>2019-04-11T02:04:58.7931809+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>Assem1.SLDASM</FileName>
-      <SHA1>FEA933B307D7B04EDC5F64FA213DEA228BFDFD30</SHA1>
-      <FileSize>153895</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-16T00:57:05.3611579+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_car_chassis.SLDASM</FileName>
+      <FileName>software\catkin_ws\build\atomic_configure\.rosinstall</FileName>
       <SHA1>MODIFIED</SHA1>
-      <FileSize>1675788</FileSize>
+      <FileSize>85</FileSize>
       <ProEVersionedName />
-      <LastUpdated>2019-05-17T20:49:38.6726859+00:00</LastUpdated>
+      <LastUpdated>2019-06-24T17:12:49.0311401+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>ass_clamp.SLDASM</FileName>
+      <FileName>software\catkin_ws\build\atomic_configure\env.sh</FileName>
       <SHA1>MODIFIED</SHA1>
-      <FileSize>1739628</FileSize>
+      <FileSize>522</FileSize>
       <ProEVersionedName />
-      <LastUpdated>2019-05-17T20:49:38.2819118+00:00</LastUpdated>
+      <LastUpdated>2019-06-24T17:12:49.0321410+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>ass_end_cap.SLDASM</FileName>
-      <SHA1>46C8C0382F5F8D999DC65DB8575B7BA9217E94CF</SHA1>
-      <FileSize>1986541</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-23T19:17:02.8371770+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_lidar_imu.SLDASM</FileName>
+      <FileName>software\catkin_ws\build\atomic_configure\local_setup.bash</FileName>
       <SHA1>MODIFIED</SHA1>
-      <FileSize>3401530</FileSize>
+      <FileSize>291</FileSize>
       <ProEVersionedName />
-      <LastUpdated>2019-05-17T20:49:37.1215938+00:00</LastUpdated>
+      <LastUpdated>2019-06-24T17:12:49.0341390+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>ass_lidar_preprocessor.SLDASM</FileName>
-      <SHA1>E5A8B0331AB1521F4AED30C1B573A5B587074DAA</SHA1>
-      <FileSize>958879</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T18:20:18.6312739+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_nuc.SLDASM</FileName>
+      <FileName>software\catkin_ws\build\atomic_configure\local_setup.sh</FileName>
       <SHA1>MODIFIED</SHA1>
-      <FileSize>894289</FileSize>
+      <FileSize>383</FileSize>
       <ProEVersionedName />
-      <LastUpdated>2019-05-17T20:49:36.4088366+00:00</LastUpdated>
+      <LastUpdated>2019-06-24T17:12:49.0361388+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>ass_rock_crawler.SLDASM</FileName>
+      <FileName>software\catkin_ws\build\atomic_configure\local_setup.zsh</FileName>
       <SHA1>MODIFIED</SHA1>
-      <FileSize>3109421</FileSize>
+      <FileSize>301</FileSize>
       <ProEVersionedName />
-      <LastUpdated>2019-05-17T20:49:39.7630589+00:00</LastUpdated>
+      <LastUpdated>2019-06-24T17:12:49.0371374+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>ass_rod_clamp.SLDASM</FileName>
-      <SHA1>F422E09787FAB17904F6A1E9831A6ECFBC59158C</SHA1>
-      <FileSize>809488</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T18:20:18.6492628+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_sensor_package.SLDASM</FileName>
+      <FileName>software\catkin_ws\build\atomic_configure\setup.bash</FileName>
       <SHA1>MODIFIED</SHA1>
-      <FileSize>3504107</FileSize>
+      <FileSize>268</FileSize>
       <ProEVersionedName />
-      <LastUpdated>2019-05-17T20:49:37.7252303+00:00</LastUpdated>
+      <LastUpdated>2019-06-24T17:12:49.0381368+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\atomic_configure\setup.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2897</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0391361+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\atomic_configure\setup.zsh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>278</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0401354+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\atomic_configure\_setup_util.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>13637</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0321410+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin\catkin_generated\version\package.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1180</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0411351+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\.rosinstall</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>87</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0451320+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\env.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>522</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0461316+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\local_setup.bash</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>291</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0471310+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\local_setup.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>385</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0471310+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\local_setup.zsh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>301</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0481301+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\setup.bash</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>268</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0481301+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\setup.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2899</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0491306+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\setup.zsh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>278</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0511294+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\installspace\_setup_util.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>13637</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0461316+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\stamps\Project\interrogate_setup_dot_py.py.stamp</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>10229</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0581249+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\stamps\Project\order_packages.cmake.em.stamp</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2767</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0591237+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\stamps\Project\package.xml.stamp</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1290</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0591237+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\stamps\Project\_setup_util.py.stamp</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>13637</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0571255+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\env_cached.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>536</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0431339+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\generate_cached_setup.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1334</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0441328+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\order_packages.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>370</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0521278+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\order_packages.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>337</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0531283+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_generated\setup_cached.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>650</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0551279+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CompilerIdC\a.out</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>8800</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9951612+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CompilerIdC\CMakeCCompilerId.c</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>16967</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9941619+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CompilerIdCXX\a.out</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>8808</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9961601+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CompilerIdCXX\CMakeCXXCompilerId.cpp</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>16939</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9961601+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CMakeCCompiler.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2069</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9891646+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CMakeCXXCompiler.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>4624</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9901636+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CMakeDetermineCompilerABI_C.bin</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>8640</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9911625+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CMakeDetermineCompilerABI_CXX.bin</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>8656</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9921629+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\3.5.1\CMakeSystem.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>417</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9931631+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\clean_test_results.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2541</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0091530+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\clean_test_results.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>226</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0101532+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\clean_test_results.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>327</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0081533+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\clean_test_results.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0121515+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\download_extra_data.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2331</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0141515+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\download_extra_data.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>168</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0151492+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\download_extra_data.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>327</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0131508+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\download_extra_data.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0151492+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\doxygen.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2163</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0171484+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\doxygen.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>156</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0171484+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\doxygen.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>327</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0161488+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\doxygen.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0191474+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\run_tests.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2191</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0241438+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\run_tests.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>158</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0241438+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\run_tests.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>327</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0231456+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\run_tests.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0251437+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\tests.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2135</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0261434+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\tests.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>154</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0271421+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\tests.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>327</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0251437+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\tests.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0271421+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\cmake.check_cache</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>86</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0131508+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\CMakeDirectoryInformation.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>675</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9971595+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\CMakeError.log</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2906</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9981609+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\CMakeOutput.log</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>43940</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0001602+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\CMakeRuleHashes.txt</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>95</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0011588+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\feature_tests.bin</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>12696</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0191474+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\feature_tests.c</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>722</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0201469+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\feature_tests.cxx</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>10416</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0211456+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\Makefile.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>12560</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0041566+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\Makefile2</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>15891</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0051556+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\progress.marks</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>3</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0221459+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeFiles\TargetDirectories.txt</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2329</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0061550+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>7542</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0631215+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>320</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0631215+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock.dir\depend.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>91</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0631215+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>969</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0621226+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock.dir\flags.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>439</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0641219+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock.dir\link.txt</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>175</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0651207+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>68</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0651207+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock_main.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>10181</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0671207+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock_main.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>396</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0681187+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock_main.dir\depend.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>96</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0681187+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock_main.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1115</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0661208+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock_main.dir\flags.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>444</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0701182+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock_main.dir\link.txt</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>241</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0701182+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\gmock_main.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>90</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0731180+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\CMakeDirectoryInformation.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>648</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0611229+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CMakeFiles\progress.marks</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>3</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0731180+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>5370</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0781139+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>261</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0791137+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest.dir\depend.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>91</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0801135+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>784</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0771145+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest.dir\flags.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>397</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0811117+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest.dir\link.txt</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>255</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0811117+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>46</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0821111+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest_main.dir\build.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>5690</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0841100+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest_main.dir\cmake_clean.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>282</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0861096+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest_main.dir\depend.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>96</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0871079+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest_main.dir\DependInfo.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>890</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0831120+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest_main.dir\flags.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>402</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0871079+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest_main.dir\link.txt</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>349</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0881079+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\gtest_main.dir\progress.make</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>48</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0891077+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\CMakeDirectoryInformation.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>648</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0761148+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CMakeFiles\progress.marks</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>3</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0891077+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\cmake_install.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1038</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0911063+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\CTestTestfile.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>288</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0901076+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\gtest\Makefile</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>9663</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0911063+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\cmake_install.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1230</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0751167+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\CTestTestfile.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>298</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0741170+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\gtest\Makefile</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>11769</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0741170+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\.built_by</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>11</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9851669+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CATKIN_IGNORE</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>0</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9861672+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\catkin_make.cache</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>154</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0601244+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CMakeCache.txt</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>17414</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9871652+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\cmake_install.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>6951</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0601244+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CTestConfiguration.ini</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2497</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0281422+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CTestCustom.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>106</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0281422+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\CTestTestfile.cmake</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>319</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0291416+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\build\Makefile</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>9962</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0301417+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\.built_by</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>11</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0921049+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\.catkin</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>41</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0921049+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\.rosinstall</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>85</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0931057+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\cmake.lock</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>0</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0941034+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\env.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>522</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0941034+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\local_setup.bash</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>291</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0951042+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\local_setup.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>383</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0951042+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\local_setup.zsh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>301</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0951042+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\setup.bash</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>268</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0961039+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\setup.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2897</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0971034+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\setup.zsh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>278</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0971034+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\devel\_setup_util.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>13637</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0931057+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\scripts\drive.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>849</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0981019+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\scripts\drive.py.save</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1119</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0981019+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\scripts\drive.py.save.1</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>781</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.0991013+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\scripts\printjoystick.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>687</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1001063+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\scripts\steer.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1292</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1011002+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\scripts\steer.py.save</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>463</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1021013+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\src\CMakeLists.txt</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>50</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1031005+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\catkin_ws\.catkin_workspace</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>99</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9831698+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\startup\.crawler_startup.startup.swp</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1024</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1040998+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\startup\crawler_startup.service</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>190</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1050976+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\startup\crawler_startup_service.sh</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>393</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1060969+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\startup\readme</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>64</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1060969+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\startup\readme.save</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>66</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1070967+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>software\serialtest.py</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>729</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:49.1040998+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>..gitattriutes.swp</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1024</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9801694+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>..gitignore.swp</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1024</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T17:12:48.9801694+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>.gitattributes</FileName>
+      <SHA1>C0BBC8F5931193D649C9D0AF3E02921B2C043900</SHA1>
+      <FileSize>395</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-19T18:35:07.8844868+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>.gitignore</FileName>
+      <SHA1>C8E3745C5881C224389C02D7C32680587FFB584B</SHA1>
+      <FileSize>338</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-19T18:35:07.8924836+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>Autonomy Package Instructions.docx</FileName>
@@ -906,312 +2306,11 @@
       <LastUpdated>2019-04-23T07:05:12.8163275+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>end cap.SLDPRT</FileName>
-      <SHA1>6C33E4474A743981618C53070D729380387E9C26</SHA1>
-      <FileSize>84091</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-02T23:51:07.2425939+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>end cap.STL</FileName>
-      <SHA1>9428A51DA9E2637C73274C17A6FA544D315D4DA5</SHA1>
-      <FileSize>577084</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-02T23:52:33.6236863+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>fab_lidar_plate.SLDASM</FileName>
-      <SHA1>51970BB2FE4EAAFDAC83A35EDBC8DFCF1A8556DC</SHA1>
-      <FileSize>195186</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-16T00:57:02.7110949+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>fab_nuc_plate.SLDASM</FileName>
-      <SHA1>28B5059C8B0167CB3A9B93A18D27025AE4515E6D</SHA1>
-      <FileSize>192678</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-16T22:12:37.5057497+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>O-Drive Base.SLDPRT</FileName>
+      <FileName>readme</FileName>
       <SHA1>MODIFIED</SHA1>
-      <FileSize>154297</FileSize>
+      <FileSize>1061</FileSize>
       <ProEVersionedName />
-      <LastUpdated>2019-05-26T21:04:54.8379103+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>O-Drive Base.STL</FileName>
-      <SHA1>62A4A32C0CEA5895091A4C10E7C8648DB3B7C63F</SHA1>
-      <FileSize>2320484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-05T23:27:40.5965235+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>Part1.STL</FileName>
-      <SHA1>26CE3BADBF54EC7DA60C66F324770A3218679313</SHA1>
-      <FileSize>1155884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-14T07:11:05.5659365+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_cage_lid.SLDPRT</FileName>
-      <SHA1>6FA5A082D967552794275BAFA82BF622747D332A</SHA1>
-      <FileSize>98479</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-11T02:04:18.6390680+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_carriage.SLDPRT</FileName>
-      <SHA1>AAA92262C8F3A6A638183571184012D72F0A445C</SHA1>
-      <FileSize>81207</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-18T18:42:33.7261032+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_clamp_clamp.SLDPRT</FileName>
-      <SHA1>F2DCAE0EA77454C66FB45B70A46B9ED959B7A83A</SHA1>
-      <FileSize>119954</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-18T18:42:07.9045031+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_clamp_clamp.STL</FileName>
-      <SHA1>0A37143154B500861F27BD48A274C26F220CD506</SHA1>
-      <FileSize>793684</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-28T08:31:41.1897743+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_encoder_motor_mount.SLDPRT</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>94541</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-25T21:47:26.7583181+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_encoder_motor_mount.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>867484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-25T21:47:45.4902824+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_end_cap.SLDPRT</FileName>
-      <SHA1>AF3411D08941FFD03FC1685CF220F1219E586605</SHA1>
-      <FileSize>88738</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-04T22:39:13.5027096+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_end_cap.STL</FileName>
-      <SHA1>8F9A20EEE3949F2C8631B227EADBEDC426D59EDD</SHA1>
-      <FileSize>1153484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-04T22:39:22.8193877+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_fixture_plate_motor.SLDPRT</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>110527</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-22T23:38:10.6301779+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_fixture_plate_motor.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>2432284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-24T19:20:09.9793953+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_fixture_plate_motor.wrl</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>2295</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-22T17:04:11.0871283+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_lower_clamp.SLDPRT</FileName>
-      <SHA1>970AD029E70C9753CCB1ADED197E37C28DE71F93</SHA1>
-      <FileSize>225641</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-14T18:12:12.0927637+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_lower_clamp.STL</FileName>
-      <SHA1>007D8AE58EEAF84A45F214C404D41612C4C297F9</SHA1>
-      <FileSize>60736284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-14T21:41:02.5194437+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc_cover.SLDPRT</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>150323</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-21T03:38:59.9894067+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc_cover.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>1448184</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-21T02:22:19.5734945+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc_mount.SLDPRT</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>222209</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-22T04:03:14.3853797+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc_mount.STL</FileName>
-      <SHA1>42ECA82DDEE76EC929839BF33516043FCDB57A9E</SHA1>
-      <FileSize>3509884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-23T17:04:57.6618982+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc__board_keepout.SLDPRT</FileName>
-      <SHA1>A093B8007D2DC8E63B3D3156EC3B3CC0420A869A</SHA1>
-      <FileSize>99049</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-11T02:47:25.1083090+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_odrive_carriage.SLDPRT</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>234558</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-07T20:43:19.7243527+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_odrive_carriage.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>20874184</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-05T04:37:09.6771676+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_realsense_mount.SLDPRT</FileName>
-      <SHA1>1CC1D494C952C046BDF0D1DB2E16E3163728940C</SHA1>
-      <FileSize>113539</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-09T05:24:48.0866051+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_realsense_mount.STL</FileName>
-      <SHA1>A27ACE628EE5B28DE13FD7635A6DA759D22DFD26</SHA1>
-      <FileSize>1299084</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-09T05:25:03.7081025+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_rod_clamp.SLDPRT</FileName>
-      <SHA1>28E4F66E6893D816C126E779F71595AB3A5328CA</SHA1>
-      <FileSize>245736</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-25T02:06:07.4849782+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_rod_clamp.STL</FileName>
-      <SHA1>A35D4366C7190849F848CA135812FD2B36189F6B</SHA1>
-      <FileSize>2363884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-25T02:06:03.2185001+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_rod_clamp_insert.STL</FileName>
-      <SHA1>0AFE88FF560A80CBDD9B8298FC21DA946153321A</SHA1>
-      <FileSize>2363884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-24T05:37:00.2457067+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_rod_clamp_through.STL</FileName>
-      <SHA1>51F59B16A2D85174C3AFFFF7CB60153979E4C24D</SHA1>
-      <FileSize>1362484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-24T05:36:34.3274431+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_sensor_plate.SLDPRT</FileName>
-      <SHA1>E1A114A23E6E8B40AD37C39BD36510A2F12D13AF</SHA1>
-      <FileSize>204136</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T18:20:18.6612563+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_threaded_rod.SLDPRT</FileName>
-      <SHA1>84D44449F1C1DA3FEA774C221E48704FA3250A55</SHA1>
-      <FileSize>48280</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-28T08:37:50.4073090+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_upper_clamp.SLDPRT</FileName>
-      <SHA1>47603AAFD0A3896084CB282F6B68915827308146</SHA1>
-      <FileSize>380487</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-18T18:42:07.0619217+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_upper_clamp.STL</FileName>
-      <SHA1>D1C6659C031BA26481B00E381486A9B15746AE89</SHA1>
-      <FileSize>9779284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-26T09:47:12.8858080+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_upper_clamp_front.STL</FileName>
-      <SHA1>8351C3249F48D94E995135E5DBAC7EA11C1FA5B8</SHA1>
-      <FileSize>9841284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-26T09:46:54.6212755+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_upper_clamp_rear.STL</FileName>
-      <SHA1>94C0FD7F9AECECECDFB9BD8A70E8C84CEA28B10C</SHA1>
-      <FileSize>9841284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-14T21:40:20.0442038+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_velodyne_riser_V1.SLDPRT</FileName>
-      <SHA1>2C9AD17929047A57FD199F9AF70C11F5CB5B0CCD</SHA1>
-      <FileSize>321717</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T20:47:12.5873801+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_velodyne_riser_V1_3in.STL</FileName>
-      <SHA1>D335D67CB16F43EEF3E2D673800FCBE07396B15D</SHA1>
-      <FileSize>341384</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T20:47:12.5893781+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_velodyne_riser_V1_4in.STL</FileName>
-      <SHA1>EA5FA13F6495219330253790DD68D6E4936DABD4</SHA1>
-      <FileSize>425884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T20:47:12.5953744+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_velodyne_riser_V1_5in.STL</FileName>
-      <SHA1>515E0A3A3D96974392BE4BC92759286EE152820F</SHA1>
-      <FileSize>367384</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T20:47:12.5993740+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_velodyne_riser_V2.SLDPRT</FileName>
-      <SHA1>66F7150421F38A8A542B7AA81234DE51ADCCD78B</SHA1>
-      <FileSize>137743</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-04T20:40:30.8004880+00:00</LastUpdated>
+      <LastUpdated>2019-06-24T17:12:48.9811700+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>Rock Crawler.pptx</FileName>
@@ -1236,7 +2335,7 @@
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>zadig-2.4.exe</FileName>
-      <SHA1>MODIFIED</SHA1>
+      <SHA1>7E2BAC877385EF86EFD9D54D1B89FF4E9E18243A</SHA1>
       <FileSize>5158456</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-13T02:55:07.9337510+00:00</LastUpdated>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GCSCMDirState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <UpdateTime>2019-06-24T10:12:50.9860155-07:00</UpdateTime>
+  <UpdateTime>2019-06-25T14:21:58.3327790-07:00</UpdateTime>
   <Standins>
     <GCSCMStandin>
       <FileName>Angle Measures\100.STL</FileName>
@@ -515,10 +515,10 @@
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>firmware\Stearing\SERIAL.ino</FileName>
-      <SHA1>4EB26E02A440FFD94A415C66601495F2C3EE7B7A</SHA1>
-      <FileSize>2373</FileSize>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2843</FileSize>
       <ProEVersionedName />
-      <LastUpdated>2019-06-18T22:02:32.4351670+00:00</LastUpdated>
+      <LastUpdated>2019-06-25T21:21:57.2961522+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>firmware\Stearing\Stearing.ino</FileName>

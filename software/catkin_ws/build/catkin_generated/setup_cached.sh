@@ -8,6 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/jake/Crawler/software/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/jake/Crawler/software/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
 export PWD="/home/jake/Crawler/software/catkin_ws/build"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/jake/Crawler/software/catkin_ws/devel/share/common-lisp"
 export ROS_PACKAGE_PATH="/home/jake/Crawler/software/catkin_ws/src:$ROS_PACKAGE_PATH"

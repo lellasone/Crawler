@@ -3,9 +3,9 @@ Install Process:
 	Step 1: Install ros Kinetic
 	Step 2: Install Python3.6
 	Step 3: sudo pip3 install odrive (may fail) 
-	Step 3.1: Install python3.6-dev
-	Step 3.2: install python3-usb
-	Step 3.3: sudo pip3 instal --no-dependencies odrive (should work)
+	Step 3.1: install python3-usb
+	Step 3.2: install python3-yaml
+	Step 3.3: sudo pip3 install --no-dependencies odrive (should work)
 	[at this point python should be able to import the library]
 	Step 4: Clone repository onto machine
 	Step 5: Install systemd service as described below. 
@@ -15,7 +15,7 @@ Install systemd service:
 	# when the computer boots. 
 	
 	Step 1: Navigate to the software/startup subdirectory of the git repo
-	Step 2: sudo cp crawler_startup_service.sh /usr/bin/crawler)startupservice.sh
+	Step 2: sudo cp crawler_startup_service.sh /usr/bin/crawler_startup_service.sh
 	Step 3: sudo chmod +x /usr/bin/crawler_startup_service.sh
 	Step 4: sudo cp crawler_startup.service /etc/systemd/system/crawler_startup.service
 	Step 5: sudo chmod 644 /etc/systemd/system/crawler_startup.service

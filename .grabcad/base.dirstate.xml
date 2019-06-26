@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GCSCMDirState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <UpdateTime>2019-06-14T02:35:44.2630632+00:00</UpdateTime>
+  <UpdateTime>2019-06-25T21:16:42.1207427+00:00</UpdateTime>
   <Standins>
     <GCSCMStandin>
       <FileName>Angle Measures\100.STL</FileName>
@@ -710,289 +710,9 @@
       <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>Assem1.SLDASM</FileName>
-      <SHA1>FEA933B307D7B04EDC5F64FA213DEA228BFDFD30</SHA1>
-      <FileSize>153895</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_car_chassis.SLDASM</FileName>
-      <SHA1>4DAC774C4F732741102DF45239FF61CF5E55AAFA</SHA1>
-      <FileSize>1676205</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_clamp.SLDASM</FileName>
-      <SHA1>D968513FBF3C8CC84D8DE0F336FBA3A4762FF8F2</SHA1>
-      <FileSize>1738806</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_end_cap.SLDASM</FileName>
-      <SHA1>46C8C0382F5F8D999DC65DB8575B7BA9217E94CF</SHA1>
-      <FileSize>1986541</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_lidar_imu.SLDASM</FileName>
-      <SHA1>962D8656F1B40823162A957247539F377D859120</SHA1>
-      <FileSize>3400858</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_lidar_preprocessor.SLDASM</FileName>
-      <SHA1>E5A8B0331AB1521F4AED30C1B573A5B587074DAA</SHA1>
-      <FileSize>958879</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_nuc.SLDASM</FileName>
-      <SHA1>7F59D7BC0A7469F1134C1C8997D1521028B5B94A</SHA1>
-      <FileSize>893640</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_rock_crawler.SLDASM</FileName>
-      <SHA1>00D1CCA5D4109B62DB1B3F639B81F6268B84229F</SHA1>
-      <FileSize>3043747</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_rod_clamp.SLDASM</FileName>
-      <SHA1>F422E09787FAB17904F6A1E9831A6ECFBC59158C</SHA1>
-      <FileSize>809488</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>ass_sensor_package.SLDASM</FileName>
-      <SHA1>8D2D24D9C1BAAFCF866D2D7D3C33796B183EBF97</SHA1>
-      <FileSize>3503996</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>Autonomy Package Instructions.docx</FileName>
       <SHA1>0657BB39BE9808BA5A5B02D7388AAB5BDF3676EA</SHA1>
       <FileSize>760054</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>end cap.SLDPRT</FileName>
-      <SHA1>6C33E4474A743981618C53070D729380387E9C26</SHA1>
-      <FileSize>84091</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>end cap.STL</FileName>
-      <SHA1>9428A51DA9E2637C73274C17A6FA544D315D4DA5</SHA1>
-      <FileSize>577084</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>fab_lidar_plate.SLDASM</FileName>
-      <SHA1>51970BB2FE4EAAFDAC83A35EDBC8DFCF1A8556DC</SHA1>
-      <FileSize>195186</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>fab_nuc_plate.SLDASM</FileName>
-      <SHA1>28B5059C8B0167CB3A9B93A18D27025AE4515E6D</SHA1>
-      <FileSize>192678</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>Part1.STL</FileName>
-      <SHA1>26CE3BADBF54EC7DA60C66F324770A3218679313</SHA1>
-      <FileSize>1155884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_cage_lid.SLDPRT</FileName>
-      <SHA1>6FA5A082D967552794275BAFA82BF622747D332A</SHA1>
-      <FileSize>98479</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_carriage.SLDPRT</FileName>
-      <SHA1>AAA92262C8F3A6A638183571184012D72F0A445C</SHA1>
-      <FileSize>81207</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_clamp_clamp.SLDPRT</FileName>
-      <SHA1>F2DCAE0EA77454C66FB45B70A46B9ED959B7A83A</SHA1>
-      <FileSize>119954</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_clamp_clamp.STL</FileName>
-      <SHA1>0A37143154B500861F27BD48A274C26F220CD506</SHA1>
-      <FileSize>793684</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_end_cap.SLDPRT</FileName>
-      <SHA1>AF3411D08941FFD03FC1685CF220F1219E586605</SHA1>
-      <FileSize>88738</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_end_cap.STL</FileName>
-      <SHA1>8F9A20EEE3949F2C8631B227EADBEDC426D59EDD</SHA1>
-      <FileSize>1153484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_lower_clamp.SLDPRT</FileName>
-      <SHA1>970AD029E70C9753CCB1ADED197E37C28DE71F93</SHA1>
-      <FileSize>225641</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_lower_clamp.STL</FileName>
-      <SHA1>007D8AE58EEAF84A45F214C404D41612C4C297F9</SHA1>
-      <FileSize>60736284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc_cover.SLDPRT</FileName>
-      <SHA1>82D39A09B327FB073E1AA4CDA553E689A720BCF7</SHA1>
-      <FileSize>122103</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc_cover.STL</FileName>
-      <SHA1>F3F8EA9D4E8FB3DB81322A1DF9A57621C76EE4BE</SHA1>
-      <FileSize>871784</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc_mount.SLDPRT</FileName>
-      <SHA1>645BF3D9F4D60FA425C7DFD83EBAF9842AE9F54F</SHA1>
-      <FileSize>310541</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc_mount.STL</FileName>
-      <SHA1>42ECA82DDEE76EC929839BF33516043FCDB57A9E</SHA1>
-      <FileSize>3509884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_nuc__board_keepout.SLDPRT</FileName>
-      <SHA1>A093B8007D2DC8E63B3D3156EC3B3CC0420A869A</SHA1>
-      <FileSize>99049</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_realsense_mount.SLDPRT</FileName>
-      <SHA1>1CC1D494C952C046BDF0D1DB2E16E3163728940C</SHA1>
-      <FileSize>113539</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_realsense_mount.STL</FileName>
-      <SHA1>A27ACE628EE5B28DE13FD7635A6DA759D22DFD26</SHA1>
-      <FileSize>1299084</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_rod_clamp.SLDPRT</FileName>
-      <SHA1>28E4F66E6893D816C126E779F71595AB3A5328CA</SHA1>
-      <FileSize>245736</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_rod_clamp.STL</FileName>
-      <SHA1>A35D4366C7190849F848CA135812FD2B36189F6B</SHA1>
-      <FileSize>2363884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_rod_clamp_insert.STL</FileName>
-      <SHA1>0AFE88FF560A80CBDD9B8298FC21DA946153321A</SHA1>
-      <FileSize>2363884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_rod_clamp_through.STL</FileName>
-      <SHA1>51F59B16A2D85174C3AFFFF7CB60153979E4C24D</SHA1>
-      <FileSize>1362484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_sensor_plate.SLDPRT</FileName>
-      <SHA1>E1A114A23E6E8B40AD37C39BD36510A2F12D13AF</SHA1>
-      <FileSize>204136</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_threaded_rod.SLDPRT</FileName>
-      <SHA1>84D44449F1C1DA3FEA774C221E48704FA3250A55</SHA1>
-      <FileSize>48280</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_upper_clamp.SLDPRT</FileName>
-      <SHA1>47603AAFD0A3896084CB282F6B68915827308146</SHA1>
-      <FileSize>380487</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_upper_clamp.STL</FileName>
-      <SHA1>D1C6659C031BA26481B00E381486A9B15746AE89</SHA1>
-      <FileSize>9779284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_upper_clamp_front.STL</FileName>
-      <SHA1>8351C3249F48D94E995135E5DBAC7EA11C1FA5B8</SHA1>
-      <FileSize>9841284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_upper_clamp_rear.STL</FileName>
-      <SHA1>94C0FD7F9AECECECDFB9BD8A70E8C84CEA28B10C</SHA1>
-      <FileSize>9841284</FileSize>
       <ProEVersionedName />
       <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
     </GCSCMStandin>
@@ -1011,34 +731,6 @@
       <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>par_velodyne_riser_V1.SLDPRT</FileName>
-      <SHA1>2C9AD17929047A57FD199F9AF70C11F5CB5B0CCD</SHA1>
-      <FileSize>321717</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>par_velodyne_riser_V2.SLDPRT</FileName>
-      <SHA1>66F7150421F38A8A542B7AA81234DE51ADCCD78B</SHA1>
-      <FileSize>137743</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>O-Drive Base.SLDPRT</FileName>
-      <SHA1>7B0CC3A400341F727995C1DBA4CE1D1D5EAB3A92</SHA1>
-      <FileSize>154303</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>O-Drive Base.STL</FileName>
-      <SHA1>62A4A32C0CEA5895091A4C10E7C8648DB3B7C63F</SHA1>
-      <FileSize>2320484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>vn-100-user-manual-(um001).pdf</FileName>
       <SHA1>494E2C4D46759E21B3004E4988EB1C97FB87E6C0</SHA1>
       <FileSize>2720727</FileSize>
@@ -1053,23 +745,569 @@
       <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>par_velodyne_riser_V1_3in.STL</FileName>
+      <FileName>CAD\Assem1.SLDASM</FileName>
+      <SHA1>FEA933B307D7B04EDC5F64FA213DEA228BFDFD30</SHA1>
+      <FileSize>153895</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_car_chassis.SLDASM</FileName>
+      <SHA1>F396680BB84C26FBA73B49EA92D3FC61273151CD</SHA1>
+      <FileSize>1675788</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_clamp.SLDASM</FileName>
+      <SHA1>C9B77498103DB248EDFB36F6AD6BC14D296AD448</SHA1>
+      <FileSize>1739628</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_end_cap.SLDASM</FileName>
+      <SHA1>46C8C0382F5F8D999DC65DB8575B7BA9217E94CF</SHA1>
+      <FileSize>1986541</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_lidar_imu.SLDASM</FileName>
+      <SHA1>32352680FAD3469CDAEDE4B3508E6BB7154C58D2</SHA1>
+      <FileSize>3401530</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_lidar_preprocessor.SLDASM</FileName>
+      <SHA1>E5A8B0331AB1521F4AED30C1B573A5B587074DAA</SHA1>
+      <FileSize>958879</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_nuc.SLDASM</FileName>
+      <SHA1>68C003BA6EC1BE69FE9BF840650161C9FDFA76EC</SHA1>
+      <FileSize>894289</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_rock_crawler.SLDASM</FileName>
+      <SHA1>742B9B52DA526F7F84F972B4D354D7135764AC2C</SHA1>
+      <FileSize>3109421</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_rod_clamp.SLDASM</FileName>
+      <SHA1>F422E09787FAB17904F6A1E9831A6ECFBC59158C</SHA1>
+      <FileSize>809488</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\ass_sensor_package.SLDASM</FileName>
+      <SHA1>E7741E82C595D111F326F01B22A9F8BD280DBC45</SHA1>
+      <FileSize>3504107</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\end cap.SLDPRT</FileName>
+      <SHA1>6C33E4474A743981618C53070D729380387E9C26</SHA1>
+      <FileSize>84091</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\end cap.STL</FileName>
+      <SHA1>9428A51DA9E2637C73274C17A6FA544D315D4DA5</SHA1>
+      <FileSize>577084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\fab_lidar_plate.SLDASM</FileName>
+      <SHA1>51970BB2FE4EAAFDAC83A35EDBC8DFCF1A8556DC</SHA1>
+      <FileSize>195186</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\fab_nuc_plate.SLDASM</FileName>
+      <SHA1>28B5059C8B0167CB3A9B93A18D27025AE4515E6D</SHA1>
+      <FileSize>192678</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\O-Drive Base.SLDPRT</FileName>
+      <SHA1>B193B5DDD064938D0563841F524F4651FA2D3955</SHA1>
+      <FileSize>154297</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\O-Drive Base.STL</FileName>
+      <SHA1>62A4A32C0CEA5895091A4C10E7C8648DB3B7C63F</SHA1>
+      <FileSize>2320484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\Part1.STL</FileName>
+      <SHA1>26CE3BADBF54EC7DA60C66F324770A3218679313</SHA1>
+      <FileSize>1155884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_cage_lid.SLDPRT</FileName>
+      <SHA1>6FA5A082D967552794275BAFA82BF622747D332A</SHA1>
+      <FileSize>98479</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_carriage.SLDPRT</FileName>
+      <SHA1>AAA92262C8F3A6A638183571184012D72F0A445C</SHA1>
+      <FileSize>81207</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_clamp_clamp.SLDPRT</FileName>
+      <SHA1>F2DCAE0EA77454C66FB45B70A46B9ED959B7A83A</SHA1>
+      <FileSize>119954</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_clamp_clamp.STL</FileName>
+      <SHA1>0A37143154B500861F27BD48A274C26F220CD506</SHA1>
+      <FileSize>793684</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_encoder_motor_mount.SLDPRT</FileName>
+      <SHA1>9D0CD81E76CF8B7BAD2C9283D62BADB61FCA61DE</SHA1>
+      <FileSize>94541</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_encoder_motor_mount.STL</FileName>
+      <SHA1>1BF1AE8170D4190E4AF8110A61ADB3E6191D0A6F</SHA1>
+      <FileSize>867484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_end_cap.SLDPRT</FileName>
+      <SHA1>AF3411D08941FFD03FC1685CF220F1219E586605</SHA1>
+      <FileSize>88738</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_end_cap.STL</FileName>
+      <SHA1>8F9A20EEE3949F2C8631B227EADBEDC426D59EDD</SHA1>
+      <FileSize>1153484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_fixture_plate_motor.SLDPRT</FileName>
+      <SHA1>A5C6FCF4B414842C4B7F4360E04903548F21370E</SHA1>
+      <FileSize>110527</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_fixture_plate_motor.STL</FileName>
+      <SHA1>500D55C2864F16B459CF649604E357F7A847DEE6</SHA1>
+      <FileSize>2432284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_fixture_plate_motor.wrl</FileName>
+      <SHA1>E631257DE6C1EA824DDD2534E61E1D373732BA8A</SHA1>
+      <FileSize>2295</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_lower_clamp.SLDPRT</FileName>
+      <SHA1>970AD029E70C9753CCB1ADED197E37C28DE71F93</SHA1>
+      <FileSize>225641</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_lower_clamp.STL</FileName>
+      <SHA1>007D8AE58EEAF84A45F214C404D41612C4C297F9</SHA1>
+      <FileSize>60736284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc_cover.SLDPRT</FileName>
+      <SHA1>B673C90E2CD719B6968DE3D1F9FC8687BF9E2C61</SHA1>
+      <FileSize>150323</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc_cover.STL</FileName>
+      <SHA1>7ADD8E6BBF0295E3B6FBA6E478C2FC6CCD574705</SHA1>
+      <FileSize>1448184</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc_mount.SLDPRT</FileName>
+      <SHA1>8CC1FD8430CC02E2531B66380C1C18026B6232F4</SHA1>
+      <FileSize>222209</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc_mount.STL</FileName>
+      <SHA1>42ECA82DDEE76EC929839BF33516043FCDB57A9E</SHA1>
+      <FileSize>3509884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nuc__board_keepout.SLDPRT</FileName>
+      <SHA1>A093B8007D2DC8E63B3D3156EC3B3CC0420A869A</SHA1>
+      <FileSize>99049</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_odrive_carriage.SLDPRT</FileName>
+      <SHA1>DD1C463549FBF911BFC583A4CFB82F762546BD4D</SHA1>
+      <FileSize>234558</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_odrive_carriage.STL</FileName>
+      <SHA1>4764020BBCF0A6BAB9BBD21E781DC1193D96930F</SHA1>
+      <FileSize>20874184</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_realsense_mount.SLDPRT</FileName>
+      <SHA1>1CC1D494C952C046BDF0D1DB2E16E3163728940C</SHA1>
+      <FileSize>113539</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_realsense_mount.STL</FileName>
+      <SHA1>A27ACE628EE5B28DE13FD7635A6DA759D22DFD26</SHA1>
+      <FileSize>1299084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp.SLDPRT</FileName>
+      <SHA1>28E4F66E6893D816C126E779F71595AB3A5328CA</SHA1>
+      <FileSize>245736</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp.STL</FileName>
+      <SHA1>A35D4366C7190849F848CA135812FD2B36189F6B</SHA1>
+      <FileSize>2363884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp_insert.STL</FileName>
+      <SHA1>0AFE88FF560A80CBDD9B8298FC21DA946153321A</SHA1>
+      <FileSize>2363884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp_through.STL</FileName>
+      <SHA1>51F59B16A2D85174C3AFFFF7CB60153979E4C24D</SHA1>
+      <FileSize>1362484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_sensor_plate.SLDPRT</FileName>
+      <SHA1>E1A114A23E6E8B40AD37C39BD36510A2F12D13AF</SHA1>
+      <FileSize>204136</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_threaded_rod.SLDPRT</FileName>
+      <SHA1>84D44449F1C1DA3FEA774C221E48704FA3250A55</SHA1>
+      <FileSize>48280</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_upper_clamp.SLDPRT</FileName>
+      <SHA1>47603AAFD0A3896084CB282F6B68915827308146</SHA1>
+      <FileSize>380487</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_upper_clamp.STL</FileName>
+      <SHA1>D1C6659C031BA26481B00E381486A9B15746AE89</SHA1>
+      <FileSize>9779284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_upper_clamp_front.STL</FileName>
+      <SHA1>8351C3249F48D94E995135E5DBAC7EA11C1FA5B8</SHA1>
+      <FileSize>9841284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_upper_clamp_rear.STL</FileName>
+      <SHA1>94C0FD7F9AECECECDFB9BD8A70E8C84CEA28B10C</SHA1>
+      <FileSize>9841284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_velodyne_riser_V1.SLDPRT</FileName>
+      <SHA1>2C9AD17929047A57FD199F9AF70C11F5CB5B0CCD</SHA1>
+      <FileSize>321717</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_velodyne_riser_V1_3in.STL</FileName>
       <SHA1>D335D67CB16F43EEF3E2D673800FCBE07396B15D</SHA1>
       <FileSize>341384</FileSize>
       <ProEVersionedName />
       <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>par_velodyne_riser_V1_4in.STL</FileName>
+      <FileName>CAD\par_velodyne_riser_V1_4in.STL</FileName>
       <SHA1>EA5FA13F6495219330253790DD68D6E4936DABD4</SHA1>
       <FileSize>425884</FileSize>
       <ProEVersionedName />
       <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>par_velodyne_riser_V1_5in.STL</FileName>
+      <FileName>CAD\par_velodyne_riser_V1_5in.STL</FileName>
       <SHA1>515E0A3A3D96974392BE4BC92759286EE152820F</SHA1>
       <FileSize>367384</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_velodyne_riser_V2.SLDPRT</FileName>
+      <SHA1>66F7150421F38A8A542B7AA81234DE51ADCCD78B</SHA1>
+      <FileSize>137743</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>firmware\Reciever\Reciever\Reciever.ino</FileName>
+      <SHA1>2A136AA16946CA771E18574FEA1F0D826D7AF18B</SHA1>
+      <FileSize>2928</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>firmware\Stearing\SERIAL.ino</FileName>
+      <SHA1>4EB26E02A440FFD94A415C66601495F2C3EE7B7A</SHA1>
+      <FileSize>2373</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>firmware\Stearing\Stearing.ino</FileName>
+      <SHA1>8EFAEE3B45209983E925C3E3F9EBABD8C8FAF5DF</SHA1>
+      <FileSize>458</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03643.JPG</FileName>
+      <SHA1>C5A247DBC964E26B1DAAFA9DB1A7FB8A2907E52B</SHA1>
+      <FileSize>3097554</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03644.JPG</FileName>
+      <SHA1>85B13BCB33509BE15E999984B20705E90DB227C5</SHA1>
+      <FileSize>2351333</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03645.JPG</FileName>
+      <SHA1>77A968E2B17915353D3F2053C864F310F9C8FD71</SHA1>
+      <FileSize>3375793</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03646.JPG</FileName>
+      <SHA1>004BA6F68360F92303ED57763226072F7F0DE525</SHA1>
+      <FileSize>2734725</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03647.JPG</FileName>
+      <SHA1>E57BC4054EFF1A47DD05DCF62297DA6493E9BE18</SHA1>
+      <FileSize>3127737</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03648.JPG</FileName>
+      <SHA1>3756E83D93CE6055F36FBB5F74BA2C757E1FD310</SHA1>
+      <FileSize>10714980</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03649.JPG</FileName>
+      <SHA1>4FDD46109FECA2B5B0F659C9B16158DE6FC997D7</SHA1>
+      <FileSize>10105269</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03650.JPG</FileName>
+      <SHA1>8211108E4FEA634D924F2962B30462550C560F37</SHA1>
+      <FileSize>10671977</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03651.JPG</FileName>
+      <SHA1>1CF2977B45112200BA10061F06B1A22BFDAEBD17</SHA1>
+      <FileSize>3426133</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03652.JPG</FileName>
+      <SHA1>30EB250CB99893E3E69E44A0151A1D28470CD6ED</SHA1>
+      <FileSize>2673382</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>images\ODrive\DSC03653.JPG</FileName>
+      <SHA1>2989035BB8302B80985DC3B06A73934415315411</SHA1>
+      <FileSize>3314301</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\Assem1.SLDASM</FileName>
+      <SHA1>79ED52BD0A2EFA10402EFF3826BB7AAEBC6BFAFB</SHA1>
+      <FileSize>116131</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\par_vel_standin-Revolve1.STL</FileName>
+      <SHA1>CD28DE74AD1174CEFF4ADB866D89F0001CD9588D</SHA1>
+      <FileSize>2668184</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\par_vel_standin-Revolve2.STL</FileName>
+      <SHA1>FEC174E5399DDC0E493EB0BE5D102C5D12C8097C</SHA1>
+      <FileSize>2310084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\par_vel_standin.SLDPRT</FileName>
+      <SHA1>BA6097E5DEDDB80FC51D40B3116D575554120A9C</SHA1>
+      <FileSize>171226</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>Sensors\par_vel_standin.STL</FileName>
+      <SHA1>22CE0567DCB9A191DF6E679E452C152E5FADC0AD</SHA1>
+      <FileSize>4978184</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>.gitattributes</FileName>
+      <SHA1>C0BBC8F5931193D649C9D0AF3E02921B2C043900</SHA1>
+      <FileSize>395</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>.gitignore</FileName>
+      <SHA1>C8E3745C5881C224389C02D7C32680587FFB584B</SHA1>
+      <FileSize>338</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>zadig-2.4.exe</FileName>
+      <SHA1>7E2BAC877385EF86EFD9D54D1B89FF4E9E18243A</SHA1>
+      <FileSize>5158456</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nano_carriage.SLDPRT</FileName>
+      <SHA1>69C6ED384B1B8D6CD6C1DA6411D211DE728F1BF2</SHA1>
+      <FileSize>260930</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\CP_par_nano_carriage_bottom.gcode</FileName>
+      <SHA1>DA39A3EE5E6B4B0D3255BFEF95601890AFD80709</SHA1>
+      <FileSize>0</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nano_carriage_bottom.STL</FileName>
+      <SHA1>A72A8F41DAE8B4CB87315530C2D7103178005D41</SHA1>
+      <FileSize>147084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_nano_carriage_top.STL</FileName>
+      <SHA1>A7B1042B5951D36615445D363B3CC0EEA26466AD</SHA1>
+      <FileSize>127284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\par_rod_clamp_2.STL</FileName>
+      <SHA1>86C3563CBFEBF51D5FAA63FB78AF93C497485F79</SHA1>
+      <FileSize>95684</FileSize>
       <ProEVersionedName />
       <LastUpdated>0001-01-01T00:00:00.0000000+00:00</LastUpdated>
     </GCSCMStandin>

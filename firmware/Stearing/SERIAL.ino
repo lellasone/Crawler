@@ -19,11 +19,15 @@
 #define SERIAL_FRAME_LENGTH 6 //Start byte + end byte + command byte + data bytes. 
 #define SERIAL_INDEX_START SERIAL_FRAME_LENGTH - 1
 #define SERIAL_INDEX_COMMAND SERIAL_INDEX_START - 1
+#define SERIAL_INDEX_DATA_START SERIAL_INDEX_COMMAND - 1
+#define SERIAL_INDEX_DATA_END 2 //the last byte in the array to contain payload data. 
+#define SERIAL_INDEX_CHECKSUM 1 //the byte containing the checksum if used. 
 
 #define SERIAL_START        'A'
 #define SERIAL_END          'Z'
 #define SERIAL_PING         'a'
-#define SERIAL_STEERING     'b'
+#define SERIAL_ECHO         'b'
+#define SERIAL_STEERING     'c'
 
 #define SERIAL_ID           "JPL"
 
@@ -55,11 +59,18 @@ void parse_command(byte command[]){
   
   switch(command[SERIAL_INDEX_COMMAND]){
     case SERIAL_PING:
-      //used to verify basic functionality. 
+      //Reply with a pre-programed responce. 
       Serial.println(SERIAL_ID);
+      break;
+    case SERIAL_ECHO: 
+      //Reply with exactly the payload that was sent. 
+      for(int i = SERIAL_INDEX_DATA_START; i >=SERIAL_INDEX_DATA_END; i--){
+        Serial.write(command[i]);
+      }
       break;
     case SERIAL_STEERING:
       update_steering(command[SERIAL_INDEX_COMMAND - 1]);
+      
     default: 
       //Likely an invalid command, prints command on serial. 
       Serial.print("default: ");

@@ -6,6 +6,8 @@ Install Process:
 	Step 3.1: sudo apt install python3-usb
 	Step 3.2: sudo apt install python3-yaml
 	Step 3.3: sudo pip3 install --no-dependencies odrive (should work)
+	Step 3.5: pip3 install rospkg
+	Step 3.5: pip3 install serial
 	[at this point python should be able to import the library]
 	Step 4: Install git
 	Step 5: Clone respository to home directory. 

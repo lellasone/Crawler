@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # This module is responcible for the Crawler's stearing system. It is run when
 # the robot is first booted. 
@@ -46,8 +46,8 @@ def send_frame(command, data, reply_length = 0):
 	    teensy.write(frame)
 	    if reply_length != 0:
 	        return [True, (binascii.hexlify(teensy.read(reply_length)))]
-	except: 
-		print("serial exception")
+	except serial.SerialException as e: 
+		print("serial exception: " + str(e))
 def request_echo(payload):
     responce = send_frame(COMMAND_ECHO, payload, 2)
     return responce 

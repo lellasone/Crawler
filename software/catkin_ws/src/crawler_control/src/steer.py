@@ -34,6 +34,9 @@ setpoint = 128 # the steering setpoint.
 # This function composes and transmits each command frame. 
 # It must be provided with the command byte, data payload,
 # and length of expected reply (if appropriate)
+# This function will return a list in the form [bool, responce] where 
+# bool is True if the communication was succesful, and False if it failed. 
+# if a length of 0 is specified for the responce that index will be set at ""
 def send_frame(command, data, reply_length = 0):
 	try: 
 	    teensy = serial.Serial(port)
@@ -46,15 +49,25 @@ def send_frame(command, data, reply_length = 0):
 	    teensy.write(frame)
 	    if reply_length != 0:
 	        return [True, (binascii.hexlify(teensy.read(reply_length)))]
+	    else:
+	    	return [True, ""]
 	except serial.SerialException as e: 
 		print("serial exception: " + str(e))
+		return[False,""]
+		
+
 def request_echo(payload):
     responce = send_frame(COMMAND_ECHO, payload, 2)
     return responce 
 
+# Requests the device ID of the target device. 
+def request_ping():
+	responce = send_frame(COMMAND_PING, bytearray.fromhex("0000"), 3)
+	return responce
+
 # Sends a steering setpoint update command to the teensy. 
 # args: 
-#	payload - a single byte with the neutral position fo the wheels set at 128. 
+#	payload - a single byte with the neutral position of the wheels set at 128. 
 def set_steering_setpoint(payload):
 	if (type(payload) != bytes):
 		print("ERROR: steering setpoint must be a bytes")
@@ -78,6 +91,22 @@ def send_steering():
 		print(setpoint)
 
 
+# This function scans through all of the avaliable ACM ports (0 - 9) and 
+# attempts to ping each one. The lowest value'd device that matches the specified
+# ID string is the one returned. If no device is found an empty string will be 
+# returned. If a device ID is found, it will also be set as the device ID for this
+# serial parser. 
+# Args: 
+# 	ID - The ID of the device to be found, given as a string. 
+def scan_ports(ID):
+	for i in range (0, 10):
+		responce = request_ping()[1]
+		if ID == responce:
+			port = "/dev/ttyACM" + str(i)
+			return(port)
+	return("")
+
+
 
 def listener():
 	rospy.Subscriber("/spacenav/joy", Joy, callback)
@@ -99,6 +128,7 @@ def callback(msg):
 
 
 if __name__ == '__main__':
+	print(scan_ports("JPL"))
 	rospy.init_node('steer', anonymous = True)
 	commander = threading.Thread(target=send_steering)
 	commander.start()

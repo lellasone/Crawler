@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+
+# This module is responsible for the Crawler's speed control. It is run when 
+# the robot is first booted. 
+#
+# Maintainer: Jake ketchum, jketchum@caltech.edu
+
+import rospy
+from sensor_msgs.msg import Joy
+import odrive
+
+INDEX_PAN = 3
+INDEX_SPEED = 4
+
+MAX_SPEED = 50000
+
+def listener():
+	print("Setting up listener")
+	rospy.init_node('throttle',anonymous=True)
+
+	rospy.Subscriber("/spacenav/joy", Joy, callback)
+	
+	print("spinning up listener")
+	rospy.spin()
+	print("listener down")
+
+def callback(msg):
+	speed = msg.axes[INDEX_SPEED]
+	speed = speed * -MAX_SPEED #scale from to correct speeds.
+	set_speed(int(speed))
+
+def set_speed(speed):
+	engine.axis0.controller.vel_setpoint = speed
+
+def setup_odrive():
+	global engine 
+	print("finding odrive")
+	engine = odrive.find_any()
+	print("odrive found")
+	print(engine.vbus_voltage)
+
+if __name__ == '__main__':
+	setup_odrive()
+	listener()
+
+

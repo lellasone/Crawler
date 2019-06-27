@@ -1,14 +1,16 @@
 Install Process:
 	Step 0: Install ubuntu 16.04
 	Step 1: Install ros Kinetic
-	Step 2: Install Python3.6
+	Step 2: Install python3-pip
 	Step 3: sudo pip3 install odrive (may fail) 
-	Step 3.1: install python3-usb
-	Step 3.2: install python3-yaml
+	Step 3.1: sudo apt install python3-usb
+	Step 3.2: sudo apt install python3-yaml
 	Step 3.3: sudo pip3 install --no-dependencies odrive (should work)
 	[at this point python should be able to import the library]
-	Step 4: Clone repository onto machine
-	Step 5: Install systemd service as described below. 
+	Step 4: Install git
+	Step 5: Clone respository to home directory. 
+		https://github.com/lellasone/Crawler.git
+	Step 6: Install systemd service as described below. 
 
 Install systemd service:
 	# This process ensures that the robot will automatically start up

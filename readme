@@ -12,7 +12,9 @@ Install Process:
 	Step 4: Install git
 	Step 5: Clone respository to home directory. 
 		https://github.com/lellasone/Crawler.git
-	Step 6: Install systemd service as described below. 
+	Step 6: build Crawler/software/catkin_ws
+	Step 7: Install systemd service as described below. 
+	Setp 8: sudo apt install openssh-server ii
 
 Install systemd service:
 	# This process ensures that the robot will automatically start up

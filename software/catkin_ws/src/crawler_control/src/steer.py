@@ -37,9 +37,14 @@ setpoint = 128 # the steering setpoint.
 # This function will return a list in the form [bool, responce] where 
 # bool is True if the communication was succesful, and False if it failed. 
 # if a length of 0 is specified for the responce that index will be set at ""
-def send_frame(command, data, reply_length = 0):
+def send_frame(command, data, reply_length = 0, port_id = None):
+	
+	# if no port has been provided use the global default. 
+	if port_id == None: 
+		port_id = port
+
 	try: 
-	    teensy = serial.Serial(port)
+	    teensy = serial.Serial(port_id)
 	    frame = START_BYTE
 	    frame = frame + command + data
 	    frame = frame + bytearray.fromhex("00") # add checksum
@@ -48,7 +53,7 @@ def send_frame(command, data, reply_length = 0):
 	    print(frame)
 	    teensy.write(frame)
 	    if reply_length != 0:
-	        return [True, (binascii.hexlify(teensy.read(reply_length)))]
+	        return [True, teensy.read(reply_length)]
 	    else:
 	    	return [True, ""]
 	except serial.SerialException as e: 
@@ -61,8 +66,8 @@ def request_echo(payload):
     return responce 
 
 # Requests the device ID of the target device. 
-def request_ping():
-	responce = send_frame(COMMAND_PING, bytearray.fromhex("0000"), 3)
+def request_ping(port_id = port):
+	responce = send_frame(COMMAND_PING, bytearray.fromhex("0000"), 3, port_id = port_id)
 	return responce
 
 # Sends a steering setpoint update command to the teensy. 
@@ -76,6 +81,7 @@ def set_steering_setpoint(payload):
 	if (len(payload) != 2):
 		print("ERROR: steering setpoint must be a byte array of length 2")
 		return [False, 0] #indicate an error occured. 
+	print(port)
 	responce = send_frame(COMMAND_STEER, payload, 0)
 	return responce
 
@@ -85,7 +91,7 @@ def set_steering_setpoint(payload):
 def send_steering():
 	rate = rospy.Rate(50)
 	while True: 
-
+		print(port)
 		set_steering_setpoint(bytes([setpoint, 0]))
 		rate.sleep()
 		print(setpoint)
@@ -100,9 +106,14 @@ def send_steering():
 # 	ID - The ID of the device to be found, given as a string. 
 def scan_ports(ID):
 	for i in range (0, 10):
-		responce = request_ping()[1]
+		port_i = "/dev/ttyACM" + str(i)
+		responce = request_ping(port_id = port_i)[1]
+		print (responce) 
+		print (bytes(ID))
 		if ID == responce:
-			port = "/dev/ttyACM" + str(i)
+			print ("found")
+			global port 
+			port = port_i
 			return(port)
 	return("")
 
@@ -128,7 +139,9 @@ def callback(msg):
 
 
 if __name__ == '__main__':
-	print(scan_ports("JPL"))
+	print(scan_ports(bytes(bytearray.fromhex("4A504C"))))
+	print(port)
+	time.sleep(5)
 	rospy.init_node('steer', anonymous = True)
 	commander = threading.Thread(target=send_steering)
 	commander.start()

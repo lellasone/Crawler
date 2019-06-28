@@ -1,0 +1,3 @@
+<launch>
+	<node name="steer" pkg="crawler_control" type="steer.py" />
+</launch> 

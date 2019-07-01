@@ -79,4 +79,3 @@ void parse_command(byte command[]){
       break;
   }
 }
-

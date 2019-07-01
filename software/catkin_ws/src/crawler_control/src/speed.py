@@ -6,11 +6,11 @@
 # Maintainer: Jake ketchum, jketchum@caltech.edu
 
 import rospy
-from sensor_msgs.msg import Joy
+from std_msgs.msg import Float64
 import odrive
 
 INDEX_PAN = 0
-INDEX_SPEED = 1
+INDEX_SPEED = 0
 
 MAX_SPEED = 200000 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 80 #in amps
@@ -21,13 +21,13 @@ def init_node():
 
 
 def listener():
-	rospy.Subscriber("/spacenav/joy", Joy, callback)
+	rospy.Subscriber("/crawler/command_speed", Float64, callback)
 	print("spinning up listener")
 	rospy.spin()
 	print("listener down")
 
 def callback(msg):
-	speed = msg.axes[INDEX_SPEED]
+	speed = msg.data
 	speed = speed * -MAX_SPEED #scale from to correct speeds.
 	set_speed(int(speed))
 	rospy.loginfo("speed_requested: " +str(speed))

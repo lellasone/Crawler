@@ -8,6 +8,7 @@
 import rospy
 from sensor_msgs.msg import Joy
 from std_msgs.msg import String
+from std_msgs.msg import Float64
 import threading 
 
 import serial
@@ -118,7 +119,7 @@ def scan_ports(ID):
 
 
 def listener():
-	rospy.Subscriber("/spacenav/joy", Joy, callback)
+	rospy.Subscriber("crawler/command_steer", Float64, callback)
 	
 	print("spinning up listener")
 	rospy.spin()
@@ -126,8 +127,8 @@ def listener():
 
 
 def callback(msg):
-	try: 
-		angle = msg.axes[INDEX_PAN]
+	try:
+		angle = msg.data
 		angle = angle + 1 #re-center as positive
 		angle = angle * 128 # scale to 8 bits. 
 		global setpoint 

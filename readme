@@ -26,11 +26,21 @@ Install systemd service:
 	
 	Step 6: sudo systemctl start crawler_startup
 	(other steps may be required to enable start on boot)
-Joystick communicatoion:
 
-plug into laptop
-cheeck ip 
-update ip if needed ens 
-source bash all windows
-roslaunch
+Joystick PS4 communicatoion:
 
+        Step 0: If commited any changes, do
+                sudo systemctl restart crawler_startup.service
+                to restart the system
+
+	Step 1: Plug and connect joystick via a USB into a laptop that is 
+		connected to robot's WiFi. 
+ 
+	Step 2: Check IP of the laptop.  (vim ~/.bashrc, ROS_IP, to exit esc :q! or esc :wq if save; ifconfig on laptop -> inlet addr should be same)
+		update IP if needed: sudo ifconfig ens33 192.168.8.234 (Sasha Mac)
+
+	Step 3: source ~/.bashrc on all windows open in terminal
+
+	Step 4: roslaunch joystick.launch in Crawler/software/catkin_ws/src/crawler_control/launch
+		joystick should correctly run. 
+		To check, ssh nuc@192.168.8.175, rostopic echo spacenav/joy

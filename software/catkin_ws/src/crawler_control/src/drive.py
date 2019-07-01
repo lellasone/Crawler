@@ -14,6 +14,8 @@ import time
 
 INDEX_SPEED_SPACENAV = 0
 INDEX_STEER_SPACENAV = 1
+INDEX_SPEED_PS4 = 0
+INDEX_STEER_PS3 = 1
 
 def init_node():
 	''' 
@@ -35,7 +37,19 @@ def listener_spacenav_joy():
 	rospy.spin()
 
 def callback_spacenav(msg):
-	set_movement_joy(msg, INDEX_SPEED_SPACENAV, INDEX_STEER_SPACENAV)
+	#set_movement_joy(msg, INDEX_SPEED_SPACENAV, INDEX_STEER_SPACENAV)
+
+
+def listener_spacenav_joy():
+	''' 
+		This function is responsible for listening to incomming movment
+		commands from the spacenav controller and responding too them. 
+	'''
+	rospy.Subscriber("/ps4/joy", Joy, callback_ps4)
+	rospy.spin()
+
+def callback_ps4(msg):
+	set_movement_joy(msg, INDEX_SPEED_PS4, INDEX_STEER_PS4)
 
 
 def set_movement_joy(msg, index_speed, index_steer):

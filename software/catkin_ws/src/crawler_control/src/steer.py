@@ -7,6 +7,7 @@
 
 import rospy
 from sensor_msgs.msg import Joy
+from std_msgs.msg import String
 import threading 
 
 import serial
@@ -50,14 +51,14 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 	    frame = frame + bytearray.fromhex("00") # add checksum
 	    frame = frame + END_BYTE
 	    
-	    print(frame)
+	    rospy.loginfo(frame)
 	    teensy.write(frame)
 	    if reply_length != 0:
 	        return [True, teensy.read(reply_length)]
 	    else:
 	    	return [True, ""]
 	except serial.SerialException as e: 
-		print("serial exception: " + str(e))
+		rospy.logerr("serial exception: " + str(e))
 		return[False,""]
 		
 
@@ -75,13 +76,12 @@ def request_ping(port_id = port):
 #	payload - a single byte with the neutral position of the wheels set at 128. 
 def set_steering_setpoint(payload):
 	if (type(payload) != bytes):
-		print("ERROR: steering setpoint must be a bytes")
-		print("Is Type: " + str(type(payload)))
+		rospy.logerr("ERROR: steering setpoint must be a bytes")
+		rospy.logerr("Is Type: " + str(type(payload)))
 		return [False, 0] #indicate an error occured. 
 	if (len(payload) != 2):
-		print("ERROR: steering setpoint must be a byte array of length 2")
+		rospy.logerr("ERROR: steering setpoint must be a byte array of length 2")
 		return [False, 0] #indicate an error occured. 
-	print(port)
 	responce = send_frame(COMMAND_STEER, payload, 0)
 	return responce
 
@@ -90,11 +90,11 @@ def set_steering_setpoint(payload):
 # steering setpoint to the ppm controller. 
 def send_steering():
 	rate = rospy.Rate(50)
+	count = 0
 	while True: 
-		print(port)
-		set_steering_setpoint(bytes([setpoint, 0]))
-		rate.sleep()
-		print(setpoint)
+		responce = set_steering_setpoint(bytes([setpoint, 0]))
+		if not responce[0]:
+			rospy.logwarn("steering update failed")
 
 
 # This function scans through all of the avaliable ACM ports (0 - 9) and 
@@ -108,10 +108,8 @@ def scan_ports(ID):
 	for i in range (0, 10):
 		port_i = "/dev/ttyACM" + str(i)
 		responce = request_ping(port_id = port_i)[1]
-		print (responce) 
-		print (bytes(ID))
 		if ID == responce:
-			print ("found")
+			rospy.loginfo("setting steering port to: " + str(port_i))
 			global port 
 			port = port_i
 			return(port)

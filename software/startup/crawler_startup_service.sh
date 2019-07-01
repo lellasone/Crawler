@@ -13,9 +13,7 @@ sleep 1
 
 roslaunch spacenav_node classic.launch &
 
-rosrun crawler_control chatter.py&
-rosrun crawler_control speed.py&
-rosrun crawler_control steer.py&
+roslaunch crawler_control standard.launch &
 
 while true; do
 	sleep 1m;

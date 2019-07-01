@@ -28,3 +28,11 @@ Install systemd service:
 	
 	Step 6: sudo systemctl start crawler_startup
 	(other steps may be required to enable start on boot)
+Joystick communicatoion:
+
+plug into laptop
+cheeck ip 
+update ip if needed ens 
+source bash all windows
+roslaunch
+

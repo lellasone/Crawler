@@ -35,7 +35,7 @@ def listener_spacenav_joy():
 	rospy.spin()
 
 def callback_spacenav(msg):
-	set_movement_joy(msg, 1, 3)
+	set_movement_joy(msg, INDEX_SPEED_SPACENAV, INDEX_STEER_SPACENAV)
 
 
 def set_movement_joy(msg, index_speed, index_steer):

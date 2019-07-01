@@ -38,7 +38,7 @@ def listener_spacenav_joy():
 
 def callback_spacenav(msg):
 	#set_movement_joy(msg, INDEX_SPEED_SPACENAV, INDEX_STEER_SPACENAV)
-
+	pass
 
 def listener_ps4_joy():
 	''' 

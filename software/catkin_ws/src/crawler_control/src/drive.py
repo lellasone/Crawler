@@ -40,10 +40,10 @@ def callback_spacenav(msg):
 	#set_movement_joy(msg, INDEX_SPEED_SPACENAV, INDEX_STEER_SPACENAV)
 
 
-def listener_spacenav_joy():
+def listener_ps4_joy():
 	''' 
 		This function is responsible for listening to incomming movment
-		commands from the spacenav controller and responding too them. 
+		commands from the ps4 controller and responding to them. 
 	'''
 	rospy.Subscriber("/ps4/joy", Joy, callback_ps4)
 	rospy.spin()

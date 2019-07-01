@@ -9,8 +9,8 @@ import rospy
 from sensor_msgs.msg import Joy
 import odrive
 
-INDEX_PAN = 0
-INDEX_SPEED = 1
+INDEX_PAN = 1
+INDEX_SPEED = 0
 
 MAX_SPEED = 200000 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 80 #in amps

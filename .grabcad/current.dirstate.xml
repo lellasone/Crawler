@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GCSCMDirState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <UpdateTime>2019-07-02T15:20:12.8764969-07:00</UpdateTime>
+  <UpdateTime>2019-07-02T15:22:05.1763726-07:00</UpdateTime>
   <Standins>
     <GCSCMStandin>
       <FileName>Angle Measures\100.STL</FileName>
@@ -80,6 +80,118 @@
       <LastUpdated>2019-04-14T00:49:55.9613393+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
+      <FileName>CAD\STLs\end cap.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>577084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-02T23:52:33.6236863+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\O-Drive Base.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2320484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-05T23:27:40.5965235+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\Part1.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1155884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-14T07:11:05.5659365+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_autonomy_stand.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>765484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-29T21:52:40.9306140+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_clamp_clamp.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>793684</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-28T08:31:41.1897743+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_encoder_motor_mount.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>867484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-25T21:47:45.4902824+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_end_cap.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1153484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-04T22:39:22.8193877+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_fixture_plate_motor.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2432284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-24T19:20:09.9793953+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_fixture_plate_motor.wrl</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2295</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-22T17:04:11.0871283+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_lower_clamp.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>60736284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-14T21:41:02.5194437+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_nano_carriage lid.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>37334884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-20T04:30:07.8371617+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_nano_carriage.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2491584</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-20T04:29:40.8272160+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_nano_carriage_bottom.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>147084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T16:26:35.5100202+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_nano_carriage_top.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>127284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T16:26:35.5140193+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_nuc_cover.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1448184</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-21T02:22:19.5734945+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_nuc_mount.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>3509884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-23T17:04:57.6618982+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
       <FileName>CAD\STLs\par_odrive_carriage lower.STL</FileName>
       <SHA1>MODIFIED</SHA1>
       <FileSize>590684</FileSize>
@@ -92,6 +204,90 @@
       <FileSize>4950384</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-07-02T22:20:07.8722393+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_odrive_carriage.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>20874184</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-05T04:37:09.6771676+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_realsense_mount.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1299084</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-09T05:25:03.7081025+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_rod_clamp.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2363884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-25T02:06:03.2185001+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_rod_clamp_2.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>95684</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-06-24T16:26:35.5180161+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_rod_clamp_insert.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>2363884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-24T05:37:00.2457067+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_rod_clamp_through.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>1362484</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-24T05:36:34.3274431+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_upper_clamp.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>9779284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-26T09:47:12.8858080+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_upper_clamp_front.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>9841284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-26T09:46:54.6212755+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_upper_clamp_rear.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>9841284</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-04-14T21:40:20.0442038+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_velodyne_riser_V1_3in.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>341384</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T20:47:12.5893781+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_velodyne_riser_V1_4in.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>425884</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T20:47:12.5953744+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>CAD\STLs\par_velodyne_riser_V1_5in.STL</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>367384</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-05-10T20:47:12.5993740+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>CAD\Assem1.SLDASM</FileName>
@@ -185,13 +381,6 @@
       <LastUpdated>2019-05-02T23:51:07.2425939+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\end cap.STL</FileName>
-      <SHA1>9428A51DA9E2637C73274C17A6FA544D315D4DA5</SHA1>
-      <FileSize>577084</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-02T23:52:33.6236863+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\fab_lidar_plate.SLDASM</FileName>
       <SHA1>51970BB2FE4EAAFDAC83A35EDBC8DFCF1A8556DC</SHA1>
       <FileSize>195186</FileSize>
@@ -213,13 +402,6 @@
       <LastUpdated>2019-05-26T21:04:54.8379103+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\O-Drive Base.STL</FileName>
-      <SHA1>62A4A32C0CEA5895091A4C10E7C8648DB3B7C63F</SHA1>
-      <FileSize>2320484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-05T23:27:40.5965235+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\ODrive3.4.ipt</FileName>
       <SHA1>MODIFIED</SHA1>
       <FileSize>21693952</FileSize>
@@ -227,25 +409,11 @@
       <LastUpdated>2019-07-02T20:14:39.1653080+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\Part1.STL</FileName>
-      <SHA1>26CE3BADBF54EC7DA60C66F324770A3218679313</SHA1>
-      <FileSize>1155884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-14T07:11:05.5659365+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\par_autonomy_stand.SLDPRT</FileName>
       <SHA1>MODIFIED</SHA1>
       <FileSize>131632</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-06-29T21:52:25.9352091+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_autonomy_stand.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>765484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-29T21:52:40.9306140+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>CAD\par_cage_lid.SLDPRT</FileName>
@@ -269,25 +437,11 @@
       <LastUpdated>2019-04-18T18:42:07.9045031+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\par_clamp_clamp.STL</FileName>
-      <SHA1>0A37143154B500861F27BD48A274C26F220CD506</SHA1>
-      <FileSize>793684</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-28T08:31:41.1897743+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\par_encoder_motor_mount.SLDPRT</FileName>
       <SHA1>9D0CD81E76CF8B7BAD2C9283D62BADB61FCA61DE</SHA1>
       <FileSize>94541</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-25T21:47:26.7583181+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_encoder_motor_mount.STL</FileName>
-      <SHA1>1BF1AE8170D4190E4AF8110A61ADB3E6191D0A6F</SHA1>
-      <FileSize>867484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-25T21:47:45.4902824+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>CAD\par_end_cap.SLDPRT</FileName>
@@ -297,32 +451,11 @@
       <LastUpdated>2019-05-04T22:39:13.5027096+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\par_end_cap.STL</FileName>
-      <SHA1>8F9A20EEE3949F2C8631B227EADBEDC426D59EDD</SHA1>
-      <FileSize>1153484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-04T22:39:22.8193877+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\par_fixture_plate_motor.SLDPRT</FileName>
       <SHA1>A5C6FCF4B414842C4B7F4360E04903548F21370E</SHA1>
       <FileSize>110527</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-22T23:38:10.6301779+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_fixture_plate_motor.STL</FileName>
-      <SHA1>500D55C2864F16B459CF649604E357F7A847DEE6</SHA1>
-      <FileSize>2432284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-24T19:20:09.9793953+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_fixture_plate_motor.wrl</FileName>
-      <SHA1>E631257DE6C1EA824DDD2534E61E1D373732BA8A</SHA1>
-      <FileSize>2295</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-22T17:04:11.0871283+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>CAD\par_lower_clamp.SLDPRT</FileName>
@@ -332,46 +465,11 @@
       <LastUpdated>2019-04-14T18:12:12.0927637+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\par_lower_clamp.STL</FileName>
-      <SHA1>007D8AE58EEAF84A45F214C404D41612C4C297F9</SHA1>
-      <FileSize>60736284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-14T21:41:02.5194437+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_nano_carriage lid.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>37334884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-20T04:30:07.8371617+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\par_nano_carriage.SLDPRT</FileName>
       <SHA1>69C6ED384B1B8D6CD6C1DA6411D211DE728F1BF2</SHA1>
       <FileSize>260930</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-06-24T16:26:35.5080203+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_nano_carriage.STL</FileName>
-      <SHA1>MODIFIED</SHA1>
-      <FileSize>2491584</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-20T04:29:40.8272160+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_nano_carriage_bottom.STL</FileName>
-      <SHA1>A72A8F41DAE8B4CB87315530C2D7103178005D41</SHA1>
-      <FileSize>147084</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-24T16:26:35.5100202+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_nano_carriage_top.STL</FileName>
-      <SHA1>A7B1042B5951D36615445D363B3CC0EEA26466AD</SHA1>
-      <FileSize>127284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-24T16:26:35.5140193+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>CAD\par_nuc_cover.SLDPRT</FileName>
@@ -381,25 +479,11 @@
       <LastUpdated>2019-05-21T03:38:59.9894067+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\par_nuc_cover.STL</FileName>
-      <SHA1>7ADD8E6BBF0295E3B6FBA6E478C2FC6CCD574705</SHA1>
-      <FileSize>1448184</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-21T02:22:19.5734945+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\par_nuc_mount.SLDPRT</FileName>
       <SHA1>8CC1FD8430CC02E2531B66380C1C18026B6232F4</SHA1>
       <FileSize>222209</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-22T04:03:14.3853797+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_nuc_mount.STL</FileName>
-      <SHA1>42ECA82DDEE76EC929839BF33516043FCDB57A9E</SHA1>
-      <FileSize>3509884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-23T17:04:57.6618982+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>CAD\par_nuc__board_keepout.SLDPRT</FileName>
@@ -416,13 +500,6 @@
       <LastUpdated>2019-07-02T22:20:11.8419074+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\par_odrive_carriage.STL</FileName>
-      <SHA1>4764020BBCF0A6BAB9BBD21E781DC1193D96930F</SHA1>
-      <FileSize>20874184</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-05T04:37:09.6771676+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\par_realsense_mount.SLDPRT</FileName>
       <SHA1>1CC1D494C952C046BDF0D1DB2E16E3163728940C</SHA1>
       <FileSize>113539</FileSize>
@@ -430,46 +507,11 @@
       <LastUpdated>2019-05-09T05:24:48.0866051+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\par_realsense_mount.STL</FileName>
-      <SHA1>A27ACE628EE5B28DE13FD7635A6DA759D22DFD26</SHA1>
-      <FileSize>1299084</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-09T05:25:03.7081025+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\par_rod_clamp.SLDPRT</FileName>
       <SHA1>28E4F66E6893D816C126E779F71595AB3A5328CA</SHA1>
       <FileSize>245736</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-04-25T02:06:07.4849782+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_rod_clamp.STL</FileName>
-      <SHA1>A35D4366C7190849F848CA135812FD2B36189F6B</SHA1>
-      <FileSize>2363884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-25T02:06:03.2185001+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_rod_clamp_2.STL</FileName>
-      <SHA1>86C3563CBFEBF51D5FAA63FB78AF93C497485F79</SHA1>
-      <FileSize>95684</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-06-24T16:26:35.5180161+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_rod_clamp_insert.STL</FileName>
-      <SHA1>0AFE88FF560A80CBDD9B8298FC21DA946153321A</SHA1>
-      <FileSize>2363884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-24T05:37:00.2457067+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_rod_clamp_through.STL</FileName>
-      <SHA1>51F59B16A2D85174C3AFFFF7CB60153979E4C24D</SHA1>
-      <FileSize>1362484</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-24T05:36:34.3274431+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>CAD\par_sensor_plate.SLDPRT</FileName>
@@ -493,53 +535,11 @@
       <LastUpdated>2019-04-18T18:42:07.0619217+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
-      <FileName>CAD\par_upper_clamp.STL</FileName>
-      <SHA1>D1C6659C031BA26481B00E381486A9B15746AE89</SHA1>
-      <FileSize>9779284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-26T09:47:12.8858080+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_upper_clamp_front.STL</FileName>
-      <SHA1>8351C3249F48D94E995135E5DBAC7EA11C1FA5B8</SHA1>
-      <FileSize>9841284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-26T09:46:54.6212755+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_upper_clamp_rear.STL</FileName>
-      <SHA1>94C0FD7F9AECECECDFB9BD8A70E8C84CEA28B10C</SHA1>
-      <FileSize>9841284</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-04-14T21:40:20.0442038+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
       <FileName>CAD\par_velodyne_riser_V1.SLDPRT</FileName>
       <SHA1>2C9AD17929047A57FD199F9AF70C11F5CB5B0CCD</SHA1>
       <FileSize>321717</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-05-10T20:47:12.5873801+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_velodyne_riser_V1_3in.STL</FileName>
-      <SHA1>D335D67CB16F43EEF3E2D673800FCBE07396B15D</SHA1>
-      <FileSize>341384</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T20:47:12.5893781+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_velodyne_riser_V1_4in.STL</FileName>
-      <SHA1>EA5FA13F6495219330253790DD68D6E4936DABD4</SHA1>
-      <FileSize>425884</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T20:47:12.5953744+00:00</LastUpdated>
-    </GCSCMStandin>
-    <GCSCMStandin>
-      <FileName>CAD\par_velodyne_riser_V1_5in.STL</FileName>
-      <SHA1>515E0A3A3D96974392BE4BC92759286EE152820F</SHA1>
-      <FileSize>367384</FileSize>
-      <ProEVersionedName />
-      <LastUpdated>2019-05-10T20:47:12.5993740+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>CAD\par_velodyne_riser_V2.SLDPRT</FileName>
@@ -771,6 +771,13 @@
       <FileSize>1343970</FileSize>
       <ProEVersionedName />
       <LastUpdated>2019-04-14T18:20:00.3302646+00:00</LastUpdated>
+    </GCSCMStandin>
+    <GCSCMStandin>
+      <FileName>mcmaster_carr\94639A203_NYLON UNTHREADED SPACERS.SLDPRT</FileName>
+      <SHA1>MODIFIED</SHA1>
+      <FileSize>143122</FileSize>
+      <ProEVersionedName />
+      <LastUpdated>2019-07-02T22:18:33.4792908+00:00</LastUpdated>
     </GCSCMStandin>
     <GCSCMStandin>
       <FileName>mcmaster_carr\98804A029_18-8 STAINLESS STEEL THREADED ROD.SLDPRT</FileName>

@@ -129,8 +129,8 @@ def listener():
 def callback(msg):
 	try:
 		angle = msg.data
-		angle = angle + 1 #re-center as positive
-		angle = angle * 128 # scale to 8 bits. 
+		angle = -1* angle + 1 #re-center as positive
+		angle = angle * 127 # scale to 8 bits. 
 		global setpoint 
 		setpoint = int(angle)
 	except: 

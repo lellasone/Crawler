@@ -9,9 +9,6 @@ import rospy
 from std_msgs.msg import Float64
 import odrive
 
-INDEX_PAN = 0
-INDEX_SPEED = 0
-
 MAX_SPEED = 200000 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 80 #in amps
 

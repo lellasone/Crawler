@@ -13,9 +13,9 @@ import time
 
 
 INDEX_SPEED_SPACENAV = 0
-INDEX_STEER_SPACENAV = 1
-INDEX_SPEED_PS4 = 0
-INDEX_STEER_PS3 = 1
+INDEX_STEER_SPACENAV = 5
+INDEX_SPEED_PS4 = 1
+INDEX_STEER_PS4 = 0
 
 def init_node():
 	''' 
@@ -37,7 +37,7 @@ def listener_spacenav_joy():
 	rospy.spin()
 
 def callback_spacenav(msg):
-	#set_movement_joy(msg, INDEX_SPEED_SPACENAV, INDEX_STEER_SPACENAV)
+	set_movement_joy(msg, INDEX_SPEED_SPACENAV, INDEX_STEER_SPACENAV)
 	pass
 
 def listener_ps4_joy():
@@ -49,6 +49,7 @@ def listener_ps4_joy():
 	rospy.spin()
 
 def callback_ps4(msg):
+	print("ping")
 	set_movement_joy(msg, INDEX_SPEED_PS4, INDEX_STEER_PS4)
 
 
@@ -71,7 +72,7 @@ def set_movement_joy(msg, index_speed, index_steer):
 
 if __name__ == '__main__':
 	init_node()
-	listener_spacenav_joy()
+	#listener_spacenav_joy()
 	listener_ps4_joy()
 	#spin_listeners()
 

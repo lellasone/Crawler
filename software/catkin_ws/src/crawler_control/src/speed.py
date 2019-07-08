@@ -11,8 +11,10 @@ import odrive
 import threading 
 import time
 
-MAX_SPEED = 200000 #in pulses per revolution (hardware dependent)
-MAX_CURRENT = 80 #in amps
+MAX_RPM = 250 #max RPM of motor
+CPR = 4000 # encoder counts per motor revolution. 
+MAX_PPS = CPR * MAX_RPM #in pulses per revolution (hardware dependent)
+MAX_CURRENT = 60 #in amps
 
 def init_node():
 	print("Setting up listener")
@@ -30,7 +32,7 @@ def callback(msg):
 		This function is called each time a new joy
 	'''
 	speed = msg.data
-	speed = speed * -MAX_SPEED #scale from to correct speeds.
+	speed = speed * -MAX_PPS #scale from to correct speeds.
 	set_speed(int(speed))
 	rospy.loginfo("speed_requested: " +str(speed))
 	rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
@@ -44,7 +46,7 @@ def set_speed(velocity):
 		- velocity: The desired robot velocity in pulses per minute. 
 	'''
 	#TODO: add try-except statment. 
-	engine.axis0.controller.vel_setpoint = velocity
+	engine.axis1.controller.vel_setpoint = velocity
 
 def set_params():
 	'''
@@ -54,19 +56,22 @@ def set_params():
 		between robots without requiring their settings be changed. 
 	'''
 	engine.axis1.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
-	engine.axis1.controller.config.vel_limit = MAX_SPEED + 50000 #add some buffer to prevent errors. 
+	engine.axis1.controller.config.vel_limit = MAX_PPS + 50000 #add some buffer to prevent errors. 
 	engine.axis1.motor.config.calibration_current = 20
 	engine.config.brake_resistance = 0.8 
 	engine.axis1.motor.config.pole_pairs = 2
-	engine.axis1.encoder.config.cpr = 2880
+	engine.axis1.encoder.config.cpr = CPR
 	engine.axis1.motor.config.requested_current_range = MAX_CURRENT #set current sense gains. 
-
+	print("paramiters set")
 	time.sleep(1)
 	engine.axis1.requested_state = 4 
 	time.sleep(4)
 	engine.axis1.requested_state = 7
 	time.sleep(10)
 	engine.axis1.requested_state = 8
+
+	engine.axis1.controller.config.control_mode = 2 #set to velocity control
+
 	#engine.save_configuration() #Not needed if called on startup. 
 
 def setup_odrive():
@@ -82,6 +87,24 @@ def setup_odrive():
 	print(engine.vbus_voltage)
 	set_params()
 	print("odrive setup complete")
+
+
+def reboot_odrive():
+	''' 
+		This function reboots the connected odrive and then finds it again.
+		This is useful for debugging or as a last-ditch option for fixing
+		errors when deployed. 
+
+		This assumes the global engine exists and has already been populated.
+	'''
+	global engine 
+	try:
+		engine.reboot()
+		time.sleep(10)
+	except: 
+		pass 
+
+	engine = odrive.find_any()
 
 def spin_analytics():
 	'''

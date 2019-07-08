@@ -64,6 +64,12 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 		
 
 def request_echo(payload):
+	'''
+		This function requests that the target device transmit back the 
+		payload bytes exactly as they are recieved. This can be used to 
+		verify that the device is functioning or for stress testing of 
+		the serial system. 
+	'''
     responce = send_frame(COMMAND_ECHO, payload, 2)
     return responce 
 
@@ -91,9 +97,19 @@ def set_steering_setpoint(payload):
 # This function is responcible for repeatedly transmitting the current 
 # steering setpoint to the ppm controller. 
 def send_steering():
+	'''
+		This function is meant to be called as a seperate thread. It
+		repeatedly polls the steering setpoint and transmits that setpoint
+		to the teensy. 
+
+		This function is also responsible for monitoring the time since
+		a new input was detected, and for setting the steering to 
+		a neutral position if that time delay beomes to long. 
+	'''
 	rate = rospy.Rate(50) 
 	global failed_count = 0 # variable to check if count was reset to 0 after a fail
 	while True: 
+		rate.sleep()
 		if count != 0 and failed_count = 0
 			responce = set_steering_setpoint(bytes([setpoint, 0]))
 			failed_count += 1
@@ -135,6 +151,11 @@ def listener():
 
 
 def callback(msg):
+	'''
+		This function is called every time a new steering request is recieved
+		from the drive system. It updates the speed setpoint as appropriate
+		but does not transmit that setpoint to the teensy. 
+	'''
 	try:
 		angle = msg.data
 		angle = -1* angle + 1 #re-center as positive

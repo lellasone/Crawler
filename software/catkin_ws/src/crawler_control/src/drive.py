@@ -17,8 +17,14 @@ INDEX_STEER_SPACENAV = 5
 INDEX_SPEED_PS4 = 1
 INDEX_STEER_PS4 = 0
 
+STEER_MAX = 0.5 #maximum turning angle in radians
+
+SPEED_GEAR_RATIO = 5 # motor rotations per wheel rotation (on average). 
+SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
+
 def init_node():
-	''' 
+	'''
+		This function creates the rosnodes used for commanding the robot. 
 	'''
 	global commands_speed
 	global commands_steer
@@ -49,8 +55,25 @@ def listener_ps4_joy():
 	rospy.spin()
 
 def callback_ps4(msg):
-	print("ping")
 	set_movement_joy(msg, INDEX_SPEED_PS4, INDEX_STEER_PS4)
+
+def callback_twist(msg)
+	'''
+		TODO: finish function.
+
+		This function is responsible interpreting twist messages in SI units and 
+		setting the speed and steering setpoints appropriatly. 
+	'''
+	heading_rad = msg.angular.z # desired turn angle in radians. (relative to current)
+	velocity_si = msg.linear.x # desired velocity in m/s
+
+	# pin steering to the rails if needed. 
+	if heading_rad > STEER_MAX:
+		heading_rad = STEER_MAX
+	elif heading_rad < -1* STEER_MAX:
+		heading_rad = -1*STEER_MAX
+	
+
 
 
 def set_movement_joy(msg, index_speed, index_steer):
@@ -65,6 +88,7 @@ def set_movement_joy(msg, index_speed, index_steer):
 			index_speed - the index of the speed axis. 
 			index_steer - the index of the steer axis. 
 	'''
+
 	commands_speed.publish(msg.axes[index_speed])
 	commands_steer.publish(msg.axes[index_steer])
 	

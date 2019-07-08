@@ -16,6 +16,10 @@ CPR = 4000 # encoder counts per motor revolution.
 MAX_PPS = CPR * MAX_RPM #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 60 #in amps
 
+engine = ''
+
+
+
 def init_node():
 	print("Setting up listener")
 	rospy.init_node('throttle',anonymous=True)
@@ -42,11 +46,19 @@ def set_speed(velocity):
 		This function is responsible for setting the velocity setpoint paramiter. Note that 
 		It functions in pulses per minute, and will thus provide a different velocity depending
 		on the robot's hardware configuration. 
+
+		note that if no odrive is connected this function will block until a new odrive is connected
+		and the original speed will not be transmitted. 
 		args: 
 		- velocity: The desired robot velocity in pulses per minute. 
 	'''
 	#TODO: add try-except statment. 
-	engine.axis1.controller.vel_setpoint = velocity
+	if(check_living()):
+		print(check_living())
+		engine.axis1.controller.vel_setpoint = velocity
+	else:
+		rospy.logwarn("No Odrive Connected")
+		setup_odrive()
 
 def set_params():
 	'''
@@ -62,15 +74,31 @@ def set_params():
 	engine.axis1.motor.config.pole_pairs = 2
 	engine.axis1.encoder.config.cpr = CPR
 	engine.axis1.motor.config.requested_current_range = MAX_CURRENT #set current sense gains. 
+	engine.axis1.controller.config.control_mode = 2 #set to velocity control
 	print("paramiters set")
+
+def check_living():
+	try: 
+		engine.serial_number
+	except: 
+		return False
+	return True
+
+
+def startup_calibration():
+	'''
+		This function runs through the startup sequence for the robot. It should be called after
+		all the desired odrive paramtiers have been set, but before any attempts are made to move
+		the robot. Note, that this function takes a non-trivla time (order of 20 seconds) to execute. 
+	'''
+	print("calibrating motor and encoder")
 	time.sleep(1)
 	engine.axis1.requested_state = 4 
 	time.sleep(4)
 	engine.axis1.requested_state = 7
 	time.sleep(10)
 	engine.axis1.requested_state = 8
-
-	engine.axis1.controller.config.control_mode = 2 #set to velocity control
+	print("motor and encoder calibration complete")
 
 	#engine.save_configuration() #Not needed if called on startup. 
 
@@ -86,6 +114,7 @@ def setup_odrive():
 	print("odrive found")
 	print(engine.vbus_voltage)
 	set_params()
+
 	print("odrive setup complete")
 
 

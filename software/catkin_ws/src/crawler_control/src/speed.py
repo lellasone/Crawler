@@ -8,6 +8,8 @@
 import rospy
 from std_msgs.msg import Float64
 import odrive
+import threading 
+import time
 
 MAX_SPEED = 200000 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 80 #in amps
@@ -24,6 +26,9 @@ def listener():
 	print("listener down")
 
 def callback(msg):
+	'''
+		This function is called each time a new joy
+	'''
 	speed = msg.data
 	speed = speed * -MAX_SPEED #scale from to correct speeds.
 	set_speed(int(speed))
@@ -41,8 +46,6 @@ def set_speed(velocity):
 	#TODO: add try-except statment. 
 	engine.axis0.controller.vel_setpoint = velocity
 
-
-
 def set_params():
 	'''
 		This function is sets various paramiters on the ODrive motor controller. 
@@ -50,13 +53,20 @@ def set_params():
 		every time the ODrive is re-booted. This allows ODrives to be swapped 
 		between robots without requiring their settings be changed. 
 	'''
-	engine.axis0.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
-	engine.axis0.controller.config.vel_limit = MAX_SPEED + 50000 #add some buffer to prevent errors. 
-	engine.axis0.motor.config.calibration_current = 20
+	engine.axis1.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
+	engine.axis1.controller.config.vel_limit = MAX_SPEED + 50000 #add some buffer to prevent errors. 
+	engine.axis1.motor.config.calibration_current = 20
 	engine.config.brake_resistance = 0.8 
-	engine.axis0.motor.config.pole_pairs = 2
-	engine.axis0.encoder.config.cpr = 2880
-	engine.axis0.motor.config.requested_current_range = MAX_CURRENT #set current sense gains. 
+	engine.axis1.motor.config.pole_pairs = 2
+	engine.axis1.encoder.config.cpr = 2880
+	engine.axis1.motor.config.requested_current_range = MAX_CURRENT #set current sense gains. 
+
+	time.sleep(1)
+	engine.axis1.requested_state = 4 
+	time.sleep(4)
+	engine.axis1.requested_state = 7
+	time.sleep(10)
+	engine.axis1.requested_state = 8
 	#engine.save_configuration() #Not needed if called on startup. 
 
 def setup_odrive():
@@ -71,10 +81,30 @@ def setup_odrive():
 	print("odrive found")
 	print(engine.vbus_voltage)
 	set_params()
+	print("odrive setup complete")
+
+def spin_analytics():
+	'''
+		This function is responsible for spinning up the threads that handle 
+		status reporting for the o-drive.
+	'''
+	current = threading.Thread(target=broadcast_value, args = (engine.axis1.motor.current_control.Iq_measured,))
+	current.start()
+
+def broadcast_value(value):
+	rate = rospy.Rate(50)
+	while True: 
+		rospy.loginfo(value)
+		rospy.loginfo(engine.axis1.motor.current_control.Iq_measured)
+
+		rate.sleep()
+
+
 
 if __name__ == '__main__':
 	init_node()
 	setup_odrive()
+	spin_analytics()
 	listener()
 
 

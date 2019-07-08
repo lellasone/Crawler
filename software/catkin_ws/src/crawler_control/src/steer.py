@@ -52,7 +52,7 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 	    frame = frame + bytearray.fromhex("00") # add checksum
 	    frame = frame + END_BYTE
 	    
-	    rospy.loginfo(frame)
+	    #rospy.loginfo(frame)
 	    teensy.write(frame)
 	    if reply_length != 0:
 	        return [True, teensy.read(reply_length)]

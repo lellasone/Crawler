@@ -57,7 +57,7 @@ def listener_ps4_joy():
 def callback_ps4(msg):
 	set_movement_joy(msg, INDEX_SPEED_PS4, INDEX_STEER_PS4)
 
-def callback_twist(msg)
+def callback_twist(msg):
 	'''
 		TODO: finish function.
 

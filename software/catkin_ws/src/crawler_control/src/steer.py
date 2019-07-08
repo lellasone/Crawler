@@ -70,8 +70,8 @@ def request_echo(payload):
 		verify that the device is functioning or for stress testing of 
 		the serial system. 
 	'''
-    responce = send_frame(COMMAND_ECHO, payload, 2)
-    return responce 
+	responce = send_frame(COMMAND_ECHO, payload, 2)
+	return responce 
 
 # Requests the device ID of the target device. 
 def request_ping(port_id = port):
@@ -90,7 +90,8 @@ def set_steering_setpoint(payload):
 		rospy.logerr("ERROR: steering setpoint must be a byte array of length 2")
 		return [False, 0] #indicate an error occured. 
 	responce = send_frame(COMMAND_STEER, payload, 0)
-	global count = 0
+	global count
+	count = 0
 	return responce
 
 
@@ -107,17 +108,19 @@ def send_steering():
 		a neutral position if that time delay beomes to long. 
 	'''
 	rate = rospy.Rate(50) 
-	global failed_count = 0 # variable to check if count was reset to 0 after a fail
+	global failed_count
+	failed_count = 0 # variable to check if count was reset to 0 after a fail
 	while True: 
 		rate.sleep()
-		if count != 0 and failed_count = 0
+		if count != 0 and failed_count == 0:
 			responce = set_steering_setpoint(bytes([setpoint, 0]))
 			failed_count += 1
-		elif count = 0
+		elif count == 0:
 			count += 1
 			failed_count = 0
-		else # if  count != 0 and failed count != 0, means lost control
+		else: # if  count != 0 and failed count != 0, means lost control
 			# stop the robot
+			pass
 		if not responce[0]:
 			rospy.logwarn("steering update failed")
 

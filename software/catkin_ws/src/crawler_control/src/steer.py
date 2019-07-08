@@ -84,16 +84,24 @@ def set_steering_setpoint(payload):
 		rospy.logerr("ERROR: steering setpoint must be a byte array of length 2")
 		return [False, 0] #indicate an error occured. 
 	responce = send_frame(COMMAND_STEER, payload, 0)
+	global count = 0
 	return responce
 
 
 # This function is responcible for repeatedly transmitting the current 
 # steering setpoint to the ppm controller. 
 def send_steering():
-	rate = rospy.Rate(50)
-	count = 0
+	rate = rospy.Rate(50) 
+	global failed_count = 0 # variable to check if count was reset to 0 after a fail
 	while True: 
-		responce = set_steering_setpoint(bytes([setpoint, 0]))
+		if count != 0 and failed_count = 0
+			responce = set_steering_setpoint(bytes([setpoint, 0]))
+			failed_count += 1
+		elif count = 0
+			count += 1
+			failed_count = 0
+		else # if  count != 0 and failed count != 0, means lost control
+			# stop the robot
 		if not responce[0]:
 			rospy.logwarn("steering update failed")
 

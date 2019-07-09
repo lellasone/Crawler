@@ -48,10 +48,10 @@ def listener_spacenav_joy():
 def callback_spacenav(msg):
 	if(msg.buttons[0] == 1):
 		cruse_control = True
-	elif(msg.buttons[1] == 1)
+	elif(msg.buttons[1] == 1):
 		cruse_control = False
 	global velocity
-	
+
 	if not cruse_control:
 		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV]
 

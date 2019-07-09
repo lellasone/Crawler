@@ -11,7 +11,7 @@ import odrive
 import threading 
 import time
 
-MAX_RPM = 250 #max RPM of motor
+MAX_RPM = 100 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
 MAX_PPS = CPR * MAX_RPM #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 60 #in amps
@@ -33,10 +33,10 @@ def listener():
 
 def callback(msg):
 	'''
-		This function is called each time a new joy
+		This function is called each time a new speed request is detected. 
 	'''
 	speed = msg.data
-	speed = speed * -MAX_PPS #scale from to correct speeds.
+	speed = compute_pps(speed) #scale from to correct speeds.
 	set_speed(int(speed))
 	rospy.loginfo("speed_requested: " +str(speed))
 	rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
@@ -50,7 +50,7 @@ def set_speed(velocity):
 		note that if no odrive is connected this function will block until a new odrive is connected
 		and the original speed will not be transmitted. 
 		args: 
-		- velocity: The desired robot velocity in pulses per minute. 
+		- velocity: The desired robot velocity in pulses per second (should be an int)
 	'''
 	#TODO: add try-except statment. 
 	if(check_living()):
@@ -68,7 +68,7 @@ def set_params():
 		between robots without requiring their settings be changed. 
 	'''
 	engine.axis1.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
-	engine.axis1.controller.config.vel_limit = MAX_PPS + 50000 #add some buffer to prevent errors. 
+	engine.axis1.controller.config.vel_limit = MAX_PPS + 20000 #add some buffer to prevent errors. 
 	engine.axis1.motor.config.calibration_current = 20
 	engine.config.brake_resistance = 0.8 
 	engine.axis1.motor.config.pole_pairs = 2
@@ -84,6 +84,24 @@ def check_living():
 	except: 
 		return False
 	return True
+
+def compute_pps(RPM):
+	'''
+		This function takes the desired motor RPM and converts that to 
+		encoder pulses per second. This is useful for determining what 
+		speed to write to the odrive (which takes its speeds in pps)
+
+		Note that in it's current form this function tends to be off by 
+		around 0.5% depending on what the encoder CPR is calculated too
+		on the odrive. 
+		args:
+			RPM - motor speed to be converted in rotations per minute. 
+
+		returns: the pps as a float.
+	'''
+	rps = rpm / 60
+	pps = rps * CPR 
+	return(pps)
 
 
 def startup_calibration():

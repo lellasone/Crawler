@@ -24,6 +24,7 @@ STEER_MAX = 0.5 #maximum turning angle in radians
 
 SPEED_GEAR_RATIO = 5 # motor rotations per wheel rotation (on average). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
+SPEED_MAX_RPM = 100 # Maximum allowable speed. 
 
 cruse_control = False # when true new velocity requests will be ingored. 
 requested_velocity = 0 #velocity, used with cruse control. 
@@ -59,7 +60,7 @@ def callback_spacenav(msg):
 	if not cruse_control:
 		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV]
 
-	commands_speed.publish(velocity)
+	commands_speed.publish(velocity * SPEED_MAX_RPM)
 	commands_steer.publish(msg.axes[INDEX_STEER_SPACENAV])
 
 def listener_ps4_joy():
@@ -119,7 +120,7 @@ def set_movement_joy(msg, index_speed, index_steer):
 			index_steer - the index of the steer axis. 
 	'''
 
-	commands_speed.publish(msg.axes[index_speed])
+	commands_speed.publish(msg.axes[index_speed]* SPEED_MAX_RPM)
 	commands_steer.publish(msg.axes[index_steer])
 	
 

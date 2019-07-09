@@ -110,6 +110,8 @@ def send_steering():
 	rate = rospy.Rate(50) 
 	global failed_count
 	failed_count = 0 # variable to check if count was reset to 0 after a fail
+	global count
+	count = 1
 	while True: 
 		rate.sleep()
 		if count != 0 and failed_count == 0:

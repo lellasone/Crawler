@@ -114,7 +114,7 @@ def setup_odrive():
 	print("odrive found")
 	print(engine.vbus_voltage)
 	set_params()
-
+	startup_calibration()
 	print("odrive setup complete")
 
 

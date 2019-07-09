@@ -85,7 +85,7 @@ def check_living():
 		return False
 	return True
 
-def compute_pps(RPM):
+def compute_pps(rpm):
 	'''
 		This function takes the desired motor RPM and converts that to 
 		encoder pulses per second. This is useful for determining what 

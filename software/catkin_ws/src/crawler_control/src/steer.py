@@ -15,7 +15,6 @@ import serial
 import time
 import binascii
 import os
-import rospy
 
 COMMAND_ECHO = bytearray.fromhex("62")
 COMMAND_PING = bytearray.fromhex("61")
@@ -174,7 +173,7 @@ if __name__ == '__main__':
 	print(port)
 	time.sleep(5)
 	rospy.init_node('steer', anonymous = True)
-	commander = threading.Thread(target=send_steering)
+	commander = threading.Thread(target = send_steering)
 	commander.start()
 	listener()
 

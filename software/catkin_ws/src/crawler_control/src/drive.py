@@ -108,7 +108,7 @@ def set_movement_joy(msg, index_speed, index_steer):
 
 if __name__ == '__main__':
 	init_node()
-	#listener_spacenav_joy()
-	listener_ps4_joy()
+	listener_spacenav_joy()
+	#listener_ps4_joy()
 	#spin_listeners()
 

@@ -10,12 +10,15 @@ import rospy
 from std_msgs.msg import Float64
 from sensor_msgs.msg import Joy
 import time
+import math
 
 
 INDEX_SPEED_SPACENAV = 0
 INDEX_STEER_SPACENAV = 5
 INDEX_SPEED_PS4 = 1
 INDEX_STEER_PS4 = 0
+
+
 
 STEER_MAX = 0.5 #maximum turning angle in radians
 
@@ -80,6 +83,8 @@ def callback_twist(msg):
 	heading_rad = msg.angular.z # desired turn angle in radians. (relative to current)
 	velocity_si = msg.linear.x # desired velocity in m/s
 
+	vleocity_rpm = convert_velocity(velocity_si)
+
 	# pin steering to the rails if needed. 
 	if heading_rad > STEER_MAX:
 		heading_rad = STEER_MAX
@@ -87,7 +92,19 @@ def callback_twist(msg):
 		heading_rad = -1*STEER_MAX
 	
 
-
+def convert_velocity(velocity)
+	'''
+		Converts the input velocity in meters per second, into an angular 
+		velocity in RPM at the motor. This will depend on the robot and
+		requires that the corresponding paramiters be set at the top of 
+		this file. 
+		args:
+			velocity - The desired robot velocity in m/s. 
+	'''
+	meters_per_minute = velocity * 60 
+	rpm_wheel = meters_per_minute / (math.pi * SPEED_WHEEL_DIAMETER)
+	rpm_motor = rpm_wheel *SPEED_GEAR_RATIO
+	return(rpm_motor)
 
 def set_movement_joy(msg, index_speed, index_steer):
 	'''

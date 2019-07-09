@@ -46,11 +46,12 @@ def listener_spacenav_joy():
 	rospy.spin()
 
 def callback_spacenav(msg):
+	global velocity
+	global cruse_control
 	if(msg.buttons[0] == 1):
 		cruse_control = True
 	elif(msg.buttons[1] == 1):
 		cruse_control = False
-	global velocity
 
 	if not cruse_control:
 		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV]

@@ -75,6 +75,7 @@ def set_params():
 	engine.axis1.encoder.config.cpr = CPR
 	engine.axis1.motor.config.requested_current_range = MAX_CURRENT #set current sense gains. 
 	engine.axis1.controller.config.control_mode = 2 #set to velocity control
+	engine.axis1.encoder.config.use_index = True
 	print("paramiters set")
 
 def check_living():
@@ -95,7 +96,7 @@ def startup_calibration():
 	time.sleep(1)
 	engine.axis1.requested_state = 4 
 	time.sleep(4)
-	engine.axis1.requested_state = 7
+	engine.axis1.requested_state = 6
 	time.sleep(10)
 	engine.axis1.requested_state = 8
 	print("motor and encoder calibration complete")

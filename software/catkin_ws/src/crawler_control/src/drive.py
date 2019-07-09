@@ -22,6 +22,9 @@ STEER_MAX = 0.5 #maximum turning angle in radians
 SPEED_GEAR_RATIO = 5 # motor rotations per wheel rotation (on average). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
 
+cruse_control = False # when true new velocity requests will be ingored. 
+requested_velocity = 0 #velocity, used with cruse control. 
+
 def init_node():
 	'''
 		This function creates the rosnodes used for commanding the robot. 
@@ -43,7 +46,17 @@ def listener_spacenav_joy():
 	rospy.spin()
 
 def callback_spacenav(msg):
-	set_movement_joy(msg, INDEX_SPEED_SPACENAV, INDEX_STEER_SPACENAV)
+	if(msg.buttons[0] == 1):
+		cruse_control = True
+	elif(msg.buttons[1] == 1)
+		cruse_control = False
+	global velocity
+	
+	if not cruse_control:
+		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV]
+
+	commands_speed.publish(velocity)
+	commands_steer.publish(msg.axes[INDEX_STEER_SPACENAV])
 
 def listener_ps4_joy():
 	''' 

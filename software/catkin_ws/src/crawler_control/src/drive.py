@@ -93,7 +93,7 @@ def callback_twist(msg):
 		heading_rad = -1*STEER_MAX
 	
 
-def convert_velocity(velocity)
+def convert_velocity(velocity):
 	'''
 		Converts the input velocity in meters per second, into an angular 
 		velocity in RPM at the motor. This will depend on the robot and

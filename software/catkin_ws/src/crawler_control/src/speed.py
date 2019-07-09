@@ -97,7 +97,9 @@ def startup_calibration():
 	engine.axis1.requested_state = 4 
 	time.sleep(4)
 	engine.axis1.requested_state = 6
-	time.sleep(10)
+	time.sleep(5)
+	engine.axis1.requested_state = 7
+	time.sleep(5)
 	engine.axis1.requested_state = 8
 	print("motor and encoder calibration complete")
 

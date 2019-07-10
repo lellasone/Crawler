@@ -20,7 +20,8 @@ INDEX_STEER_PS4 = 0
 
 
 
-STEER_MAX = 0.5 #maximum turning angle in radians
+STEER_MAX = 0.4835 #maximum turning angle in radians
+RADIUS_MAX = 0.667 # min turning radius in meters
 
 SPEED_GEAR_RATIO = 5 # motor rotations per wheel rotation (on average). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
@@ -81,10 +82,10 @@ def callback_twist(msg):
 		This function is responsible interpreting twist messages in SI units and 
 		setting the speed and steering setpoints appropriatly. 
 	'''
-	heading_rad = msg.angular.z # desired turn angle in radians. (relative to current)
+	heading_rad = RADIUS_MIN * STEER_MAX / msg.radius.z # desired angle of wheels
 	velocity_si = msg.linear.x # desired velocity in m/s
 
-	vleocity_rpm = convert_velocity(velocity_si)
+	velocity_rpm = convert_velocity(velocity_si)
 
 	# pin steering to the rails if needed. 
 	if heading_rad > STEER_MAX:

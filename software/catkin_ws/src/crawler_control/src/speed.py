@@ -13,7 +13,7 @@ import time
 
 MAX_RPM = 100 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
-MAX_PPS = CPR * MAX_RPM #in pulses per revolution (hardware dependent)
+MAX_PPS = CPR * MAX_RPM * 60 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 60 #in amps
 
 engine = ''

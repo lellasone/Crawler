@@ -20,7 +20,7 @@ INDEX_STEER_PS4 = 0
 
 
 
-STEER_MAX = 0.4835 #maximum turning angle in radians
+TURN_MAX = 0.4835 # maximum turning angle in radians
 RADIUS_MIN = 0.667 # min turning radius in meters
 STEER_TO_REAL = 1 # correlation between steering angle and real wheel angle
 
@@ -87,10 +87,10 @@ def callback_twist(msg):
 	velocity_si = msg.linear.x # desired velocity in m/s
 
 	# pin steering to the rails if needed. 
-	if heading_rad > STEER_MAX:
-		heading_rad = STEER_MAX
-	elif heading_rad < -1* STEER_MAX:
-		heading_rad = -1*STEER_MAX
+	if heading_rad > TURN_MAX:
+		heading_rad = TURN_MAX
+	elif heading_rad < -1 * TURN_MAX:
+		heading_rad = -1 * TURN_MAX
 
 	velocity_rpm = convert_velocity(velocity_si)
 	steer_angle = convert_angle(heading_rad)

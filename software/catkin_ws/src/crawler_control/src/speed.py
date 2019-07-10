@@ -11,9 +11,9 @@ import odrive
 import threading 
 import time
 
-MAX_RPM = 100 #max RPM of motor
+MAX_RPM = 700 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
-MAX_PPS = CPR * MAX_RPM * 60 #in pulses per revolution (hardware dependent)
+MAX_PPS = CPR * MAX_RPM / 60 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 60 #in amps
 
 engine = ''
@@ -39,7 +39,7 @@ def callback(msg):
 	speed = compute_pps(speed) #scale from to correct speeds.
 	set_speed(int(speed))
 	rospy.loginfo("speed_requested: " +str(speed))
-	rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
+	#rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
 
 def set_speed(velocity):
 	'''
@@ -54,7 +54,7 @@ def set_speed(velocity):
 	'''
 	#TODO: add try-except statment. 
 	if(check_living()):
-		print(check_living())
+		print(velocity)
 		engine.axis1.controller.vel_setpoint = velocity
 	else:
 		rospy.logwarn("No Odrive Connected")

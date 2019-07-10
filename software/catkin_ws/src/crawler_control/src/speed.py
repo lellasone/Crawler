@@ -11,7 +11,7 @@ import odrive
 import threading 
 import time
 
-MAX_RPM = 700 #max RPM of motor
+MAX_RPM = 3500 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
 MAX_PPS = CPR * MAX_RPM / 60 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 60 #in amps

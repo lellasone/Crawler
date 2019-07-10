@@ -35,10 +35,10 @@ def callback(msg):
 	'''
 		This function is called each time a new speed request is detected. 
 	'''
-	speed = msg.data
-	speed = compute_pps(speed) #scale from to correct speeds.
-	set_speed(int(speed))
-	rospy.loginfo("speed_requested: " +str(speed))
+	rpm = msg.data
+	pps = compute_pps(rpm) #scale from to correct speeds.
+	set_speed(int(pps))
+	rospy.loginfo("speed_requested: " +str(rpm) + " rpm, pps: " + str(pps))
 	#rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
 
 def set_speed(velocity):

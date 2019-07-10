@@ -25,7 +25,7 @@ RADIUS_MAX = 0.667 # min turning radius in meters
 
 SPEED_GEAR_RATIO = 5 # motor rotations per wheel rotation (on average). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
-SPEED_MAX_RPM = 100 # Maximum allowable speed. 
+SPEED_MAX_RPM =  3500 # Maximum allowable speed. 
 
 cruse_control = False # when true new velocity requests will be ingored. 
 requested_velocity = 0 #velocity, used with cruse control. 
@@ -94,7 +94,7 @@ def callback_twist(msg):
 		heading_rad = -1*STEER_MAX
 	
 
-def convert_velocity(velocity)
+def convert_velocity(velocity):
 	'''
 		Converts the input velocity in meters per second, into an angular 
 		velocity in RPM at the motor. This will depend on the robot and

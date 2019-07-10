@@ -11,9 +11,9 @@ import odrive
 import threading 
 import time
 
-MAX_RPM = 100 #max RPM of motor
+MAX_RPM = 3500 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
-MAX_PPS = CPR * MAX_RPM #in pulses per revolution (hardware dependent)
+MAX_PPS = CPR * MAX_RPM / 60 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 60 #in amps
 
 engine = ''
@@ -35,11 +35,11 @@ def callback(msg):
 	'''
 		This function is called each time a new speed request is detected. 
 	'''
-	speed = msg.data
-	speed = compute_pps(speed) #scale from to correct speeds.
-	set_speed(int(speed))
-	rospy.loginfo("speed_requested: " +str(speed))
-	rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
+	rpm = msg.data
+	pps = compute_pps(rpm) #scale from to correct speeds.
+	set_speed(int(pps))
+	rospy.loginfo("speed_requested: " +str(rpm) + " rpm, pps: " + str(pps))
+	#rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
 
 def set_speed(velocity):
 	'''
@@ -54,7 +54,7 @@ def set_speed(velocity):
 	'''
 	#TODO: add try-except statment. 
 	if(check_living()):
-		print(check_living())
+		print(velocity)
 		engine.axis1.controller.vel_setpoint = velocity
 	else:
 		rospy.logwarn("No Odrive Connected")
@@ -85,7 +85,7 @@ def check_living():
 		return False
 	return True
 
-def compute_pps(RPM):
+def compute_pps(rpm):
 	'''
 		This function takes the desired motor RPM and converts that to 
 		encoder pulses per second. This is useful for determining what 

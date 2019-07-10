@@ -165,8 +165,9 @@ def callback(msg):
 		TODO: Redo for twist (rads to servo angle)
 	'''
 	try:
-		angle = msg.data / STEER_MAX
-		angle = angle * 127 # scale to 8 bits. 
+		angle = msg.data / STEER_MAX # scale to range -1 to 1
+		angle += 1 # scake to range 0 to 2 
+		angle = angle * 127 # scale to 8 bits. (0 to 255)
 		global setpoint 
 		setpoint = int(angle)
 	except: 

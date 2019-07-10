@@ -96,7 +96,7 @@ def callback_twist(msg):
 	steer_angle = convert_angle(heading_rad)
 	
 
-def convert_velocity(velocity)
+def convert_velocity(velocity):
 	'''
 		Converts the input velocity in meters per second, into an angular 
 		velocity in RPM at the motor. This will depend on the robot and
@@ -110,7 +110,7 @@ def convert_velocity(velocity)
 	rpm_motor = rpm_wheel *SPEED_GEAR_RATIO
 	return(rpm_motor)
 
-def convert_angle(desired_angle)
+def convert_angle(desired_angle):
 	'''
 		Converts the input desired angle in radius, into the angle for 
 		the steering in radians. This will depend on the robot and

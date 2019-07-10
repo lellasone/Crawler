@@ -20,11 +20,13 @@ INDEX_STEER_PS4 = 0
 
 
 
-STEER_MAX = 0.5 #maximum turning angle in radians
+STEER_MAX = 0.4835 #maximum turning angle in radians
+RADIUS_MIN = 0.667 # min turning radius in meters
+STEER_TO_REAL = 1 # correlation between steering angle and real wheel angle
 
 SPEED_GEAR_RATIO = 8.11 # motor rotations per wheel rotation (on average). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
-SPEED_MAX_RPM =  3500 # Maximum allowable speed. 
+SPEED_MAX_RPM = 100 # Maximum allowable speed. 
 
 cruse_control = False # when true new velocity requests will be ingored. 
 requested_velocity = 0 #velocity, used with cruse control. 
@@ -81,15 +83,20 @@ def callback_twist(msg):
 		This function is responsible interpreting twist messages in SI units and 
 		setting the speed and steering setpoints appropriatly. 
 	'''
-	heading_rad = msg.angular.z # angular velocity in radains per second.
+	heading_rad = msg.radius.z # desired angle of wheels
 	velocity_si = msg.linear.x # desired velocity in m/s
 
-	vleocity_rpm = convert_velocity(velocity_si)
+	# pin steering to the rails if needed. 
+	if heading_rad > STEER_MAX:
+		heading_rad = STEER_MAX
+	elif heading_rad < -1* STEER_MAX:
+		heading_rad = -1*STEER_MAX
 
-	
+	velocity_rpm = convert_velocity(velocity_si)
+	steer_angle = convert_angle(heading_rad)
 	
 
-def convert_velocity(velocity):
+def convert_velocity(velocity)
 	'''
 		Converts the input velocity in meters per second, into an angular 
 		velocity in RPM at the motor. This will depend on the robot and
@@ -102,6 +109,19 @@ def convert_velocity(velocity):
 	rpm_wheel = meters_per_minute / (math.pi * SPEED_WHEEL_DIAMETER)
 	rpm_motor = rpm_wheel *SPEED_GEAR_RATIO
 	return(rpm_motor)
+
+def convert_angle(desired_angle)
+	'''
+		Converts the input desired angle in radius, into the angle for 
+		the steering in radians. This will depend on the robot and
+		requires that the corresponding paramiters be set at the top of 
+		this file. 
+		args:
+			desired_angle - The desired robot angle direction in radians. 
+	'''
+
+	steer_angle = desired_angle * STEER_TO_REAL
+	return(steer_angle)
 
 def set_movement_joy(msg, index_speed, index_steer):
 	'''

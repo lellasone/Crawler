@@ -24,7 +24,7 @@ STEER_MAX = 0.5 #maximum turning angle in radians
 
 SPEED_GEAR_RATIO = 5 # motor rotations per wheel rotation (on average). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
-SPEED_MAX_RPM = 3500 # Maximum allowable speed. 
+SPEED_MAX_RPM =  3500 # Maximum allowable speed. 
 
 cruse_control = False # when true new velocity requests will be ingored. 
 requested_velocity = 0 #velocity, used with cruse control. 

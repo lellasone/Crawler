@@ -120,9 +120,13 @@ def convert_angle(desired_angle):
 		this file. 
 		args:
 			desired_angle - The desired robot angle direction in radians. 
+		Returns: 
+			Desired angle scaled to -1 to 1 corresponding servo movment range
+			(notably this likely exceeds the steering control range. )
 	'''
 
 	steer_angle = desired_angle * STEER_TO_REAL
+
 	return(steer_angle)
 
 def set_movement_joy(msg, index_speed, index_steer):

@@ -30,6 +30,9 @@ INDEX_SPEED = 4
 
 STEER_MAX = 0.4835 # maximum steering possible angle in radians 
 
+SETPOINT_MIN = 60 # smallest meaningful output value. 
+SETPOINT_MAX = 190 # Largest meaningful output value. 
+
 setpoint = 128 # the steering setpoint. 
 
 
@@ -164,16 +167,20 @@ def callback(msg):
 		from the drive system. It updates the speed setpoint as appropriate
 		but does not transmit that setpoint to the teensy. 
 
+		Note: 	This function needs to recieve a value between -1 and 1,
+				where 0 corresponds to straight and +1 corresponds to a 
+				left turn. 
+
 		TODO: Redo for twist (rads to servo angle)
 	'''
-	try:
-		angle = msg.data / STEER_MAX # scale to range -1 to 1
+	angle = msg.data# scale to range -1 to 1
+	if(angle <= 1 and angle >= -1):
 		angle += 1 # scake to range 0 to 2 
 		angle = angle * 127 # scale to 8 bits. (0 to 255)
 		global setpoint 
 		setpoint = int(angle)
-	except: 
-		pass 
+	else:
+		rospy.logerr("setpoint must be between -1 and 1, is currently: " + str(angle))
 
 def spin_send_steering():
 	rospy.init_node('steer', anonymous = True)

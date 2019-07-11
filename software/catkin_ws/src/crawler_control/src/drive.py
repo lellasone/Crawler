@@ -60,11 +60,11 @@ def callback_spacenav(msg):
 		cruse_control = False
 
 	if not cruse_control:
-		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV]
+		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV] * SPEED_MAX_RPM
 	else 
         velocity = convert_velocity(1)
 
-	commands_speed.publish(velocity * SPEED_MAX_RPM)
+	commands_speed.publish(velocity)
 	commands_steer.publish(msg.axes[INDEX_STEER_SPACENAV])
 
 def listener_ps4_joy():

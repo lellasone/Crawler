@@ -20,7 +20,7 @@ INDEX_STEER_PS4 = 0
 
 
 
-STEER_MAX = 0.4835 #maximum turning angle in radians
+TURN_MAX = 0.4835 # maximum turning angle in radians
 RADIUS_MIN = 0.667 # min turning radius in meters
 STEER_TO_REAL = 1 # correlation between steering angle and real wheel angle
 
@@ -60,9 +60,11 @@ def callback_spacenav(msg):
 		cruse_control = False
 
 	if not cruse_control:
-		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV]
+		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV] * SPEED_MAX_RPM
+	else 
+        velocity = convert_velocity(1)
 
-	commands_speed.publish(velocity * SPEED_MAX_RPM)
+	commands_speed.publish(velocity)
 	commands_steer.publish(msg.axes[INDEX_STEER_SPACENAV])
 
 def listener_ps4_joy():
@@ -87,16 +89,16 @@ def callback_twist(msg):
 	velocity_si = msg.linear.x # desired velocity in m/s
 
 	# pin steering to the rails if needed. 
-	if heading_rad > STEER_MAX:
-		heading_rad = STEER_MAX
-	elif heading_rad < -1* STEER_MAX:
-		heading_rad = -1*STEER_MAX
+	if heading_rad > TURN_MAX:
+		heading_rad = TURN_MAX
+	elif heading_rad < -1 * TURN_MAX:
+		heading_rad = -1 * TURN_MAX
 
 	velocity_rpm = convert_velocity(velocity_si)
 	steer_angle = convert_angle(heading_rad)
 	
 
-def convert_velocity(velocity)
+def convert_velocity(velocity):
 	'''
 		Converts the input velocity in meters per second, into an angular 
 		velocity in RPM at the motor. This will depend on the robot and
@@ -110,7 +112,7 @@ def convert_velocity(velocity)
 	rpm_motor = rpm_wheel *SPEED_GEAR_RATIO
 	return(rpm_motor)
 
-def convert_angle(desired_angle)
+def convert_angle(desired_angle):
 	'''
 		Converts the input desired angle in radius, into the angle for 
 		the steering in radians. This will depend on the robot and

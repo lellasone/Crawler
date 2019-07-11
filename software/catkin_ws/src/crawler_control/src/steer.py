@@ -28,6 +28,8 @@ port = "/dev/ttyACM0"
 INDEX_PAN = 3
 INDEX_SPEED = 4
 
+STEER_MAX = 0.4835 # maximum steering possible angle in radians 
+
 setpoint = 128 # the steering setpoint. 
 
 
@@ -159,11 +161,13 @@ def callback(msg):
 		This function is called every time a new steering request is recieved
 		from the drive system. It updates the speed setpoint as appropriate
 		but does not transmit that setpoint to the teensy. 
+
+		TODO: Redo for twist (rads to servo angle)
 	'''
 	try:
-		angle = msg.data
-		angle = -1* angle + 1 #re-center as positive
-		angle = angle * 127 # scale to 8 bits. 
+		angle = msg.data / STEER_MAX # scale to range -1 to 1
+		angle += 1 # scake to range 0 to 2 
+		angle = angle * 127 # scale to 8 bits. (0 to 255)
 		global setpoint 
 		setpoint = int(angle)
 	except: 

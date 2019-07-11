@@ -19,14 +19,14 @@ INDEX_SPEED_PS4 = 1
 INDEX_STEER_PS4 = 0
 
 
-
+TEST_SPEED = 2 #m/s
 TURN_MAX = 0.4835 # maximum turning angle in radians
 RADIUS_MIN = 0.667 # min turning radius in meters
 STEER_TO_REAL = 1 # correlation between steering angle and real wheel angle
 
-SPEED_GEAR_RATIO = 8.11 # motor rotations per wheel rotation (on average). 
+SPEED_GEAR_RATIO = 8.11*(54/18) # motor rotations per wheel rotation (8.11 * spur/ pinion). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
-SPEED_MAX_RPM = 100 # Maximum allowable speed. 
+SPEED_MAX_RPM = 3500 # Maximum allowable speed. 
 
 cruse_control = False # when true new velocity requests will be ingored. 
 requested_velocity = 0 #velocity, used with cruse control. 
@@ -60,9 +60,9 @@ def callback_spacenav(msg):
 		cruse_control = False
 
 	if not cruse_control:
-		velocity = -1 * msg.axes[INDEX_SPEED_SPACENAV] * SPEED_MAX_RPM
+		velocity = msg.axes[INDEX_SPEED_SPACENAV] * SPEED_MAX_RPM
 	else 
-        velocity = convert_velocity(1)
+        velocity = convert_velocity(TEST_SPEED)
 
 	commands_speed.publish(velocity)
 	commands_steer.publish(msg.axes[INDEX_STEER_SPACENAV])
@@ -107,9 +107,9 @@ def convert_velocity(velocity):
 		args:
 			velocity - The desired robot velocity in m/s. 
 	'''
-	meters_per_minute = velocity * 60 
+	meters_per_minute = velocity * 60.0 
 	rpm_wheel = meters_per_minute / (math.pi * SPEED_WHEEL_DIAMETER)
-	rpm_motor = rpm_wheel *SPEED_GEAR_RATIO
+	rpm_motor = rpm_wheel * SPEED_GEAR_RATIO
 	return(rpm_motor)
 
 def convert_angle(desired_angle):

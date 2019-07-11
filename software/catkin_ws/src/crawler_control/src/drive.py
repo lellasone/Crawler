@@ -61,8 +61,8 @@ def callback_spacenav(msg):
 
 	if not cruse_control:
 		velocity = msg.axes[INDEX_SPEED_SPACENAV] * SPEED_MAX_RPM
-	else 
-        velocity = convert_velocity(TEST_SPEED)
+	else:
+		velocity = convert_velocity(TEST_SPEED)
 
 	commands_speed.publish(velocity)
 	commands_steer.publish(msg.axes[INDEX_STEER_SPACENAV])

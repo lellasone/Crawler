@@ -176,6 +176,7 @@ def callback(msg):
 		pass 
 
 def spin_send_steering():
+	rospy.init_node('steer', anonymous = True)
 	commander = threading.Thread(target = send_steering)
 	commander.start()
 
@@ -184,7 +185,7 @@ if __name__ == '__main__':
 	print(scan_ports(bytes(bytearray.fromhex("4A504C"))))
 	print(port)
 	time.sleep(5)
-	rospy.init_node('steer', anonymous = True)
+	
 	spin_send_steering()
 	listener()
 

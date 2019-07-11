@@ -81,7 +81,9 @@ def request_ping(port_id = port):
 
 # Sends a steering setpoint update command to the teensy. 
 # args: 
-#	payload - a single byte with the neutral position of the wheels set at 128. 
+#	payload - a pair of  bytes with the neutral position of the 
+#			  wseels set at 128. The second byte should always 
+#			  be zero. 
 def set_steering_setpoint(payload):
 	if (type(payload) != bytes):
 		rospy.logerr("ERROR: steering setpoint must be a bytes")
@@ -173,14 +175,17 @@ def callback(msg):
 	except: 
 		pass 
 
+def spin_send_steering():
+	commander = threading.Thread(target = send_steering)
+	commander.start()
+
 
 if __name__ == '__main__':
 	print(scan_ports(bytes(bytearray.fromhex("4A504C"))))
 	print(port)
 	time.sleep(5)
 	rospy.init_node('steer', anonymous = True)
-	commander = threading.Thread(target = send_steering)
-	commander.start()
+	spin_send_steering()
 	listener()
 
 

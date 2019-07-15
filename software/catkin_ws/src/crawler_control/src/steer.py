@@ -175,7 +175,7 @@ def callback(msg):
 	'''
 	angle = msg.data# scale to range -1 to 1
 	if(angle <= 1 and angle >= -1):
-		angle += 1 # scake to range 0 to 2 
+		angle += 1 # scale to range 0 to 2 
 		angle = angle * 127 # scale to 8 bits. (0 to 255)
 		global setpoint 
 		setpoint = int(angle)

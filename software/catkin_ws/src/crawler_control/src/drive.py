@@ -21,9 +21,9 @@ INDEX_STEER_PS4 = 0
 
 
 TEST_SPEED = 2 #m/s
-TURN_MAX = 0.4835 # maximum turning angle in radians
+TURN_MAX = 0.5 # maximum turning angle in radians
 RADIUS_MIN = 0.667 # min turning radius in meters
-STEER_TO_REAL = 255 # correlation between steering angle and real wheel angle
+
 
 SPEED_GEAR_RATIO = 8.11*(54/18) # motor rotations per wheel rotation (8.11 * spur/ pinion). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
@@ -85,7 +85,7 @@ def listener_ackermann_auto():
 		This function is responsible for listening to incomming movment
 		commands from the ps4 controller and responding to them. 
 	'''
-	rospy.Subscriber("/ackermann/auto", AckermannDriveStamped, callback_ackermann)
+	rospy.Subscriber("/ackermann_cmd_openloop", AckermannDriveStamped, callback_ackermann)
 	rospy.spin()
 
 def callback_twist(msg):
@@ -155,12 +155,7 @@ def convert_angle(desired_angle):
 			Desired angle scaled to -0.5 to 0.5 corresponding servo movment range
 			(notably this likely exceeds the steering control range. )
 	'''
-    if (desired angle > 0.5):
-    	steer_angle = 0.5
-    elif (desired angle < -0.5):
-    	steer_angle = -0.5
-	else:
-		steer_angle = desired_angle / 0.5 # scale to -1 to 1 range
+	steer_angle = desired_angle / TURN_MAX # scale to -1 to 1 range
 
 	return(steer_angle)
 

@@ -28,7 +28,7 @@ port = "/dev/ttyACM0"
 INDEX_PAN = 3
 INDEX_SPEED = 4
 
-STEER_MAX = 0.4835 # maximum steering possible angle in radians 
+TURN_MAX = 0.5 # maximum steering possible angle in radians 
 
 SETPOINT_MIN = 60 # smallest meaningful output value. 
 SETPOINT_MAX = 190 # Largest meaningful output value. 
@@ -176,7 +176,7 @@ def callback(msg):
 	angle = msg.data
 	# scale to range -1 to 1
 	if(angle <= 1 and angle >= -1):
-		angle = angle * 0.5 # scale back to -0.5 to 0.5 to get 75 - 172 range
+		angle = angle * TURN_MAX # scale back to -0.5 to 0.5 to get 75 - 172 range
 		angle = 10/451 * (391 + math.sqrt(31497381 - 45100000 * angle))
 		global setpoint 
 		setpoint = int(angle)

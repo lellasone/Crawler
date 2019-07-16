@@ -152,11 +152,15 @@ def convert_angle(desired_angle):
 		args:
 			desired_angle - The desired robot angle direction in radians. 
 		Returns: 
-			Desired angle scaled to -1 to 1 corresponding servo movment range
+			Desired angle scaled to -0.5 to 0.5 corresponding servo movment range
 			(notably this likely exceeds the steering control range. )
 	'''
-
-	steer_angle = desired_angle / (2 * math.pi) * STEER_TO_REAL
+    if (desired angle > 0.5):
+    	steer_angle = 0.5
+    elif (desired angle < -0.5):
+    	steer_angle = -0.5
+	else:
+		steer_angle = desired_angle / 0.5 # scale to -1 to 1 range
 
 	return(steer_angle)
 

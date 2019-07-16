@@ -173,14 +173,15 @@ def callback(msg):
 
 		TODO: Redo for twist (rads to servo angle)
 	'''
-	angle = msg.data# scale to range -1 to 1
+	angle = msg.data
+	# scale to range -1 to 1
 	if(angle <= 1 and angle >= -1):
-		angle += 1 # scale to range 0 to 2 
-		angle = angle * 127 # scale to 8 bits. (0 to 255)
+		angle = angle * 0.5 # scale back to -0.5 to 0.5 to get 75 - 172 range
+		angle = 10/451 * (391 + math.sqrt(31497381 - 45100000 * angle))
 		global setpoint 
 		setpoint = int(angle)
 	else:
-		rospy.logerr("setpoint must be between -1 and 1, is currently: " + str(angle))
+		rospy.logerr("setpoint must be between -1 and 1 rads, is currently: " + str(angle))
 
 def spin_send_steering():
 	rospy.init_node('steer', anonymous = True)

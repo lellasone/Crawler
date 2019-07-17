@@ -138,6 +138,14 @@ def setup_odrive():
 	print("odrive setup complete")
 
 
+def process_errors(): 
+	''' 
+		This function is responsible for odrive-related error handeling. It should
+		be called on a regular basis. 
+	'''
+
+
+
 def reboot_odrive():
 	''' 
 		This function reboots the connected odrive and then finds it again.

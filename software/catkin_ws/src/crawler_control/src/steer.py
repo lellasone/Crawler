@@ -119,7 +119,7 @@ def send_steering():
 	failed_count = 0 # variable to check if count was reset to 0 after a fail
 	global count
 	count = 1
-	while True: 
+	while not rospy.is_shutdown: 
 		rate.sleep()
 		if count != 0 and failed_count == 0:
 			responce = set_steering_setpoint(bytes([setpoint, 0]))

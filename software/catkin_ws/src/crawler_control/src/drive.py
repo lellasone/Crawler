@@ -11,6 +11,7 @@ from std_msgs.msg import Float64
 from sensor_msgs.msg import Joy
 import time
 import math
+from ackermann_msgs.msg import AckermannDriveStamped
 
 
 INDEX_SPEED_SPACENAV = 0
@@ -20,9 +21,9 @@ INDEX_STEER_PS4 = 0
 
 
 TEST_SPEED = 2 #m/s
-TURN_MAX = 0.4835 # maximum turning angle in radians
+TURN_MAX = 0.5 # maximum turning angle in radians
 RADIUS_MIN = 0.667 # min turning radius in meters
-STEER_TO_REAL = 1 # correlation between steering angle and real wheel angle
+
 
 SPEED_GEAR_RATIO = 8.11*(54/18) # motor rotations per wheel rotation (8.11 * spur/ pinion). 
 SPEED_WHEEL_DIAMETER = 0.2 # wheel diameter in meters. 
@@ -78,6 +79,15 @@ def listener_ps4_joy():
 def callback_ps4(msg):
 	set_movement_joy(msg, INDEX_SPEED_PS4, INDEX_STEER_PS4)
 
+
+def listener_ackermann_auto():
+	''' 
+		This function is responsible for listening to incomming movment
+		commands from the ps4 controller and responding to them. 
+	'''
+	rospy.Subscriber("/ackermann_cmd_openloop", AckermannDriveStamped, callback_ackermann)
+	rospy.spin()
+
 def callback_twist(msg):
 	'''
 		TODO: finish function.
@@ -85,7 +95,7 @@ def callback_twist(msg):
 		This function is responsible interpreting twist messages in SI units and 
 		setting the speed and steering setpoints appropriatly. 
 	'''
-	heading_rad = msg.radius.z # desired angle of wheels
+	heading_rad = msg.radius.z # desired angle in radians
 	velocity_si = msg.linear.x # desired velocity in m/s
 
 	# pin steering to the rails if needed. 
@@ -96,6 +106,27 @@ def callback_twist(msg):
 
 	velocity_rpm = convert_velocity(velocity_si)
 	steer_angle = convert_angle(heading_rad)
+
+def callback_ackermann(ack_msg):
+	'''
+		TODO: finish function.
+
+		This function is responsible interpreting ackermann messages in SI units
+		and setting the speed and steering setpoints appropriately. 
+	'''
+	heading_rad = ack_msg.drive.steering_angle # desired angle in radians
+	velocity_si = ack_msg.drive.speed # desired velocity in m/s
+
+	# pin steering to the rails if needed. 
+	if heading_rad > TURN_MAX:
+		heading_rad = TURN_MAX
+	elif heading_rad < -1 * TURN_MAX:
+		heading_rad = -1 * TURN_MAX
+
+	velocity_rpm = convert_velocity(velocity_si)
+	steer_angle = convert_angle(heading_rad)
+
+	set_movement_ackermann(velocity_rpm, steer_angle)
 	
 
 def convert_velocity(velocity):
@@ -121,11 +152,10 @@ def convert_angle(desired_angle):
 		args:
 			desired_angle - The desired robot angle direction in radians. 
 		Returns: 
-			Desired angle scaled to -1 to 1 corresponding servo movment range
+			Desired angle scaled to -0.5 to 0.5 corresponding servo movment range
 			(notably this likely exceeds the steering control range. )
 	'''
-
-	steer_angle = desired_angle * STEER_TO_REAL
+	steer_angle = desired_angle / TURN_MAX # scale to -1 to 1 range
 
 	return(steer_angle)
 
@@ -144,12 +174,42 @@ def set_movement_joy(msg, index_speed, index_steer):
 
 	commands_speed.publish(msg.axes[index_speed]* SPEED_MAX_RPM)
 	commands_steer.publish(msg.axes[index_steer])
-	
+
+def set_movement_ackermann(velocity_rpm, steer_angle):
+	'''
+		This function handles new steering and speed requests from ackermann automomy. 
+		It should be called each time a new ackwrmann message is recieved.  
+
+		args:
+			velocity_rpm - requested speed of the motor in rpm
+			steer_angle - requested steering angle of the wheels in radians
+	'''
+
+	commands_speed.publish(velocity_rpm)
+	commands_steer.publish(steer_angle)
+
+def steer_angle_test(velocity_si, steer_angle):
+	''' 
+		This function drives the robot at continuous linear velocity at same steering 
+		angle for 4 seconds to  get the steering angle correlation to real world angle.
+
+		args:
+			velocity_si - requested velocity in m/s
+			steer_angle - requested steering angle of the wheels in radians
+	'''
+    go = True
+    t0 = time.time()
+	while go:
+		command_speed.publish(convert_velocity(velocity_si))
+		commands_steer.publish(steer_angle)
+		if (t0 = 4):
+			go = False
 
 
 if __name__ == '__main__':
 	init_node()
-	listener_spacenav_joy()
+	#listener_spacenav_joy()
 	#listener_ps4_joy()
+	listener_ackermann_auto()
 	#spin_listeners()
 

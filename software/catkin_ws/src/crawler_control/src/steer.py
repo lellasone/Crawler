@@ -143,13 +143,16 @@ def send_steering():
 # 	ID - The ID of the device to be found, given as a string. 
 def scan_ports(ID):
 	for i in range (0, 10):
-		port_i = "/dev/ttyACM" + str(i)
-		responce = request_ping(port_id = port_i)[1]
-		if ID == responce:
-			rospy.loginfo("setting steering port to: " + str(port_i))
-			global port 
-			port = port_i
-			return(port)
+		try:
+			port_i = "/dev/ttyACM" + str(i)
+			responce = request_ping(port_id = port_i)[1]
+			if ID == responce:
+				rospy.loginfo("setting steering port to: " + str(port_i))
+				global port 
+				port = port_i
+				return(port)
+		except serial.SerialException as e:
+			rospy.logwarn("error while port scanning (likely benighn): " + str(e))
 	return("")
 
 

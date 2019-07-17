@@ -200,7 +200,7 @@ def steer_angle_test(velocity_si, steer_angle):
 	go = True
 	t0 = time.time()
 	while go:
-		command_speed.publish(convert_velocity(velocity_si))
+		commands_speed.publish(convert_velocity(velocity_si))
 		commands_steer.publish(steer_angle)
 		if (t0 == 4.0):
 			go = False

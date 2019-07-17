@@ -197,12 +197,12 @@ def steer_angle_test(velocity_si, steer_angle):
 			velocity_si - requested velocity in m/s
 			steer_angle - requested steering angle of the wheels in radians
 	'''
-    go = True
-    t0 = time.time()
+	go = True
+	t0 = time.time()
 	while go:
 		command_speed.publish(convert_velocity(velocity_si))
 		commands_steer.publish(steer_angle)
-		if (t0 = 4):
+		if (t0 = 4.0):
 			go = False
 
 

@@ -202,7 +202,7 @@ def steer_angle_test(velocity_si, steer_angle):
 	while go:
 		command_speed.publish(convert_velocity(velocity_si))
 		commands_steer.publish(steer_angle)
-		if (t0 = 4.0):
+		if (t0 == 4.0):
 			go = False
 
 

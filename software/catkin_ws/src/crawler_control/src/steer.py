@@ -15,6 +15,7 @@ import serial
 import time
 import binascii
 import os
+import math
 
 COMMAND_ECHO = bytearray.fromhex("62")
 COMMAND_PING = bytearray.fromhex("61")

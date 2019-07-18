@@ -189,7 +189,7 @@ def broadcast_value(value):
 	while not rospy.is_shutdown(): 
 		current = engine.axis1.motor.current_control.Iq_measured
 		errors = engine.axis1.error
-		rospy.loginfo("Errors: {}, Current: {}".format(errors,round(Iq_measured))
+		rospy.loginfo("Errors: {}, Current: {}".format(errors,round(Iq_measured)))
 	while True: 
 		#rospy.loginfo(value)
 		#rospy.loginfo(engine.axis1.motor.current_control.Iq_measured)

@@ -15,8 +15,12 @@ MAX_RPM = 3500 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
 MAX_PPS = CPR * MAX_RPM / 60 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 60 #in amps
+MAX_ACCELERATION = 1 # m/s^2
 
 engine = ''
+
+global old_velocity
+old_velocity = 0
 
 
 
@@ -39,11 +43,13 @@ def callback(msg):
 	pps = compute_pps(rpm) #scale from to correct speeds.
 	set_speed(int(pps))
 	rospy.loginfo("speed_requested: " +str(rpm) + " rpm, pps: " + str(pps))
+	old_velocity = pps
+	rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
 
 def set_speed(velocity):
 	'''
-		This function is responsible for setting the velocity setpoint paramiter. Note that 
-		It functions in pulses per minute, and will thus provide a different velocity depending
+		This function is responsible for setting the velocity setpoint parameter. Note that 
+		it functions in pulses per minute, and will thus provide a different velocity depending
 		on the robot's hardware configuration. 
 
 		note that if no odrive is connected this function will block until a new odrive is connected
@@ -54,7 +60,14 @@ def set_speed(velocity):
 	#TODO: add try-except statment. 
 	if(check_living()):
 		print(velocity)
-		engine.axis1.controller.vel_setpoint = velocity
+		#max_acceleration_velocity = check_acceleration(old_velocity) 
+		#if (max_acceleration_velocity > velocity):
+		engine.axis1.controller.vel_setpoint = velocity 
+		#else:
+			#rospy.loginfo("Acceleration is too high")
+			#engine.axis1.controller.vel_setpoint = max_acceleration_velocity
+
+
 	else:
 		rospy.logwarn("No Odrive Connected")
 		setup_odrive()
@@ -177,10 +190,15 @@ def broadcast_value(value):
 		current = engine.axis1.motor.current_control.Iq_measured
 		errors = engine.axis1.error
 		rospy.loginfo("Errors: {}, Current: {}".format(errors,round(Iq_measured))
+	while True: 
+		#rospy.loginfo(value)
 		#rospy.loginfo(engine.axis1.motor.current_control.Iq_measured)
 
 		rate.sleep()
 
+def check_acceleration(old_velocity):
+	max_acceleration_velocity = old_velocity + MAX_ACCELERATION * 1/50 # 50 hz rate assumed
+	return(max_acceleration_velocity)
 
 
 if __name__ == '__main__':

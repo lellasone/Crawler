@@ -179,8 +179,8 @@ def spin_analytics():
 def broadcast_value(value):
 	rate = rospy.Rate(50)
 	while True: 
-		rospy.loginfo(value)
-		rospy.loginfo(engine.axis1.motor.current_control.Iq_measured)
+		#rospy.loginfo(value)
+		#rospy.loginfo(engine.axis1.motor.current_control.Iq_measured)
 
 		rate.sleep()
 

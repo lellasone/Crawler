@@ -187,6 +187,7 @@ def set_movement_ackermann(velocity_rpm, steer_angle):
 
 	commands_speed.publish(velocity_rpm)
 	commands_steer.publish(steer_angle)
+<<<<<<< HEAD
 
 def steer_angle_test(velocity_si, steer_angle):
 	''' 
@@ -203,6 +204,8 @@ def steer_angle_test(velocity_si, steer_angle):
 		commands_steer.publish(-steer_angle)
 	commands_speed.publish(convert_velocity(0.0))
 	commands_steer.publish(0)
+=======
+>>>>>>> auto_test_1_fixes
 
 
 if __name__ == '__main__':

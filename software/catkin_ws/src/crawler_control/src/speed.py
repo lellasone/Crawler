@@ -43,8 +43,8 @@ def callback(msg):
 	pps = compute_pps(rpm) #scale from to correct speeds.
 	set_speed(int(pps))
 	rospy.loginfo("speed_requested: " +str(rpm) + " rpm, pps: " + str(pps))
-	old_velocity = msg.data
-	#rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
+	old_velocity = pps
+	rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
 
 def set_speed(velocity):
 	'''
@@ -60,12 +60,12 @@ def set_speed(velocity):
 	#TODO: add try-except statment. 
 	if(check_living()):
 		print(velocity)
-		max_acceleration_velocity = check_acceleration(old_velocity, velocity) 
-		if (max_acceleration_velocity > velocity):
-			engine.axis1.controllee.vel_setpoint = velocity 
-		else:
-			rospy.loginfo("Acceleration is too high")
-			engine.axis1.controller.vel_setpoint = max_acceleration_velocity
+		#max_acceleration_velocity = check_acceleration(old_velocity) 
+		#if (max_acceleration_velocity > velocity):
+		engine.axis1.controller.vel_setpoint = velocity 
+		#else:
+			#rospy.loginfo("Acceleration is too high")
+			#engine.axis1.controller.vel_setpoint = max_acceleration_velocity
 
 
 	else:

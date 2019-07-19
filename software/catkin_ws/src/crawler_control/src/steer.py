@@ -141,7 +141,7 @@ def send_steering():
 			failed_count += 1 #incriment the failure counter. 
 			#rospy.logwarn("steering update failed")
 		if (failed_count > 0 and failed_count % ALLOWED_FAILURES == 0):
-			print(scan_ports(bytes("JPL", encoding='utf8')))
+			print(scan_ports(DEVICE_ID))
 
 
 # This function scans through all of the avaliable ACM ports (0 - 9) and 
@@ -204,7 +204,7 @@ def spin_send_steering():
 
 
 if __name__ == '__main__':
-	print(scan_ports(bytes("JPL", encoding='utf8')))
+	print(scan_ports(DEVICE_ID))
 	print(port)
 	time.sleep(5)
 	

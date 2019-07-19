@@ -10,6 +10,7 @@ from sensor_msgs.msg import Joy
 from std_msgs.msg import String
 from std_msgs.msg import Float64
 import threading 
+import termios
 
 import serial
 import time
@@ -36,7 +37,7 @@ SETPOINT_MAX = 190 # Largest meaningful output value.
 
 setpoint = 128 # the steering setpoint. 
 
-count_failed = 0
+ALLOWED_FAILURES = 100
 
 
 
@@ -67,6 +68,9 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 	    	return [True, ""]
 	except serial.SerialException as e: 
 		rospy.logerr("serial exception: " + str(e))
+		return[False,""]
+	except termios.error as e: 
+		rospy.logger("Termios exception: " + str(e))
 		return[False,""]
 		
 
@@ -116,15 +120,17 @@ def send_steering():
 		a new input was detected, and for setting the steering to 
 		a neutral position if that time delay beomes to long. 
 	'''
+	print ("setting up steering sender")
 	rate = rospy.Rate(50) 
 	global failed_count
-	failed_count = 0 # variable to check if count was reset to 0 after a fail
-	global count
+	failed_count = 0
 	count = 1
-	while not rospy.is_shutdown: 
+	print(rospy.is_shutdown())
+	while not rospy.is_shutdown(): 
+		print(failed_count)
 		rate.sleep()
 
-		if (failed_count > 0 and failed_count % allowed_failures):
+		if (failed_count > 0 and failed_count % ALLOWED_FAILURES == 0):
 			scan_ports("4A504C")
 		else:
 			responce = set_steering_setpoint(bytes([setpoint, 0]))

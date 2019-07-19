@@ -36,6 +36,8 @@ SETPOINT_MAX = 190 # Largest meaningful output value.
 
 setpoint = 128 # the steering setpoint. 
 
+count_failed = 0
+
 
 
 # This function composes and transmits each command frame. 
@@ -121,17 +123,18 @@ def send_steering():
 	count = 1
 	while not rospy.is_shutdown: 
 		rate.sleep()
-		if count != 0 and failed_count == 0:
+
+		if (failed_count > 0 and failed_count % allowed_failures):
+			scan_ports("4A504C")
+		else:
 			responce = set_steering_setpoint(bytes([setpoint, 0]))
-			failed_count += 1
-		elif count == 0:
-			count += 1
-			failed_count = 0
-		else: # if  count != 0 and failed count != 0, means lost control
-			# stop the robot
-			pass
-		if not responce[0]:
-			rospy.logwarn("steering update failed")
+			
+			if responce[0]:
+				# if the transmission worked, reset the counter. 
+				failed_count = 0
+			else: 
+				failed_count += 1 #incriment the failure counter. 
+				rospy.logwarn("steering update failed")
 
 
 # This function scans through all of the avaliable ACM ports (0 - 9) and 

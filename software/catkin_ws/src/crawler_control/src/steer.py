@@ -38,7 +38,8 @@ SETPOINT_MAX = 190 # Largest meaningful output value.
 
 setpoint = 128 # the steering setpoint. 
 
-ALLOWED_FAILURES = 10
+ALLOWED_FAILURES = 10 # allowed failed reads befor searching for new port.
+UPDATE_RATE = 50 # rate of transmission in hz. 
 
 
 
@@ -122,7 +123,7 @@ def send_steering():
 		a neutral position if that time delay beomes to long. 
 	'''
 	print ("setting up steering sender")
-	rate = rospy.Rate(50) 
+	rate = rospy.Rate(UPDATE_RATE) 
 	global failed_count
 	failed_count = 0
 	count = 1

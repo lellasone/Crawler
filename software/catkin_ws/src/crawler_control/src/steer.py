@@ -23,6 +23,7 @@ COMMAND_PING = bytearray.fromhex("61")
 COMMAND_STEER = bytearray.fromhex("63")
 START_BYTE = bytearray.fromhex("41")
 END_BYTE = bytearray.fromhex("5A")
+DEVICE_ID = bytes("JPL", encoding = 'utf8')
 
 port = "/dev/ttyACM0"
 
@@ -37,7 +38,7 @@ SETPOINT_MAX = 190 # Largest meaningful output value.
 
 setpoint = 128 # the steering setpoint. 
 
-ALLOWED_FAILURES = 100
+ALLOWED_FAILURES = 10
 
 
 
@@ -67,7 +68,7 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 	    else:
 	    	return [True, ""]
 	except serial.SerialException as e: 
-		rospy.logerr("serial exception: " + str(e))
+		#rospy.logerr("serial exception: " + str(e))
 		return[False,""]
 	except termios.error as e: 
 		rospy.logger("Termios exception: " + str(e))
@@ -128,19 +129,19 @@ def send_steering():
 	print(rospy.is_shutdown())
 	while not rospy.is_shutdown(): 
 		print(failed_count)
+		print(port)
 		rate.sleep()
 
+		responce = set_steering_setpoint(bytes([setpoint, 0]))
+		
+		if responce[0]:
+			# if the transmission worked, reset the counter. 
+			failed_count = 0
+		else: 
+			failed_count += 1 #incriment the failure counter. 
+			#rospy.logwarn("steering update failed")
 		if (failed_count > 0 and failed_count % ALLOWED_FAILURES == 0):
-			scan_ports("4A504C")
-		else:
-			responce = set_steering_setpoint(bytes([setpoint, 0]))
-			
-			if responce[0]:
-				# if the transmission worked, reset the counter. 
-				failed_count = 0
-			else: 
-				failed_count += 1 #incriment the failure counter. 
-				rospy.logwarn("steering update failed")
+			print(scan_ports(bytes("JPL", encoding='utf8')))
 
 
 # This function scans through all of the avaliable ACM ports (0 - 9) and 
@@ -203,7 +204,7 @@ def spin_send_steering():
 
 
 if __name__ == '__main__':
-	print(scan_ports(bytes(bytearray.fromhex("4A504C"))))
+	print(scan_ports(bytes("JPL", encoding='utf8')))
 	print(port)
 	time.sleep(5)
 	

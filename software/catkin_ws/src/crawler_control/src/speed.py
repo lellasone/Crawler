@@ -155,9 +155,18 @@ def process_errors():
 	''' 
 		This function is responsible for odrive-related error handeling. It should
 		be called on a regular basis. 
+
+		Returns: Always returns True. 
 	'''
+	if(check_living()):
+		errors = engine.axis1.errors
+	else:
+		setup_odrive()
+		return True
 
-
+	if not errors == 0:
+		reboot_odrive()
+		setup_odrive()
 
 def reboot_odrive():
 	''' 

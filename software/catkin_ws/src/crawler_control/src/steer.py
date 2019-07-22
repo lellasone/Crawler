@@ -205,7 +205,9 @@ def spin_send_steering():
 
 
 if __name__ == '__main__':
+	print("Scanning for ports")
 	print(scan_ports(DEVICE_ID))
+	print("port scan complete")
 	print(port)
 	time.sleep(5)
 	

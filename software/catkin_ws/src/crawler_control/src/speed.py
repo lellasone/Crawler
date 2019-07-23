@@ -160,7 +160,7 @@ def process_errors():
 		Returns: Always returns True. 
 	'''
 	if(check_living()):
-		errors = engine.axis1.errors
+		errors = engine.axis1.error
 	else:
 		setup_odrive()
 		return True

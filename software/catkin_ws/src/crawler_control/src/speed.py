@@ -196,6 +196,7 @@ def reboot_odrive():
 
 		This assumes the global engine exists and has already been populated.
 	'''
+	print("Rebooting Odrive")
 	global odrive_setup
 	odrive_setup = False
 	global engine 

@@ -81,7 +81,7 @@ def set_params():
 	'''
 	engine.axis1.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
 	engine.axis1.controller.config.vel_limit = MAX_PPS + 20000 #add some buffer to prevent errors. 
-	engine.axis1.motor.config.calibration_current = 60 #drive current during calibration. 
+	engine.axis1.motor.config.calibration_current = 40 #drive current during calibration. 
 	engine.config.brake_resistance = 0.8 
 	engine.axis1.motor.config.pole_pairs = 2
 	engine.axis1.encoder.config.cpr = CPR

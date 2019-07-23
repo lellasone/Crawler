@@ -26,6 +26,7 @@ END_BYTE = bytearray.fromhex("5A")
 DEVICE_ID = bytes("JPL", encoding = 'utf8')
 
 port = "/dev/ttyACM0"
+SERIAL_TIMEOUT = 0.02 #read timeout in seconds. 
 
 
 INDEX_PAN = 3
@@ -56,7 +57,7 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 		port_id = port
 
 	try: 
-	    teensy = serial.Serial(port_id)
+	    teensy = serial.Serial(port_id, timeout=SERIAL_TIMEOUT)
 	    frame = START_BYTE
 	    frame = frame + command + data
 	    frame = frame + bytearray.fromhex("00") # add checksum

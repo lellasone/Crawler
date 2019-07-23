@@ -193,7 +193,7 @@ def spin_analytics():
 	current = threading.Thread(target=broadcast_value, args = (engine.axis1.motor.current_control.Iq_measured,))
 	current.start()
 
-def spin_monitor(value):
+def spin_monitor():
 	'''
 		This function spawns the monitoring thread. This thread is responcible
 		for reading out a few critical values from the odrive to rosout. 

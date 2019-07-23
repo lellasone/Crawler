@@ -14,7 +14,7 @@ import time
 MAX_RPM = 3500 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
 MAX_PPS = CPR * MAX_RPM / 60 #in pulses per revolution (hardware dependent)
-MAX_CURRENT = 60 #in amps
+MAX_CURRENT = 65 #in amps
 MAX_ACCELERATION = 1 # m/s^2
 
 engine = ''
@@ -81,7 +81,7 @@ def set_params():
 	'''
 	engine.axis1.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
 	engine.axis1.controller.config.vel_limit = MAX_PPS + 20000 #add some buffer to prevent errors. 
-	engine.axis1.motor.config.calibration_current = 20
+	engine.axis1.motor.config.calibration_current = 60 #drive current during calibration. 
 	engine.config.brake_resistance = 0.8 
 	engine.axis1.motor.config.pole_pairs = 2
 	engine.axis1.encoder.config.cpr = CPR
@@ -198,7 +198,7 @@ def broadcast_value(value):
 	while not rospy.is_shutdown(): 
 		current = engine.axis1.motor.current_control.Iq_measured
 		errors = engine.axis1.error
-		rospy.loginfo("Errors: {}, Current: {}".format(errors,round(Iq_measured)))
+		rospy.loginfo("Errors: {}, Current: {}".format(errors,round(current)))
 	while True: 
 		#rospy.loginfo(value)
 		#rospy.loginfo(engine.axis1.motor.current_control.Iq_measured)

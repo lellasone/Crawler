@@ -128,7 +128,7 @@ def startup_calibration():
 	time.sleep(1)
 	#engine.axis1.requested_state = 4 
 	#time.sleep(4)
-	print("calibrating index pulse)")
+	print("calibrating index pulse")
 	engine.axis1.requested_state = 6
 	time.sleep(10)
 	print("Calibrating encoder location")
@@ -232,6 +232,10 @@ def monitor():
 			errors = engine.axis1.error
 			rospy.loginfo("Errors: {}, Current: {}, Vel Setpoint: {}".format(errors,round(current,2),round(velocity,2)))
 			if not errors == 0: # a bit redundant, but ensures errors are printed.
+				motor = engine.axis1.motor.error
+				controller = engine.axis1.controller.error
+				encoder = engine.axis1.encoder.error
+				rospy.logwarn("Axis: {}, Motor: {}, Encoder {}, Controller {},".format(errors,motor,encoder,controller))
 				process_errors()#Fix an errors that exist
 		else:
 			print("Odrive Offline")

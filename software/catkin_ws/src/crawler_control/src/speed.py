@@ -185,15 +185,15 @@ def reboot_odrive():
 
 	engine = odrive.find_any()
 
-def spin_analytics():
+def spin_monitor():
 	'''
 		This function is responsible for spinning up the threads that handle 
 		status reporting for the o-drive.
 	'''
-	current = threading.Thread(target=broadcast_value, args = (engine.axis1.motor.current_control.Iq_measured,))
+	current = threading.Thread(target=monitor)
 	current.start()
 
-def spin_monitor():
+def monitor():
 	'''
 		This function spawns the monitoring thread. This thread is responcible
 		for reading out a few critical values from the odrive to rosout. 
@@ -205,8 +205,9 @@ def spin_monitor():
 	while not rospy.is_shutdown(): 
 		if(check_living()):
 			current = engine.axis1.motor.current_control.Iq_measured
+			velocity = engine.axis1.controller.vel_setpoint
 			errors = engine.axis1.error
-			rospy.loginfo("Errors: {}, Current: {}".format(errors,round(current,2)))
+			rospy.loginfo("Errors: {}, Current: {}, Vel Setpoint: {}".format(errors,round(current,2),round(velocity,2)))
 			process_errors()#Fix an errors that exist
 		else:
 			print("Odrive Offline")

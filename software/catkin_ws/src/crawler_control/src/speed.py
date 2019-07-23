@@ -219,7 +219,7 @@ def check_acceleration(old_velocity):
 if __name__ == '__main__':
 	init_node()
 	setup_odrive()
-	spin_analytics()
+	spin_monitor()
 	listener()
 
 

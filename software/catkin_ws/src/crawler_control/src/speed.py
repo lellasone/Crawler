@@ -42,9 +42,9 @@ def callback(msg):
 	rpm = msg.data
 	pps = compute_pps(rpm) #scale from to correct speeds.
 	set_speed(int(pps))
-	rospy.loginfo("speed_requested: " +str(rpm) + " rpm, pps: " + str(pps))
+	#rospy.loginfo("speed_requested: " +str(rpm) + " rpm, pps: " + str(pps))
 	old_velocity = pps
-	rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
+	#rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
 
 def set_speed(velocity):
 	'''
@@ -198,7 +198,7 @@ def broadcast_value(value):
 	while not rospy.is_shutdown(): 
 		current = engine.axis1.motor.current_control.Iq_measured
 		errors = engine.axis1.error
-		rospy.loginfo("Errors: {}, Current: {}".format(errors,round(current)))
+		rospy.loginfo("Errors: {}, Current: {}".format(errors,round(current,2)))
 	while True: 
 		#rospy.loginfo(value)
 		#rospy.loginfo(engine.axis1.motor.current_control.Iq_measured)

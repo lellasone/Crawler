@@ -203,7 +203,7 @@ def spin_monitor(value):
 	'''
 	rate = rospy.Rate(50)
 	while not rospy.is_shutdown(): 
-		if(check_living())
+		if(check_living()):
 			current = engine.axis1.motor.current_control.Iq_measured
 			errors = engine.axis1.error
 			rospy.loginfo("Errors: {}, Current: {}".format(errors,round(current,2)))

@@ -58,9 +58,8 @@ def set_speed(velocity):
 		- velocity: The desired robot velocity in pulses per second (should be an int)
 	'''
 	#TODO: add try-except statment. 
-	process_errors()
 	if(check_living()):
-		print(velocity)
+		#print(velocity)
 		#max_acceleration_velocity = check_acceleration(old_velocity) 
 		#if (max_acceleration_velocity > velocity):
 		engine.axis1.controller.vel_setpoint = velocity 
@@ -194,17 +193,23 @@ def spin_analytics():
 	current = threading.Thread(target=broadcast_value, args = (engine.axis1.motor.current_control.Iq_measured,))
 	current.start()
 
-def broadcast_value(value):
+def spin_monitor(value):
+	'''
+		This function spawns the monitoring thread. This thread is responcible
+		for reading out a few critical values from the odrive to rosout. 
+		In addition, the error handeling function is called each time this
+		thread executes. While not critical for operations it is highly recomended
+		that this be kicked off before the odrive is calibrated
+	'''
 	rate = rospy.Rate(50)
 	while not rospy.is_shutdown(): 
-		current = engine.axis1.motor.current_control.Iq_measured
-		errors = engine.axis1.error
-		rospy.loginfo("Errors: {}, Current: {}".format(errors,round(current,2)))
-	while True: 
-		#rospy.loginfo(value)
-		#rospy.loginfo(engine.axis1.motor.current_control.Iq_measured)
-
-		rate.sleep()
+		if(check_living)
+			current = engine.axis1.motor.current_control.Iq_measured
+			errors = engine.axis1.error
+			rospy.loginfo("Errors: {}, Current: {}".format(errors,round(current,2)))
+			process_errors()#Fix an errors that exist
+		else:
+			print("Odrive Offline")
 
 def check_acceleration(old_velocity):
 	max_acceleration_velocity = old_velocity + MAX_ACCELERATION * 1/50 # 50 hz rate assumed

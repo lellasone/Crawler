@@ -58,6 +58,7 @@ def set_speed(velocity):
 		- velocity: The desired robot velocity in pulses per second (should be an int)
 	'''
 	#TODO: add try-except statment. 
+	process_errors()
 	if(check_living()):
 		print(velocity)
 		#max_acceleration_velocity = check_acceleration(old_velocity) 

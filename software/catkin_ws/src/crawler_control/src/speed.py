@@ -14,13 +14,14 @@ import time
 MAX_RPM = 3500 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
 MAX_PPS = CPR * MAX_RPM / 60 #in pulses per revolution (hardware dependent)
-MAX_CURRENT = 65 #in amps
+MAX_CURRENT = 85 #in amps
 MAX_ACCELERATION = 1 # m/s^2
 
 engine = ''
 
 global old_velocity
 old_velocity = 0
+odrive_setup = False
 
 
 
@@ -57,8 +58,8 @@ def set_speed(velocity):
 		args: 
 		- velocity: The desired robot velocity in pulses per second (should be an int)
 	'''
-	#TODO: add try-except statment. 
-	if(check_living()):
+	global odrive_setup
+	if(check_living() and odrive_setup):
 		#print(velocity)
 		#max_acceleration_velocity = check_acceleration(old_velocity) 
 		#if (max_acceleration_velocity > velocity):
@@ -69,8 +70,9 @@ def set_speed(velocity):
 
 
 	else:
-		rospy.logwarn("No Odrive Connected")
-		setup_odrive()
+		pass
+		#rospy.logwarn("No Odrive Connected")
+		#setup_odrive()
 
 def set_params():
 	'''
@@ -81,7 +83,7 @@ def set_params():
 	'''
 	engine.axis1.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
 	engine.axis1.controller.config.vel_limit = MAX_PPS + 20000 #add some buffer to prevent errors. 
-	engine.axis1.motor.config.calibration_current = 40 #drive current during calibration. 
+	engine.axis1.motor.config.calibration_current = 60 #drive current during calibration. 
 	engine.config.brake_resistance = 0.8 
 	engine.axis1.motor.config.pole_pairs = 2
 	engine.axis1.encoder.config.cpr = CPR
@@ -124,13 +126,17 @@ def startup_calibration():
 	'''
 	print("calibrating motor and encoder")
 	time.sleep(1)
-	engine.axis1.requested_state = 4 
-	time.sleep(4)
+	#engine.axis1.requested_state = 4 
+	#time.sleep(4)
+	print("calibrating index pulse)")
 	engine.axis1.requested_state = 6
-	time.sleep(5)
+	time.sleep(10)
+	print("Calibrating encoder location")
 	engine.axis1.requested_state = 7
-	time.sleep(5)
+	time.sleep(10)
+	print("requesting closed loop control")
 	engine.axis1.requested_state = 8
+	time.sleep(1)
 	print("motor and encoder calibration complete")
 
 	#engine.save_configuration() #Not needed if called on startup. 
@@ -140,14 +146,19 @@ def setup_odrive():
 		this function is responsible for locating the odrive and creating the 
 		Odrive object. It is important that this be called after the relavent 
 		rosnode has been initated since error messages rely on roslog functionality. 
+	
+		This fuctions ets the odrive_setup flag to True.
+
 	'''
 	global engine 
+	global odrive_setup
 	print("finding odrive")
 	engine = odrive.find_any()
 	print("odrive found")
 	print(engine.vbus_voltage)
 	set_params()
 	startup_calibration()
+	odrive_setup = True #set flag to allow writes. 
 	print("odrive setup complete")
 
 
@@ -158,15 +169,21 @@ def process_errors():
 
 		Returns: Always returns True. 
 	'''
+	global odrive_setup
 	if(check_living()):
 		errors = engine.axis1.error
 	else:
+		
+		odrive_setup = False
 		setup_odrive()
 		return True
 
 	if not errors == 0:
+		odrive_setup = False
 		reboot_odrive()
 		setup_odrive()
+		return True
+	return False
 
 def reboot_odrive():
 	''' 
@@ -174,8 +191,12 @@ def reboot_odrive():
 		This is useful for debugging or as a last-ditch option for fixing
 		errors when deployed. 
 
+		This function sets the odrive_setup flag to false. 
+
 		This assumes the global engine exists and has already been populated.
 	'''
+	global odrive_setup
+	odrive_setup = False
 	global engine 
 	try:
 		engine.reboot()
@@ -201,8 +222,10 @@ def monitor():
 		thread executes. While not critical for operations it is highly recomended
 		that this be kicked off before the odrive is calibrated
 	'''
-	rate = rospy.Rate(50)
+	rate = rospy.Rate(5)
+
 	while not rospy.is_shutdown(): 
+		rate.sleep()
 		if(check_living()):
 			current = engine.axis1.motor.current_control.Iq_measured
 			velocity = engine.axis1.controller.vel_setpoint
@@ -212,6 +235,8 @@ def monitor():
 				process_errors()#Fix an errors that exist
 		else:
 			print("Odrive Offline")
+			reboot_odrive()
+			setup_odrive()
 	rospy.loginfo("Odrive monitoring offline")
 
 def check_acceleration(old_velocity):

@@ -208,9 +208,11 @@ def monitor():
 			velocity = engine.axis1.controller.vel_setpoint
 			errors = engine.axis1.error
 			rospy.loginfo("Errors: {}, Current: {}, Vel Setpoint: {}".format(errors,round(current,2),round(velocity,2)))
-			process_errors()#Fix an errors that exist
+			if not errors == 0: # a bit redundant, but ensures errors are printed.
+				process_errors()#Fix an errors that exist
 		else:
 			print("Odrive Offline")
+	rospy.loginfo("Odrive monitoring offline")
 
 def check_acceleration(old_velocity):
 	max_acceleration_velocity = old_velocity + MAX_ACCELERATION * 1/50 # 50 hz rate assumed

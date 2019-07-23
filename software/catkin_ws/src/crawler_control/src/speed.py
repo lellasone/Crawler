@@ -153,7 +153,8 @@ def setup_odrive():
 	global engine 
 	global odrive_setup
 	print("finding odrive")
-	engine = odrive.find_any()
+	if not odrive_setup():
+		engine = odrive.find_any()
 	print("odrive found")
 	print(engine.vbus_voltage)
 	set_params()

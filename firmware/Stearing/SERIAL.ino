@@ -70,7 +70,10 @@ void parse_command(byte command[]){
       break;
     case SERIAL_STEERING:
       update_steering(command[SERIAL_INDEX_COMMAND - 1]);
-      
+
+      //Provide a callback. 
+      Serial.write(command[SERIAL_INDEX_COMMAND - 1]);
+      Serial.println(SERIAL_ID);
     default: 
       //Likely an invalid command, prints command on serial. 
       Serial.print("default: ");

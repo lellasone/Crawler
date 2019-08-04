@@ -2,6 +2,10 @@
 
 # This module is responsible for the Crawler's speed control. It is run when 
 # the robot is first booted. 
+# 
+# As currently configured, this code will repeatedly attempt to reboot the 
+# Odrive if it becomes disconnected or encounters an error. This will
+# handle most problems, but sometimes a hardware re-boot may be required. 
 #
 # Maintainer: Jake ketchum, jketchum@caltech.edu
 
@@ -15,7 +19,8 @@ MAX_RPM = 3500 #max RPM of motor
 CPR = 4000 # encoder counts per motor revolution. 
 MAX_PPS = CPR * MAX_RPM / 60 #in pulses per revolution (hardware dependent)
 MAX_CURRENT = 85 #in amps
-MAX_ACCELERATION = 1 # m/s^2
+MAX_ACCELERATION = 1 # m/s^2 #not used
+SPEED_BUFFER = 50000
 
 engine = ''
 
@@ -63,7 +68,10 @@ def set_speed(velocity):
 		#print(velocity)
 		#max_acceleration_velocity = check_acceleration(old_velocity) 
 		#if (max_acceleration_velocity > velocity):
-		engine.axis1.controller.vel_setpoint = velocity 
+		try:
+			engine.axis1.controller.vel_setpoint = velocity 
+		except Exception as e:
+			rospy.logwarn("Unexpecte O-Drive error, likely not connected: " + str(e) )
 		#else:
 			#rospy.loginfo("Acceleration is too high")
 			#engine.axis1.controller.vel_setpoint = max_acceleration_velocity
@@ -81,18 +89,26 @@ def set_params():
 		every time the ODrive is re-booted. This allows ODrives to be swapped 
 		between robots without requiring their settings be changed. 
 	'''
-	engine.axis1.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
-	engine.axis1.controller.config.vel_limit = MAX_PPS + 20000 #add some buffer to prevent errors. 
-	engine.axis1.motor.config.calibration_current = 60 #drive current during calibration. 
-	engine.config.brake_resistance = 0.8 
-	engine.axis1.motor.config.pole_pairs = 2
-	engine.axis1.encoder.config.cpr = CPR
-	engine.axis1.motor.config.requested_current_range = MAX_CURRENT #set current sense gains. 
-	engine.axis1.controller.config.control_mode = 2 #set to velocity control
-	engine.axis1.encoder.config.use_index = True
+	try:
+		engine.axis1.motor.config.current_lim = MAX_CURRENT # Set maximum allowable current. 
+		engine.axis1.controller.config.vel_limit = MAX_PPS + SPEED_BUFFER #add some buffer to prevent errors. 
+		engine.axis1.motor.config.calibration_current = 60 #drive current during calibration. 
+		engine.config.brake_resistance = 0.8 
+		engine.axis1.motor.config.pole_pairs = 2
+		engine.axis1.encoder.config.cpr = CPR
+		engine.axis1.motor.config.requested_current_range = MAX_CURRENT #set current sense gains. 
+		engine.axis1.controller.config.control_mode = 2 #set to velocity control
+		engine.axis1.encoder.config.use_index = True
+	except Exception as e:
+			rospy.logwarn("Unexpecte O-Drive error, likely not connected: " + str(e) )
+
 	print("paramiters set")
 
 def check_living():
+	"""
+		This function should be used to check if the o-drive is working/connected.
+		It does this by making a request, and then catching the resultant exception. 
+	"""
 	try: 
 		engine.serial_number
 	except: 
@@ -126,18 +142,23 @@ def startup_calibration():
 	'''
 	print("calibrating motor and encoder")
 	time.sleep(1)
+
+	####### This needs to be called the first time a new o-drive is used ######
 	#engine.axis1.requested_state = 4 
 	#time.sleep(4)
-	print("calibrating index pulse")
-	engine.axis1.requested_state = 6
-	time.sleep(10)
-	print("Calibrating encoder location")
-	engine.axis1.requested_state = 7
-	time.sleep(10)
-	print("requesting closed loop control")
-	engine.axis1.requested_state = 8
-	time.sleep(1)
-	print("motor and encoder calibration complete")
+	try:
+		print("calibrating index pulse")
+		engine.axis1.requested_state = 6
+		time.sleep(10)
+		print("Calibrating encoder location")
+		engine.axis1.requested_state = 7
+		time.sleep(10)
+		print("requesting closed loop control")
+		engine.axis1.requested_state = 8
+		time.sleep(1)
+		print("motor and encoder calibration complete")
+	except Exception as e:
+		rospy.logwarn("Unexpecte O-Drive error, likely not connected: " + str(e) )
 
 	#engine.save_configuration() #Not needed if called on startup. 
 
@@ -156,7 +177,10 @@ def setup_odrive():
 	if not check_living():
 		engine = odrive.find_any()
 	print("odrive found")
-	print(engine.vbus_voltage)
+	try:
+		print(engine.vbus_voltage)
+	except Exception as e:
+			rospy.logwarn("Unexpecte O-Drive error, likely not connected: " + str(e) )
 	set_params()
 	startup_calibration()
 	odrive_setup = True #set flag to allow writes. 
@@ -172,7 +196,10 @@ def process_errors():
 	'''
 	global odrive_setup
 	if(check_living()):
-		errors = engine.axis1.error
+		try:
+			errors = engine.axis1.error
+		except Exception as e:
+			rospy.logwarn("Unexpecte O-Drive error, likely not connected: " + str(e) )
 	else:
 		
 		odrive_setup = False
@@ -229,14 +256,21 @@ def monitor():
 	while not rospy.is_shutdown(): 
 		rate.sleep()
 		if(check_living()):
-			current = engine.axis1.motor.current_control.Iq_measured
-			velocity = engine.axis1.controller.vel_setpoint
-			errors = engine.axis1.error
+			try:
+				current = engine.axis1.motor.current_control.Iq_measured
+				velocity = engine.axis1.controller.vel_setpoint
+				errors = engine.axis1.error
+			except Exception as e:
+				rospy.logwarn("Unexpecte O-Drive error, likely not connected: " + str(e) )
+
 			rospy.loginfo("Errors: {}, Current: {}, Vel Setpoint: {}".format(errors,round(current,2),round(velocity,2)))
 			if not errors == 0: # a bit redundant, but ensures errors are printed.
-				motor = engine.axis1.motor.error
-				controller = engine.axis1.controller.error
-				encoder = engine.axis1.encoder.error
+				try:
+					motor = engine.axis1.motor.error
+					controller = engine.axis1.controller.error
+					encoder = engine.axis1.encoder.error
+				except Exception as e:
+					rospy.logwarn("Unexpecte O-Drive error, likely not connected: " + str(e) )
 				rospy.logwarn("Axis: {}, Motor: {}, Encoder {}, Controller {},".format(errors,motor,encoder,controller))
 				process_errors()#Fix an errors that exist
 		else:

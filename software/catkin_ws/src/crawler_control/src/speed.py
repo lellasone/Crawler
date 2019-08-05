@@ -22,6 +22,9 @@ MAX_CURRENT = 85 #in amps
 MAX_ACCELERATION = 1 # m/s^2 #not used
 SPEED_BUFFER = 50000
 
+TIMEOUT_REFRESH=10 #how often the device checks for a timeout.(in hz) 
+TIMEOUT_THREHOLD = 10 # how many timeout checks can fail before the device times out. 
+
 engine = ''
 
 global old_velocity
@@ -50,7 +53,10 @@ def callback(msg):
 	set_speed(int(pps))
 	#rospy.loginfo("speed_requested: " +str(rpm) + " rpm, pps: " + str(pps))
 	old_velocity = pps
-	#rospy.loginfo("Iq_measured: " + str(engine.axis0.motor.current_control.Iq_measured))
+
+	#reset the timeout counter
+	global timeout_count
+	timeout_count = 0
 
 def set_speed(velocity):
 	'''
@@ -240,10 +246,13 @@ def spin_monitor():
 		This function is responsible for spinning up the threads that handle 
 		status reporting for the o-drive.
 	'''
-	current = threading.Thread(target=monitor)
-	current.start()
+	status = threading.Thread(target=monitor_odrive)
+	status.start()
 
-def monitor():
+	timeout = threading.Thread(target = monitor_timeout)
+	status.start()
+
+def monitor_odrive():
 	'''
 		This function spawns the monitoring thread. This thread is responcible
 		for reading out a few critical values from the odrive to rosout. 
@@ -278,6 +287,23 @@ def monitor():
 			reboot_odrive()
 			setup_odrive()
 	rospy.loginfo("Odrive monitoring offline")
+
+def monitor_timeout():
+	"""
+		This thread monitors how long it has been since the last movement command
+		If the number of failed commands exceed the specified threshold, then the 
+		speed setpoint is set to zero. 
+	"""
+	global timeout_count
+	timeout_count = 0
+	rate = rospy.Rate(TIMEOUT_REFRESH)
+		while not rospy.is_shutdown():
+
+			timeout_count += 1 #incriment count
+
+			if timeout_count > TIMEOUT_THREHOLD:
+				set_speed(0)
+
 
 def check_acceleration(old_velocity):
 	max_acceleration_velocity = old_velocity + MAX_ACCELERATION * 1/50 # 50 hz rate assumed

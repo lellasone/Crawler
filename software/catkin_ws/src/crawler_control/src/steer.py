@@ -32,7 +32,7 @@ SERIAL_TIMEOUT = 0.02 #read timeout in seconds.
 INDEX_PAN = 3
 INDEX_SPEED = 4
 
-TURN_MAX = 0.5 # maximum steering possible angle in radians 
+TURN_MAX = 0.6 # maximum steering possible angle in radians 
 
 SETPOINT_MIN = 60 # smallest meaningful output value. 
 SETPOINT_MAX = 190 # Largest meaningful output value. 
@@ -40,7 +40,7 @@ SETPOINT_MAX = 190 # Largest meaningful output value.
 setpoint = 128 # the steering setpoint. 
 
 ALLOWED_FAILURES = 10 # allowed failed reads befor searching for new port.
-UPDATE_RATE = 50 # rate of transmission in hz. 
+UPDATE_RATE = 200 # rate of transmission in hz. 
 
 
 
@@ -105,7 +105,13 @@ def set_steering_setpoint(payload):
 	if (len(payload) != 2):
 		rospy.logerr("ERROR: steering setpoint must be a byte array of length 2")
 		return [False, 0] #indicate an error occured. 
-	responce = send_frame(COMMAND_STEER, payload, 0)
+	responce = send_frame(COMMAND_STEER, payload, 4)
+	responce_packet = responce[1]
+	
+	verification_packet = payload[0:1] + DEVICE_ID
+	if (verification_packet != responce_packet):
+		scan_ports(DEVICE_ID)
+
 	global count
 	count = 0
 	return responce

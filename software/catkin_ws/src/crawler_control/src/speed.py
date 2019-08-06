@@ -250,7 +250,7 @@ def spin_monitor():
 	status.start()
 
 	timeout = threading.Thread(target = monitor_timeout)
-	status.start()
+	timeout.start()
 
 def monitor_odrive():
 	'''
@@ -297,12 +297,12 @@ def monitor_timeout():
 	global timeout_count
 	timeout_count = 0
 	rate = rospy.Rate(TIMEOUT_REFRESH)
-		while not rospy.is_shutdown():
+	while not rospy.is_shutdown():
+		rate.sleep()
+		timeout_count += 1 #incriment count
 
-			timeout_count += 1 #incriment count
-
-			if timeout_count > TIMEOUT_THREHOLD:
-				set_speed(0)
+		if timeout_count > TIMEOUT_THREHOLD:
+			set_speed(0)
 
 
 def check_acceleration(old_velocity):

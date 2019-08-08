@@ -28,8 +28,9 @@
 #define SERIAL_PING         'a'
 #define SERIAL_ECHO         'b'
 #define SERIAL_STEERING     'c'
+#define SERIAL_DIGITAL_W    'd'
 
-#define SERIAL_ID           "JPL"
+#define SERIAL_ID           "AAA"
 
 void process_serial(){
   static byte bytes[SERIAL_FRAME_LENGTH]; //stores the incomming command data. 
@@ -73,6 +74,9 @@ void parse_command(byte command[]){
 
       //Provide a callback. 
       Serial.write(command[SERIAL_INDEX_COMMAND - 1]);
+      Serial.println(SERIAL_ID);
+    case SERIAL_DIGITAL_W:
+      write_pin_digital(SERIAL_INDEX_DATA_START, SERIAL_INDEX_DATA_START + 1);
       Serial.println(SERIAL_ID);
     default: 
       //Likely an invalid command, prints command on serial. 

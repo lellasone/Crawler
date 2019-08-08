@@ -26,3 +26,19 @@ void write_steering(){
   servo_steering.write(map(steering_angle, -90, 90, 0, 180));
 }
 
+/* 
+ *  This function can be used to change the value of an arbitrary digital IO pin. 
+ *  It's pretty slow because it re-configures the pin each time it's called, but
+ *  is a good fit for controlling relays or the like over serial. 
+ *  args: 
+ *    pin - the arduino number of the pin in question. 
+ *    value - if 0, write the pin low. Otherwise write it high. 
+ */
+void write_pin_digital(int pin, int value){
+  pinMode(pin, OUTPUT);
+  if(value > 0){
+    digitalWrite(pin, HIGH);
+  } else {
+    digitalWrite(pin, LOW);
+  }
+}

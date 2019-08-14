@@ -29,7 +29,7 @@ COMMAND_WRITE_D = bytes("d", encoding = 'utf8')
 COMMAND_READ_D = bytes("e", encoding = 'utf8')
 START_BYTE = bytearray.fromhex("41")
 END_BYTE = bytearray.fromhex("5A")
-DEVICE_ID = bytes("AAA", encoding = 'utf8')
+DEVICE_ID = bytes("BBB", encoding = 'utf8')
 
 RESPONCE_READ_D_LN = 5 # length of read digital response in bytes. 
 RESPONCE_INDEX_ID_S = 0 #start of responce bytes. 
@@ -156,7 +156,7 @@ def monitor():
 		is set to true. 
 	"""
 	pub = rospy.Publisher(ESTOP_TOPIC, Bool, queue_size = 0)
-	rate = rospy.Rate(10) #set polling rate in hz
+	rate = rospy.Rate(2) #set polling rate in hz
 	failed_count = 0
 	while not rospy.is_shutdown():
 		rate.sleep()

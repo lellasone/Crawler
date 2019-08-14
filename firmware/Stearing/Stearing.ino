@@ -21,6 +21,8 @@ void loop() {
   // put your main code here, to run repeatedly:
   process_serial();
   write_steering();
+  //pinMode(8, INPUT);
+  //Serial.println(digitalRead(8));
 }
 
 void update_steering(byte angle){
@@ -58,9 +60,10 @@ byte write_pin_digital(int pin, int value){
 byte read_pin_digital(int pin){
   if ((pin < 0) || (pin > PIN_RANGE)){
   error = ERROR_READPIN;
+  return(0);
   }
   else {
-    pinMode(pin, OUTPUT);
+    pinMode(pin, INPUT);
     byte value = digitalRead(pin);
     error = 0;
     return value;

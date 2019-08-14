@@ -83,17 +83,25 @@ void parse_command(byte command[]){
       //Provide a callback. 
       Serial.write(command[SERIAL_INDEX_COMMAND - 1]);
       Serial.println(SERIAL_ID);
+      break;
     case SERIAL_DIGITAL_W:
-      write_pin_digital(SERIAL_INDEX_DATA_START, SERIAL_INDEX_DATA_START + 1);
-      Serial.println(SERIAL_ID + error);
+      byte pin = command[SERIAL_INDEX_DATA_START];
+      write_pin_digital(pin, command[SERIAL_INDEX_DATA_START + 1]);
+      Serial.print(SERIAL_ID);
+      Serial.print(error);
+      Serial.println(pin);
+      break;
     case SERIAL_DIGITAL_R:
-      byte response = read_pin_digital(SERIAL_INDEX_DATA_START);
-      Serial.println(SERIAL_ID + error + response);
+      byte response = read_pin_digital(command[SERIAL_INDEX_DATA_START]);
+      Serial.print(SERIAL_ID);
+      Serial.print(error);
+      Serial.println(response);
+      break;
     default: 
       //Likely an invalid command, prints command on serial. 
-      Serial.print("default: ");
-      Serial.write(command[SERIAL_INDEX_COMMAND]);
-      Serial.println("");
+      //Serial.print("default: ");
+      //#Serial.write(command[SERIAL_INDEX_COMMAND]);
+      //Serial.println("");
       break;
   }
 }

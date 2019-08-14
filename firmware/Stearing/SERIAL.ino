@@ -29,8 +29,13 @@
 #define SERIAL_ECHO         'b'
 #define SERIAL_STEERING     'c'
 #define SERIAL_DIGITAL_W    'd'
+#define SERIAL_DIGITAL_R    'e'
 
 #define SERIAL_ID           "AAA"
+
+#define ERROR_WRITEPIN       1
+#define ERROR_READPIN        2
+
 byte error;
 
 void process_serial(){
@@ -59,6 +64,8 @@ void process_serial(){
  */
 void parse_command(byte command[]){
   
+  error = 0; // clear error before any call
+  
   switch(command[SERIAL_INDEX_COMMAND]){
     case SERIAL_PING:
       //Reply with a pre-programed responce. 
@@ -78,7 +85,10 @@ void parse_command(byte command[]){
       Serial.println(SERIAL_ID);
     case SERIAL_DIGITAL_W:
       write_pin_digital(SERIAL_INDEX_DATA_START, SERIAL_INDEX_DATA_START + 1);
-      Serial.println(SERIAL_ID);
+      Serial.println(SERIAL_ID + error);
+    case SERIAL_DIGITAL_R:
+      byte response = read_pin_digital(SERIAL_INDEX_DATA_START);
+      Serial.println(SERIAL_ID + error + response);
     default: 
       //Likely an invalid command, prints command on serial. 
       Serial.print("default: ");

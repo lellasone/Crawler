@@ -4,6 +4,10 @@
 # It rely's on the higher level software e-stop system to send stop-commands
 # when requested. This module is largley identical to the steering module.
 #
+#
+# Note: responces will generally be in the form: [id][id][id][errors][data bytes...]
+# 		But not all functions have been updated on the teensy so check. 
+#
 # Maintainer: Jake Ketchum, jketchum@caltech.edu
 
 import rospy
@@ -22,9 +26,18 @@ COMMAND_ECHO = bytearray.fromhex("62")
 COMMAND_PING = bytearray.fromhex("61")
 COMMAND_STEER = bytearray.fromhex("63")
 COMMAND_WRITE_D = bytes("d", encoding = 'utf8')
+COMMAND_READ_D = bytes("e", encoding = 'utf8')
 START_BYTE = bytearray.fromhex("41")
 END_BYTE = bytearray.fromhex("5A")
 DEVICE_ID = bytes("AAA", encoding = 'utf8')
+
+RESPONCE_READ_D_LN = 5 # length of read digital response in bytes. 
+RESPONCE_INDEX_ID_S = 0 #start of responce bytes. 
+RESPONCE_INDEX_ID_E = 2 #start of responce bytes. 
+RESPONCE_INDEX_ERROR = 3# teensy errors if any. 
+RESPONCE_INDEX_DATA = 4 #start of data bytes. 
+
+PIN_TRANSPONDER = 8 # arduino number of transponder read pin. 
 
 
 ESTOP_TOPIC = 'xmaxx/estop'
@@ -125,15 +138,8 @@ def callback(msg):
 
 		TODO: Redo for twist (rads to servo angle)
 	'''
-	angle = msg.data
-	# scale to range -1 to 1
-	if(angle <= 1 and angle >= -1):
-		angle = angle * TURN_MAX # scale back to -0.5 to 0.5 to get 75 - 172 range
-		angle = 10/451 * (391 + math.sqrt(31497381 - 45100000 * angle))
-		global setpoint 
-		setpoint = int(angle)
-	else:
-		rospy.logerr("setpoint must be between -1 and 1 rads, is currently: " + str(angle))
+	pass 
+
 
 def spin_monitor_estop():
 	print("spinning up nodes")
@@ -149,14 +155,91 @@ def monitor():
 		the transponder has requested an e-stop. If it has the e-stop topic
 		is set to true. 
 	"""
-	pub = rospy.Publisher(ESTOP_TOPIC, Bool)
-	rate = rospy.Rate(10) #set polling rate in hzz
+	pub = rospy.Publisher(ESTOP_TOPIC, Bool, queue_size = 0)
+	rate = rospy.Rate(10) #set polling rate in hz
+	failed_count = 0
 	while not rospy.is_shutdown():
-		print("ping")
-		if(check_tier_2):
-			pub.publish(True)
 		rate.sleep()
+		responce = check_tier_2(pub)
 
+
+		if responce[0]:
+			# if the transmission worked, reset the counter. 
+			failed_count = 0
+		else: 
+			failed_count += 1 #incriment the failure counter. 
+			#rospy.logwarn("steering update failed")
+		if (failed_count > 0 and failed_count % ALLOWED_FAILURES == 0):
+			print(scan_ports(DEVICE_ID))
+
+def check_tier_2(pub):
+	"""
+		This function checks for the presence of a transponder e-stop, and 
+		publishes "True" to the prvoided ros publisher if one is encountered.. 
+		args:
+			pub - a rospy publisher to use for indicating an error. 
+
+		returns: unmodified return from read_pin
+	"""
+	responce = read_pin(PIN_TRANSPONDER)
+	print (responce)
+	(error, triggered) = responce
+	if triggered and error:
+		pub.publish(True)
+	elif not error:
+		rospy.logwarn("Errors: E-stop system error")
+
+	return(responce)
+
+
+
+
+
+def read_pin(pin):
+	"""
+		
+		returns: a tuple of the form (bool, bool). The first is true when no errors
+				 were encountered (detected). The second is true when the pin measured
+				 read as high. 
+	"""
+	payload = bytearray.fromhex("0000")
+	responce = send_frame(COMMAND_READ_D, payload, RESPONCE_READ_D_LN)
+	responce_packet = responce[1]
+
+	no_error_serial = responce[0] #true if no errors. 
+
+
+	# note: index 3 will contain teensy errors if any. 
+	print(responce_packet)
+
+	# check no serial errors and correct responce length. 
+	if no_error_serial and len(responce_packet) == RESPONCE_READ_D_LN:
+		value = bool(responce_packet[RESPONCE_INDEX_DATA])
+		ID = responce_packet[RESPONCE_INDEX_ID_S:RESPONCE_INDEX_ID_E]
+		# check no teensy errors and correct device. 
+		if not responce_packet[RESPONCE_INDEX_ERROR] and ID == DEVICE_ID:
+			return(responce[0], value)
+	
+	return(False, 0)
+
+
+
+
+
+
+
+def write_pin(pin, value):
+	payload = bytearray.fromhex("0000")
+	responce = send_frame(COMMAND_WRITE_D, payload, 3)
+	responce_packet = responce[1]
+	
+	verification_packet = payload[0:1] + DEVICE_ID
+	if (verification_packet != responce_packet):
+		scan_ports(DEVICE_ID)
+
+	global count
+	count = 0
+	return responce
 
 if __name__ == '__main__':
 	print("Scanning for ports")

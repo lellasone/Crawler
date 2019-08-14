@@ -2,6 +2,6 @@
 <node pkg="joy" type="joy_node" name="joy_node">
     <param name="dev" value="/dev/input/js0" />
     <param name="autorepeat_rate" value="50.0" />
-    <!--<remap from="joy" to="ps4/joy" />-->
+    <remap from="joy" to="xmaxx1/joy" />
 </node>
 </launch>

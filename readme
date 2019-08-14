@@ -29,7 +29,7 @@ Install systemd service:
 
 Joystick PS4 communicatoion:
 
-        Step 0: If commited any changes, do
+    Step 0: If commited any changes, do
                 sudo systemctl restart crawler_startup.service
                 to restart the system
 
@@ -44,3 +44,7 @@ Joystick PS4 communicatoion:
 	Step 4: roslaunch joystick.launch in Crawler/software/catkin_ws/src/crawler_control/launch
 		joystick should correctly run. 
 		To check, ssh nuc@192.168.8.175, rostopic echo ps4/joy
+
+PS4 Bluetooth: 
+	Step 0: Install python3-dev (or the version required for your python)
+	Step 1: sudo pip3 ds4drv

@@ -1,10 +1,12 @@
 #include <Servo.h>
 
 #define PIN_STEERING 5
+#define PIN_RANGE 23 // the number of highest pin
 
 Servo servo_steering;
 
 double steering_angle = 0;
+extern byte error;
 
 void setup() {
   servo_steering.attach(PIN_STEERING);
@@ -34,11 +36,29 @@ void write_steering(){
  *    pin - the arduino number of the pin in question. 
  *    value - if 0, write the pin low. Otherwise write it high. 
  */
-void write_pin_digital(int pin, int value){
-  pinMode(pin, OUTPUT);
-  if(value > 0){
-    digitalWrite(pin, HIGH);
-  } else {
-    digitalWrite(pin, LOW);
+byte write_pin_digital(int pin, int value){
+  if ((pin < 0) || (pin > PIN_RANGE)){
+  printf("Requested pin is out of range");
+  error = 1;
+  }
+  else {
+    pinMode(pin, OUTPUT);
+    if(value > 0){
+      digitalWrite(pin, HIGH);
+    } else {
+      digitalWrite(pin, LOW);
+    }
+  }
+}
+
+byte read_pin_digital(int pin){
+  if ((pin < 0) || (pin > PIN_RANGE)){
+  printf("Requested pin is out of range");
+  error = 1;
+  }
+  else {
+    pinMode(pin, OUTPUT);
+    byte value = digitalRead(pin);
+    return value;
   }
 }

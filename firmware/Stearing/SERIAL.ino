@@ -31,6 +31,7 @@
 #define SERIAL_DIGITAL_W    'd'
 
 #define SERIAL_ID           "AAA"
+byte error;
 
 void process_serial(){
   static byte bytes[SERIAL_FRAME_LENGTH]; //stores the incomming command data. 

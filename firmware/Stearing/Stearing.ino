@@ -42,28 +42,34 @@ void write_steering(){
  *    pin - the arduino number of the pin in question. 
  *    value - if 0, write the pin low. Otherwise write it high. 
  */
-byte write_pin_digital(int pin, int value){
-  if ((pin < 0) || (pin > PIN_RANGE)){
-  error = ERROR_WRITEPIN; // c
+void write_pin_digital(byte pin, byte value){
+  pinMode(pin, OUTPUT);
+    error = 0;
+    if(value == 0x00){
+      digitalWrite(pin, LOW);
+    } else {
+      digitalWrite(pin, HIGH);
+    }
+  /*if ((pin < 0) || (pin > PIN_RANGE)){
+    error = ERROR_WRITEPIN;
   }
   else {
     pinMode(pin, OUTPUT);
-    error = 0;
-    if(value > 0){
-      digitalWrite(pin, HIGH);
-    } else {
+    error = value;
+    if(value == 0x00){
       digitalWrite(pin, LOW);
+    } else {
+      digitalWrite(pin, HIGH);
     }
-  }
+  }*/
 }
 
 byte read_pin_digital(int pin){
   if ((pin < 0) || (pin > PIN_RANGE)){
-  error = ERROR_READPIN;
-  return(0);
-  }
-  else {
-    pinMode(pin, INPUT);
+    error = ERROR_READPIN;
+    return(0);
+  } else {
+    pinMode(pin, INPUT_PULLDOWN);
     byte value = digitalRead(pin);
     error = 0;
     return value;

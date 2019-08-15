@@ -73,7 +73,7 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 		#rospy.logerr("serial exception: " + str(e))
 		return[False,""]
 	except termios.error as e: 
-		rospy.logger("Termios exception: " + str(e))
+		rospy.logerr("Termios exception: " + str(e))
 		return[False,""]
 		
 

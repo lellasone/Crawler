@@ -29,9 +29,9 @@
 #define SERIAL_ECHO         'b'
 #define SERIAL_STEERING     'c'
 #define SERIAL_DIGITAL_W    'd'
-#define SERIAL_DIGITAL_R    'e'
+#define SERIAL_DIGITAL_R    'f'
 
-#define SERIAL_ID           "AAA"
+#define SERIAL_ID           "JPL"
 
 #define ERROR_WRITEPIN       1
 #define ERROR_READPIN        2
@@ -65,7 +65,6 @@ void process_serial(){
 void parse_command(byte command[]){
   
   error = 0; // clear error before any call
-  
   switch(command[SERIAL_INDEX_COMMAND]){
     case SERIAL_PING:
       //Reply with a pre-programed responce. 
@@ -79,29 +78,32 @@ void parse_command(byte command[]){
       break;
     case SERIAL_STEERING:
       update_steering(command[SERIAL_INDEX_COMMAND - 1]);
-
       //Provide a callback. 
       Serial.write(command[SERIAL_INDEX_COMMAND - 1]);
       Serial.println(SERIAL_ID);
       break;
-    case SERIAL_DIGITAL_W:
-      byte pin = command[SERIAL_INDEX_DATA_START];
-      write_pin_digital(pin, command[SERIAL_INDEX_DATA_START + 1]);
-      Serial.print(SERIAL_ID);
-      Serial.print(error);
-      Serial.println(pin);
-      break;
     case SERIAL_DIGITAL_R:
-      byte response = read_pin_digital(command[SERIAL_INDEX_DATA_START]);
+      static byte response = 0;
+      response = read_pin_digital(int(command[SERIAL_INDEX_DATA_START]));
       Serial.print(SERIAL_ID);
-      Serial.print(error);
-      Serial.println(response);
+      Serial.write(error);
+      Serial.write(response);
+      break;
+    case SERIAL_DIGITAL_W:
+      static byte pin = 0;
+      static byte value = 0;
+      value = command[SERIAL_INDEX_DATA_START - 1];
+      pin = command[SERIAL_INDEX_DATA_START];
+      write_pin_digital(pin, value);
+      Serial.write(SERIAL_ID);
+      Serial.write(error);
+      Serial.write(value);
       break;
     default: 
       //Likely an invalid command, prints command on serial. 
-      //Serial.print("default: ");
-      //#Serial.write(command[SERIAL_INDEX_COMMAND]);
-      //Serial.println("");
+      Serial.print("default: ");
+      Serial.write(command[SERIAL_INDEX_COMMAND]);
+      Serial.println("");
       break;
   }
 }

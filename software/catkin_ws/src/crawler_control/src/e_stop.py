@@ -26,7 +26,7 @@ COMMAND_ECHO = bytearray.fromhex("62")
 COMMAND_PING = bytearray.fromhex("61")
 COMMAND_STEER = bytearray.fromhex("63")
 COMMAND_WRITE_D = bytes("d", encoding = 'utf8')
-COMMAND_READ_D = bytes("e", encoding = 'utf8')
+COMMAND_READ_D = bytes("f", encoding = 'utf8')
 START_BYTE = bytearray.fromhex("41")
 END_BYTE = bytearray.fromhex("5A")
 DEVICE_ID = bytes("AAA", encoding = 'utf8')
@@ -78,9 +78,8 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 	    frame = frame + command + data
 	    frame = frame + bytearray.fromhex("00") # add checksum
 	    frame = frame + END_BYTE
-	    print(frame)
 	    
-	    #rospy.loginfo(frame)
+	    rospy.loginfo(frame)
 	    teensy.write(frame)
 	    if reply_length != 0:
 	        return [True, teensy.read(reply_length)]
@@ -90,7 +89,7 @@ def send_frame(command, data, reply_length = 0, port_id = None):
 		#rospy.logerr("serial exception: " + str(e))
 		return[False,""]
 	except termios.error as e: 
-		rospy.logger("Termios exception: " + str(e))
+		rospy.logerr("Termios exception: " + str(e))
 		return[False,""]
 		
 
@@ -147,13 +146,12 @@ def callback(msg):
 		This function checks wether the e-stop channel was written high or low, and
 		sets the indicator LED to match. 
 	'''
-	print("goats")
 	state = msg.data 
+	print(state)
 	if state:
 		write_pin(PIN_LED, True)
 	else:
 		write_pin(PIN_LED, False)
-	pass 
 
 
 def spin_monitor_estop():
@@ -173,8 +171,11 @@ def monitor():
 	pub = rospy.Publisher(ESTOP_TOPIC, Bool, queue_size = 0)
 	rate = rospy.Rate(1) #set polling rate in hz
 	failed_count = 0
+	count = 0
 	while not rospy.is_shutdown():
 		rate.sleep()
+		count +=1
+		print (count)
 		responce = check_tier_2(pub)
 
 		write_pin(PIN_POWER, True) # Turn on main power. 
@@ -188,6 +189,7 @@ def monitor():
 			#rospy.logwarn("steering update failed")
 		if (failed_count > 0 and failed_count % ALLOWED_FAILURES == 0):
 			print(scan_ports(DEVICE_ID))
+	print("rospy is shut down")
 
 def check_tier_2(pub):
 	"""
@@ -199,14 +201,18 @@ def check_tier_2(pub):
 		returns: unmodified return from read_pin
 	"""
 	responce = read_pin(PIN_TRANSPONDER)
-	print(responce)
-	(no_error, not_triggered) = responce
-	if not not_triggered and no_error:
-		pub.publish(True)
+	(no_error, triggered) = responce
+	if no_error:
+		if triggered:
+			pub.publish(True)
+			print("goat")
+		else:
+
+			pub.publish(False)
 	elif not no_error:
 		rospy.logwarn("Errors: E-stop system error")
 
-	return(no_error, not not_triggered)
+	return(no_error, not triggered)
 
 
 
@@ -222,21 +228,21 @@ def read_pin(pin):
 	payload = bytes([pin,0])
 	responce = send_frame(COMMAND_READ_D, payload, RESPONCE_READ_D_LN)
 	responce_packet = responce[1]
-
 	no_error_serial = responce[0] #true if no errors. 
 
 
-	# note: index 3 will contain teensy errors if any. 
-	print("bingo")
-	print(responce)
-
 	# check no serial errors and correct responce length. 
 	if no_error_serial and len(responce_packet) == RESPONCE_READ_D_LN:
-		value = bool(responce_packet[RESPONCE_INDEX_DATA])
+		if responce_packet[RESPONCE_INDEX_DATA] == 0:
+			value = False
+		else:
+			print(responce_packet[RESPONCE_INDEX_DATA])
+			value = True
+
 		ID = responce_packet[RESPONCE_INDEX_ID_S:RESPONCE_INDEX_ID_E+1]
-		print
+
 		# check no teensy errors and correct device. 
-		if not responce_packet[RESPONCE_INDEX_ERROR] == ERROR_NO_ERROR and ID == DEVICE_ID:
+		if responce_packet[RESPONCE_INDEX_ERROR] == ERROR_NO_ERROR and ID == DEVICE_ID:
 			return(responce[0], value)
 	
 	return(False, 0)
@@ -248,11 +254,11 @@ def read_pin(pin):
 
 
 def write_pin(pin, value):
+
 	payload = bytes([pin,value])
 	responce = send_frame(COMMAND_WRITE_D, payload, RESPONCE_WRITE_D_LN)
 	responce_packet = responce[1]
-	
-	print(responce)
+	print(responce_packet)
 	verification_packet = DEVICE_ID + bytes([0,pin])
 	if (verification_packet != responce_packet):
 		return[False, responce[1]]

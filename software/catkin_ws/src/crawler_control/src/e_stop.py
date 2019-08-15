@@ -57,6 +57,8 @@ SERIAL_TIMEOUT = 0.02 #read timeout in seconds.
 ALLOWED_FAILURES = 10 # allowed failed reads befor searching for new port.
 UPDATE_RATE = 200 # rate of transmission in hz. 
 
+ESTOP_FLAG = False
+
 
 
 # This function composes and transmits each command frame. 
@@ -178,6 +180,8 @@ def monitor():
 		print (count)
 		responce = check_tier_2(pub)
 
+
+
 		write_pin(PIN_POWER, True) # Turn on main power. 
 
 
@@ -191,24 +195,26 @@ def monitor():
 			print(scan_ports(DEVICE_ID))
 	print("rospy is shut down")
 
-def check_tier_2(pub):
+def check_tier_2(pub, flag):
 	"""
 		This function checks for the presence of a transponder e-stop, and 
 		publishes "True" to the prvoided ros publisher if one is encountered.. 
 		args:
 			pub - a rospy publisher to use for indicating an error. 
-
+			
 		returns: unmodified return from read_pin
 	"""
+	global ESTOP_FLAG
+
 	responce = read_pin(PIN_TRANSPONDER)
 	(no_error, triggered) = responce
 	if no_error:
 		if triggered:
 			pub.publish(True)
-			print("goat")
-		else:
-
+			ESTOP_FLAG = True
+		elif ESTOP_FLAG:
 			pub.publish(False)
+			ESTOP_FLAG = False
 	elif not no_error:
 		rospy.logwarn("Errors: E-stop system error")
 

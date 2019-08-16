@@ -47,7 +47,7 @@ PIN_LED = 16 # Pin that controls the status LED.
 PIN_POWER = 23 #Pin that controls the main power. 
 
 
-ESTOP_TOPIC = 'xmaxx/estop'
+ESTOP_TOPIC = '/xmaxx1/e_stop'
 
 port = "/dev/ttyACM0"
 SERIAL_TIMEOUT = 0.02 #read timeout in seconds. 
@@ -170,7 +170,7 @@ def monitor():
 		the transponder has requested an e-stop. If it has the e-stop topic
 		is set to true. 
 	"""
-	pub = rospy.Publisher(ESTOP_TOPIC, Bool, queue_size = 0)
+	pub = rospy.Publisher(ESTOP_TOPIC, Bool, queue_size = 1)
 	rate = rospy.Rate(1) #set polling rate in hz
 	failed_count = 0
 	count = 0
@@ -195,7 +195,7 @@ def monitor():
 			print(scan_ports(DEVICE_ID))
 	print("rospy is shut down")
 
-def check_tier_2(pub, flag):
+def check_tier_2(pub):
 	"""
 		This function checks for the presence of a transponder e-stop, and 
 		publishes "True" to the prvoided ros publisher if one is encountered.. 
